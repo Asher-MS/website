@@ -1,6 +1,7 @@
 {
-  "name": "jina.ai landing page",
+  "name": "jina-ai-landing-page",
   "version": "1.0.0",
+  "homepage": "https://jina.ai/website",
   "scripts": {
     "dev": "next --port 8080",
     "build": "next build",
