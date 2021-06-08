@@ -24,4 +24,4 @@ const Base = () => (
   </div>
 )
 
-export { Base }
+export default Base

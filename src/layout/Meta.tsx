@@ -20,6 +20,22 @@ const Meta = (props: IMetaProps) => (
         content="width=device-width,initial-scale=1"
         key="viewport"
       />
+      <meta property="og:title" content="Jina AI" />
+      <meta name="author" content="Jina AI" />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:site_name" content="Jina AI" />
+      <meta
+        property="og:image"
+        content="https://jina.ai/assets/images/jina_banner_new.png"
+      />
+      <meta name="twitter:card" content="summary" />
+      <meta
+        property="twitter:image"
+        content="https://jina.ai/assets/images/jina_banner_new.png"
+      />
+      <meta property="twitter:title" content="Jina AI" />
+      <meta name="twitter:site" content="@JinaAI_" />
+      <meta name="twitter:creator" content="@Jina AI" />
       <link
         rel="apple-touch-icon"
         href={`${process.env.baseUrl}/apple-touch-icon.png`}
@@ -60,4 +76,4 @@ const Meta = (props: IMetaProps) => (
   </>
 )
 
-export { Meta }
+export default Meta
