@@ -4,6 +4,7 @@ import className from 'classnames'
 import Link from 'next/link'
 import { Button } from '../button/Button'
 import Icon from '../template/Icon'
+import { websiteCopyStrings } from '../utils/websiteCopyStrings'
 
 type INavbarProps = {
   logo: ReactNode;
@@ -58,7 +59,7 @@ const NavbarTwoColumns = (props: INavbarProps) => {
 
       <Button fullRounded className="flex items-center justify-center w-56">
         <Icon name="GitHub" className="-ml-14 mr-6" />
-        Try it out!
+        {websiteCopyStrings.buttonCallToAction}
       </Button>
 
       <style jsx>

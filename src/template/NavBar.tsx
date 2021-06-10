@@ -3,28 +3,29 @@ import Link from 'next/link'
 import { Section } from '../layout/Section'
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns'
 import { Logo } from './Logo'
+import { websiteCopyStrings } from '../utils/websiteCopyStrings'
 
 const NavBar = () => (
   <Section yPadding="py-6">
     <NavbarTwoColumns logo={<Logo xl />}>
       <li>
         <Link href="/">
-          <a>Home</a>
+          <a>{websiteCopyStrings.navBarHome}</a>
         </Link>
       </li>
       <li>
         <Link href="/">
-          <a>Products</a>
+          <a>{websiteCopyStrings.navBarProducts}</a>
         </Link>
       </li>
       <li>
         <Link href="/">
-          <a>Developer</a>
+          <a>{websiteCopyStrings.navBarDeveloper}</a>
         </Link>
       </li>
       <li>
         <Link href="/">
-          <a>Company</a>
+          <a>{websiteCopyStrings.navBarCompany}</a>
         </Link>
       </li>
     </NavbarTwoColumns>
