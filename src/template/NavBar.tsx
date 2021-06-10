@@ -5,21 +5,26 @@ import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns'
 import { Logo } from './Logo'
 
 const NavBar = () => (
-  <Section yPadding="py-3">
+  <Section yPadding="py-6">
     <NavbarTwoColumns logo={<Logo xl />}>
       <li>
         <Link href="/">
-          <a>Docs</a>
+          <a>Home</a>
         </Link>
       </li>
       <li>
         <Link href="/">
-          <a>Blog</a>
+          <a>Products</a>
         </Link>
       </li>
       <li>
         <Link href="/">
-          <a>Sign in</a>
+          <a>Developer</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/">
+          <a>Company</a>
         </Link>
       </li>
     </NavbarTwoColumns>

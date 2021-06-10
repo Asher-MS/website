@@ -3,6 +3,7 @@ import React, { ReactNode, useState } from 'react'
 import className from 'classnames'
 import Link from 'next/link'
 import { Button } from '../button/Button'
+import Icon from '../template/Icon'
 
 type INavbarProps = {
   logo: ReactNode;
@@ -55,7 +56,10 @@ const NavbarTwoColumns = (props: INavbarProps) => {
         </ul>
       </nav>
 
-      <Button fullRounded>Try it out!</Button>
+      <Button fullRounded className="flex items-center justify-center w-56">
+        <Icon name="GitHub" className="-ml-14 mr-6" />
+        Try it out!
+      </Button>
 
       <style jsx>
         {`
