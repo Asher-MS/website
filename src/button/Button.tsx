@@ -6,6 +6,7 @@ type IButtonProps = {
   xl?: boolean;
   secondary?: boolean;
   full?: boolean;
+  fullRounded?: boolean;
   children: string;
 };
 
@@ -16,6 +17,7 @@ const Button = (props: IButtonProps) => {
     'btn-base': !props.xl,
     'btn-secondary': props.secondary,
     'btn-primary': !props.secondary,
+    'btn-full-rounded': !props.fullRounded,
     'w-full': props.full
   })
 
@@ -37,8 +39,12 @@ const Button = (props: IButtonProps) => {
             @apply font-extrabold text-xl py-4 px-6;
           }
 
+          .btn-full-rounded {
+            @apply rounded-full;
+          }
+
           .btn-primary {
-            @apply text-white bg-primary-500;
+            @apply text-white bg-primary-500 rounded-full;
           }
 
           .btn-primary:hover {

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "homepage": "https://jina.ai/website",
   "scripts": {
-    "dev": "next --port 8080",
+    "dev": "next",
     "build": "next build",
     "start": "next start",
     "build-stats": "ANALYZE=true npm run build",

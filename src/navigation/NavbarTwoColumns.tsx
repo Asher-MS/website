@@ -2,6 +2,7 @@ import React, { ReactNode, useState } from 'react'
 
 import className from 'classnames'
 import Link from 'next/link'
+import { Button } from '../button/Button'
 
 type INavbarProps = {
   logo: ReactNode;
@@ -15,16 +16,9 @@ const NavbarTwoColumns = (props: INavbarProps) => {
     setShowMenu(!showMenu)
   }
 
-  const navClass = className(
-    'w-full',
-    'sm:w-auto',
-    'sm:block',
-    'mt-2',
-    'sm:mt-0',
-    {
-      hidden: !showMenu
-    }
-  )
+  const navClass = className('w-full', 'sm:w-auto', 'sm:block', 'mt-2', 'sm:mt-0', {
+    hidden: !showMenu
+  })
 
   return (
     <div className="flex flex-wrap justify-between items-center">
@@ -60,6 +54,8 @@ const NavbarTwoColumns = (props: INavbarProps) => {
           {props.children}
         </ul>
       </nav>
+
+      <Button fullRounded>Try it out!</Button>
 
       <style jsx>
         {`

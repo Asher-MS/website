@@ -6,12 +6,14 @@ import { FAQ } from './FAQ'
 import { Features } from './Features'
 import { Footer } from './Footer'
 import { Hero } from './Hero'
+import NavBar from './NavBar'
 import { Pricing } from './Pricing'
 import { Testimonial } from './Testimonial'
 import { VerticalFeatures } from './VerticalFeatures'
 
 const Base = () => (
   <div className="antialiased text-gray-600">
+    <NavBar />
     <Hero />
     <Customer />
     <Features />
