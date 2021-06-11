@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Link from 'next/link'
 
 import { Background } from '../background/Background'
@@ -8,18 +7,15 @@ import { FooterLinks } from '../footer/FooterLinks'
 import { FooterTwoRowsCopyright } from '../footer/FooterTwoRowsCopyright'
 import { Section } from '../layout/Section'
 import { Config } from '../utils/Config'
-import { Logo } from './Logo'
+import { LogoWhite } from './Logo'
 
 const Footer = () => (
-  <Background color="bg-gray-100">
-    <Section>
+  <Background color="bg-primary-500 text-white">
+    <Section yPadding="pt-16" className="pt-16">
       <FooterTwoRowsCopyright siteName={Config.site_name}>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-6">
           <div className="col-span-1 sm:col-span-2">
-            <FooterCompanyInfo
-              logo={<Logo />}
-              description={Config.description}
-            />
+            <FooterCompanyInfo logo={<LogoWhite />} description={Config.description} />
           </div>
 
           <FooterLinks title="Product">

@@ -1,16 +1,16 @@
 import React, { ReactNode } from 'react'
 
-type ISectionProps = {
+interface ISectionProps extends React.HTMLAttributes<HTMLDivElement> {
   title?: string;
   subtitle?: string;
   description?: string;
   yPadding?: string;
   children: ReactNode;
-};
+}
 
 const Section = (props: ISectionProps) => (
   <div
-    className={`lg:max-w-screen-lg xl:max-w-screen-2xl mx-auto px-3 ${
+    className={`lg:max-w-screen-lg xl:max-w-screen-2xl mx-auto ${
       props.yPadding ? props.yPadding : 'py-16'
     }`}
   >
