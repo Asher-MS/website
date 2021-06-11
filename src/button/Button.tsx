@@ -1,7 +1,9 @@
 import React from 'react'
 import className from 'classnames'
 
-interface IButtonProps extends React.HTMLAttributes<HTMLDivElement> {
+export type DivProps = React.HTMLAttributes<HTMLDivElement>;
+
+interface IButtonProps extends DivProps {
   xl?: boolean;
   secondary?: boolean;
   full?: boolean;
