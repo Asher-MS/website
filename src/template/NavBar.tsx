@@ -10,18 +10,39 @@ const navLinks = [
   {
     label: websiteCopyStrings.navBarProducts,
     items: [
-      { title: 'Jina Core', description: 'Jina core description', icon: 'core' },
-      { title: 'Jina Hub', description: 'Jina Hub description', icon: 'hub' },
-      { title: 'Jina Dashboard', description: 'Jina Dashboard description', icon: 'dashboard' }
+      {
+        title: websiteCopyStrings.navBarProductJinaCore,
+        description: 'Jina core description',
+        icon: 'core'
+      },
+      {
+        title: websiteCopyStrings.navBarProductJinaHub,
+        description: 'Jina Hub description',
+        icon: 'hub'
+      },
+      {
+        title: websiteCopyStrings.navBarProductJinaDashboard,
+        description: 'Jina Dashboard description',
+        icon: 'dashboard'
+      }
     ]
   },
   {
     label: websiteCopyStrings.navBarDeveloper,
-    items: [{ title: 'Jina Core' }, { title: 'Jina Hub' }, { title: 'Jina Dashboard' }]
+    items: [
+      { title: websiteCopyStrings.navBarDevelopersContribute },
+      { title: websiteCopyStrings.navBarDevelopersJoin },
+      { title: websiteCopyStrings.navBarDevelopersLearn }
+    ]
   },
   {
     label: websiteCopyStrings.navBarCompany,
-    items: [{ title: 'Jina Core' }, { title: 'Jina Hub' }, { title: 'Jina Dashboard' }]
+    items: [
+      { title: websiteCopyStrings.navBarCompanyAbout },
+      { title: websiteCopyStrings.navBarCompanyCareers },
+      { title: websiteCopyStrings.navBarCompanyContact },
+      { title: websiteCopyStrings.navBarCompanyBlog }
+    ]
   }
 ]
 
