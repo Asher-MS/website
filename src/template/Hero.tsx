@@ -1,37 +1,23 @@
 import React from 'react'
 
-import Link from 'next/link'
-
+import { websiteCopyStrings } from '../utils/websiteCopyStrings'
 import { Background } from '../background/Background'
 import { Button } from '../button/Button'
-import { HeroOneButton } from '../hero/HeroOneButton'
 import { Section } from '../layout/Section'
 
 const Hero = () => (
-  <Background color="bg-gray-200">
+  <Background color="bg-white">
     <Section yPadding="pt-20 pb-3">
-      <HeroOneButton
-        title={
-          <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developer</span>
-          </>
-        }
-        description="The easiest way to build React landing page in seconds."
-        button={
-          <Link href="/">
-            <a>
-              <Button xl>Start your 14-day Free Trial</Button>
-            </a>
-          </Link>
-        }
-        image={{
-          src: '/assets/images/hero-image.png',
-          alt: 'Hero screenshot'
-        }}
-      />
+      <h1 className="text-8xl font-bold text-black w-5/12">{websiteCopyStrings.heroHeadline}</h1>
+      <p className="w-4/12">{websiteCopyStrings.heroDescription}</p>
+      <div className="flex mt-8 mb-40">
+        <Button className="w-56 py-5 mr-10">{websiteCopyStrings.heroPrimaryButton}</Button>
+        <Button secondary className="w-56 py-5">
+          {websiteCopyStrings.heroSecondaryButton}
+        </Button>
+      </div>
     </Section>
   </Background>
 )
 
-export { Hero }
+export default Hero

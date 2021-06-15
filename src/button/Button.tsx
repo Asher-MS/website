@@ -1,25 +1,29 @@
 import React from 'react'
-
 import className from 'classnames'
 
-type IButtonProps = {
+export type DivProps = React.HTMLAttributes<HTMLDivElement>;
+
+interface IButtonProps extends DivProps {
   xl?: boolean;
   secondary?: boolean;
   full?: boolean;
   fullRounded?: boolean;
   children: string;
-};
+}
 
 const Button = (props: IButtonProps) => {
-  const btnClass = className({
-    btn: true,
-    'btn-xl': props.xl,
-    'btn-base': !props.xl,
-    'btn-secondary': props.secondary,
-    'btn-primary': !props.secondary,
-    'btn-full-rounded': !props.fullRounded,
-    'w-full': props.full
-  })
+  const btnClass = className(
+    'btn',
+    {
+      'btn-xl': props.xl,
+      'btn-base': !props.xl,
+      'btn-secondary': props.secondary,
+      'btn-primary': !props.secondary,
+      'btn-full-rounded': !props.fullRounded,
+      'w-full': props.full
+    },
+    props.className
+  )
 
   return (
     <div className={btnClass}>
@@ -28,11 +32,11 @@ const Button = (props: IButtonProps) => {
       <style jsx>
         {`
           .btn {
-            @apply inline-block rounded-md text-center;
+            @apply rounded-md text-center;
           }
 
           .btn-base {
-            @apply text-lg font-semibold py-2 px-4;
+            @apply text-lg font-semibold;
           }
 
           .btn-xl {
@@ -52,7 +56,7 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-secondary {
-            @apply bg-gray-300;
+            @apply bg-secondary-500 text-black;
           }
 
           .btn-secondary:hover {
