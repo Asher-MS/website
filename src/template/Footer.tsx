@@ -8,107 +8,97 @@ import { FooterTwoRowsCopyright } from '../footer/FooterTwoRowsCopyright'
 import { Section } from '../layout/Section'
 import { Config } from '../utils/Config'
 import { LogoWhite } from './Logo'
+import { websiteCopyStrings } from '../utils/websiteCopyStrings'
 
 const Footer = () => (
   <Background color="bg-primary-500 text-white">
     <Section yPadding="pt-16" className="pt-16">
-      <FooterTwoRowsCopyright siteName={Config.site_name}>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-6">
-          <div className="col-span-1 sm:col-span-2">
-            <FooterCompanyInfo logo={<LogoWhite />} description={Config.description} />
-          </div>
-
-          <FooterLinks title="Product">
-            <li>
-              <Link href="/">
-                <a>First link</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Second link</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Third link</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Forth link</a>
-              </Link>
-            </li>
-          </FooterLinks>
-          <FooterLinks title="Resources">
-            <li>
-              <Link href="/">
-                <a>First link</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Second link</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Third link</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Forth link</a>
-              </Link>
-            </li>
-          </FooterLinks>
-          <FooterLinks title="Contact">
-            <li>
-              <Link href="/">
-                <a>First link</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Second link</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Third link</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Forth link</a>
-              </Link>
-            </li>
-          </FooterLinks>
-          <FooterLinks title="Legal">
-            <li>
-              <Link href="/">
-                <a>First link</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Second link</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Third link</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Forth link</a>
-              </Link>
-            </li>
-          </FooterLinks>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-6">
+        <div className="col-span-1 sm:col-span-2">
+          <FooterCompanyInfo logo={<LogoWhite />} description={Config.description} />
         </div>
-      </FooterTwoRowsCopyright>
+
+        <FooterLinks title={websiteCopyStrings.footerCompany}>
+          <li>
+            <Link href="/">
+              <a>{websiteCopyStrings.footerCompanyAbout}</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <a>{websiteCopyStrings.footerCompanyCareers}</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <a>{websiteCopyStrings.footerCompanyContact}</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <a>{websiteCopyStrings.footerCompanyBlog}</a>
+            </Link>
+          </li>
+        </FooterLinks>
+        <FooterLinks title={websiteCopyStrings.footerProducts}>
+          <li>
+            <Link href="/">
+              <a>{websiteCopyStrings.footerProductsCore}</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <a>{websiteCopyStrings.footerProductsHub}</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <a>{websiteCopyStrings.footerProductsDashboard}</a>
+            </Link>
+          </li>
+        </FooterLinks>
+        <FooterLinks title={websiteCopyStrings.footerDevelopers}>
+          <li>
+            <Link href="/">
+              <a>{websiteCopyStrings.footerDevelopersContribute}</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <a>{websiteCopyStrings.footerDevelopersLearn}</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <a>{websiteCopyStrings.footerDevelopersJoin}</a>
+            </Link>
+          </li>
+        </FooterLinks>
+        <FooterLinks title={websiteCopyStrings.footerSocials}>
+          <li>
+            <Link href="/">
+              <a>{websiteCopyStrings.footerSocialsGitHub}</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <a>{websiteCopyStrings.footerSocialsLinkedin}</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <a>{websiteCopyStrings.footerSocialsTwitter}</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <a>{websiteCopyStrings.footerSocialsSlack}</a>
+            </Link>
+          </li>
+        </FooterLinks>
+      </div>
     </Section>
+    <FooterTwoRowsCopyright siteName={Config.site_name}></FooterTwoRowsCopyright>
   </Background>
 )
 

@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 
 type IFooterTwoRowsCopyrightProps = {
   siteName: string;
-  children: ReactNode;
+  children?: ReactNode;
 };
 
 const FooterTwoRowsCopyright = (props: IFooterTwoRowsCopyrightProps) => (
