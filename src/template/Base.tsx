@@ -10,6 +10,7 @@ import NavBar from './NavBar'
 import { Pricing } from './Pricing'
 import { Testimonial } from './Testimonial'
 import { VerticalFeatures } from './VerticalFeatures'
+import UseCases from './UseCases'
 
 const Base = () => (
   <div className="antialiased text-gray-600">
@@ -19,6 +20,7 @@ const Base = () => (
     <Features />
     <VerticalFeatures />
     <Testimonial />
+    <UseCases />
     <Pricing />
     <FAQ />
     <Banner />
