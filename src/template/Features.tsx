@@ -2,6 +2,7 @@ import React from 'react'
 
 import { FeatureElement } from '../feature/FeatureElement'
 import { Section } from '../layout/Section'
+import { websiteCopyStrings } from '../utils/websiteCopyStrings'
 
 const Features = () => (
   <Section
@@ -9,9 +10,14 @@ const Features = () => (
     subtitle="Features"
     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at."
   >
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-16">
+    <div className="text-center font-bold text-4xl mb-8">
+      <h2 className="text-black">
+        Why <span className="text-primary-500">Jina</span>
+      </h2>
+    </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-16">
       <FeatureElement
-        title="Your title"
+        title={websiteCopyStrings.valuePropositionTimeSaverTitle}
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -25,10 +31,10 @@ const Features = () => (
           </svg>
         }
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        {websiteCopyStrings.valuePropositionTimeSaverDescription}
       </FeatureElement>
       <FeatureElement
-        title="Your title"
+        title={websiteCopyStrings.valuePropositionDataSupportTitle}
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -43,10 +49,10 @@ const Features = () => (
           </svg>
         }
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        {websiteCopyStrings.valuePropositionDataSupportDescription}
       </FeatureElement>
       <FeatureElement
-        title="Your title"
+        title={websiteCopyStrings.valuePropositionCommunityDrivenTitle}
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -61,10 +67,10 @@ const Features = () => (
           </svg>
         }
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        {websiteCopyStrings.valuePropositionCommunityDrivenDescription}
       </FeatureElement>
       <FeatureElement
-        title="Your title"
+        title={websiteCopyStrings.valuePropositionPlugAndPlayTitle}
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -74,49 +80,15 @@ const Features = () => (
             strokeLinejoin="round"
           >
             <path d="M0 0h24v24H0z" stroke="none" />
-            <path d="M5 7l5 5-5 5M12 19h7" />
+            <path d="M3 17l6-6 4 4 8-8" />
+            <path d="M14 7h7v7" />
           </svg>
         }
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </FeatureElement>
-      <FeatureElement
-        title="Your title"
-        icon={
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M0 0h24v24H0z" stroke="none" />
-            <path d="M9 12l2 2 4-4" />
-            <path d="M12 3a12 12 0 008.5 3A12 12 0 0112 21 12 12 0 013.5 6 12 12 0 0012 3" />
-          </svg>
-        }
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </FeatureElement>
-      <FeatureElement
-        title="Your title"
-        icon={
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M0 0h24v24H0z" stroke="none" />
-            <path d="M20 11A8.1 8.1 0 004.5 9M4 4v5h5M4 13a8.1 8.1 0 0015.5 2m.5 5v-5h-5" />
-          </svg>
-        }
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        {websiteCopyStrings.valuePropositionPlugAndPlayDescription}
       </FeatureElement>
     </div>
   </Section>
 )
 
-export { Features }
+export default Features
