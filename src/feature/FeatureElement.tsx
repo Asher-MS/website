@@ -11,8 +11,8 @@ const FeatureElement = (props: IFeatureElementProps) => (
     <div className="w-12 h-12">{props.icon}</div>
 
     <div className="mt-2">
-      <div className="text-2xl text-gray-900 font-semibold">{props.title}</div>
-      <div className="mt-2 text-lg leading-8">{props.children}</div>
+      <div className="text-2xl text-gray-900 font-bold">{props.title}</div>
+      <div className="mt-2 text-gray-600 font-normal text-base leading-8">{props.children}</div>
     </div>
 
     <style jsx>

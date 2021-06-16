@@ -1,5 +1,8 @@
 module.exports = {
-  purge: ['./src/**/*.{js,ts,jsx,tsx}'],
+  purge: {
+    enabled: process.env.NODE_ENV !== 'development',
+    content: ['./src/**/*.{js,ts,jsx,tsx}']
+  },
   theme: {
     fontSize: {
       xs: '0.75rem',
@@ -32,7 +35,7 @@ module.exports = {
           300: '#e2e8f0',
           400: '#cbd5e0',
           500: '#a0aec0',
-          600: '#718096',
+          600: '#666666',
           700: '#4a5568',
           800: '#2d3748',
           900: '#1a202c'
