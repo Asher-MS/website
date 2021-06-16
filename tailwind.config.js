@@ -1,5 +1,8 @@
 module.exports = {
-  purge: ['./src/**/*.{js,ts,jsx,tsx}'],
+  purge: {
+    enabled: process.env.NODE_ENV !== 'development',
+    content: ['./src/**/*.{js,ts,jsx,tsx}']
+  },
   theme: {
     fontSize: {
       xs: '0.75rem',

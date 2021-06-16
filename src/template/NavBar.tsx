@@ -47,20 +47,29 @@ const navLinks = [
 ]
 
 const NavBar = () => (
-  <Section yPadding="py-6">
-    <NavbarTwoColumns logo={<Logo xl />}>
-      <li className="text-primary-500 font-bold">
-        <Link href="/">
-          <a>{websiteCopyStrings.navBarHome}</a>
-        </Link>
-      </li>
-      {navLinks.map((linkItem) => (
-        <li key={linkItem.label}>
-          <Dropdown dropDownLabel={linkItem.label} dropDownItems={linkItem.items} />
+  <div className="top-nav-bar">
+    <Section yPadding="py-6">
+      <NavbarTwoColumns logo={<Logo xl />}>
+        <li className="text-primary-500 font-bold">
+          <Link href="/">
+            <a className="md:mr-6">{websiteCopyStrings.navBarHome}</a>
+          </Link>
         </li>
-      ))}
-    </NavbarTwoColumns>
-  </Section>
+        {navLinks.map((linkItem) => (
+          <li key={linkItem.label}>
+            <Dropdown dropDownLabel={linkItem.label} dropDownItems={linkItem.items} />
+          </li>
+        ))}
+      </NavbarTwoColumns>
+    </Section>
+    <style jsx>
+      {`
+        .top-nav-bar {
+          box-shadow: 3px 6px 33px 0px #cdcdcd40;
+        }
+      `}
+    </style>
+  </div>
 )
 
 export default NavBar
