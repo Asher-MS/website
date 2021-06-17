@@ -2,13 +2,15 @@ import React from 'react'
 
 import { Button } from '../button/Button'
 import { websiteCopyStrings } from '../utils/websiteCopyStrings'
+import CTAGitHubBackground from './CTAGitHubBackground'
 import Icon from './Icon'
 
 const CTAGitHub = () => {
   return (
-    <div className="relative py-20">
+    <div className="relative py-20 bg-gray-100">
       <div className="w-3/6 mx-auto">
-        <div className="w-5/6k">
+        <CTAGitHubBackground />
+        <div className="w-5/6">
           <h2>{websiteCopyStrings.HomeCallToActionTitle}</h2>
           <p className="text-base text-gray-600 my-3">
             {websiteCopyStrings.HomeCallToActionDescription}
@@ -19,7 +21,7 @@ const CTAGitHub = () => {
             className="rounded-full flex items-center justify-center w-48"
           >
             <span className="mr-6 font-bold">{websiteCopyStrings.HomeCallToActionButtonLabel}</span>
-            <Icon name="GitHub-black" className="w-10 h-10" />
+            <Icon name="GitHub-black" className="w-8 h-8" />
           </Button>
         </div>
       </div>
