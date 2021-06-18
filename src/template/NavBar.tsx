@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import { Section } from '../layout/Section'
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns'
 import { Logo } from './Logo'
@@ -13,17 +12,20 @@ const navLinks = [
       {
         title: websiteCopyStrings.navBarProductJinaCore,
         description: 'Jina core description',
-        icon: 'core'
+        icon: 'core',
+        link: '/core'
       },
       {
         title: websiteCopyStrings.navBarProductJinaHub,
         description: 'Jina Hub description',
-        icon: 'hub'
+        icon: 'hub',
+        link: '/hub'
       },
       {
         title: websiteCopyStrings.navBarProductJinaDashboard,
         description: 'Jina Dashboard description',
-        icon: 'dashboard'
+        icon: 'dashboard',
+        link: '/dashboard'
       }
     ]
   },
@@ -50,11 +52,6 @@ const NavBar = () => (
   <div className="top-nav-bar">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
-        <li className="text-primary-500 font-bold">
-          <Link href="/">
-            <a className="md:mr-6">{websiteCopyStrings.navBarHome}</a>
-          </Link>
-        </li>
         {navLinks.map((linkItem) => (
           <li key={linkItem.label}>
             <Dropdown dropDownLabel={linkItem.label} dropDownItems={linkItem.items} />
