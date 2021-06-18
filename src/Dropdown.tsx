@@ -26,31 +26,33 @@ const Dropdown = ({ dropDownLabel, dropDownItems }: DropdownProps) => {
           <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
         </svg>
       </button>
-      <ul className="dropdown">
-        {dropDownItems.map((item) => (
-          <li className="m-0" key={item.title}>
-            <a
-              className="hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-              href={item.link ? item.link : '#'}
-            >
-              <div>
-                <div className="flex">
-                  {item.icon && <Icon name={item.icon} />}
-                  <span className="text-gray-800 font-semibold text-sm ml-2">{item.title}</span>
+      <div className="absolute hidden group-hover:block bg-transparent pt-7">
+        <ul className="dropdown">
+          {dropDownItems.map((item) => (
+            <li className="m-0" key={item.title}>
+              <a
+                className="hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                href={item.link ? item.link : '#'}
+              >
+                <div>
+                  <div className="flex">
+                    {item.icon && <Icon name={item.icon} />}
+                    <span className="text-gray-800 font-semibold text-sm ml-2">{item.title}</span>
+                  </div>
+                  {item.description && (
+                    <span className="text-xs text-gray-500">{item.description}</span>
+                  )}
                 </div>
-                {item.description && (
-                  <span className="text-xs text-gray-500">{item.description}</span>
-                )}
-              </div>
-            </a>
-          </li>
-        ))}
-      </ul>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
 
       <style jsx>
         {`
           .dropdown {
-            @apply absolute hidden text-gray-700 p-10 group-hover:block bg-white;
+            @apply text-gray-700 p-10 bg-white;
             @apply rounded-xl w-96 top-20;
             @apply divide-solid divide-gray-200 divide-y;
             box-shadow: 3px 6px 33px rgba(205, 205, 205, 0.25);
