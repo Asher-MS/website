@@ -29,13 +29,10 @@ const Dropdown = ({ dropDownLabel, dropDownItems }: DropdownProps) => {
       <div className="absolute hidden group-hover:block bg-transparent pt-7">
         <ul className="dropdown">
           {dropDownItems.map((item) => (
-            <li className="m-0" key={item.title}>
-              <a
-                className="hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
-                href={item.link ? item.link : '#'}
-              >
+            <li className="m-0 hover:bg-gray-200" key={item.title}>
+              <a className="py-2 px-4 block whitespace-no-wrap" href={item.link ? item.link : '#'}>
                 <div>
-                  <div className="flex">
+                  <div className="flex items-center">
                     {item.icon && <Icon name={item.icon} />}
                     <span className="text-gray-800 font-semibold text-sm ml-2">{item.title}</span>
                   </div>
@@ -52,7 +49,7 @@ const Dropdown = ({ dropDownLabel, dropDownItems }: DropdownProps) => {
       <style jsx>
         {`
           .dropdown {
-            @apply text-gray-700 p-10 bg-white;
+            @apply text-gray-700 p-6 bg-white;
             @apply rounded-xl w-96 top-20;
             @apply divide-solid divide-gray-200 divide-y;
             box-shadow: 3px 6px 33px rgba(205, 205, 205, 0.25);

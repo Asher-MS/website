@@ -11,6 +11,11 @@ const Index = () => (
       canonical="https://jina.ai/"
     />
     <Base />
+    <style global jsx>{`
+      body {
+        font-family: Poppins;
+      }
+    `}</style>
   </>
 )
 
