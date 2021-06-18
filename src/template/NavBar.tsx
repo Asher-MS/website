@@ -32,18 +32,51 @@ const navLinks = [
   {
     label: websiteCopyStrings.navBarDeveloper,
     items: [
-      { title: websiteCopyStrings.navBarDevelopersContribute },
-      { title: websiteCopyStrings.navBarDevelopersJoin },
-      { title: websiteCopyStrings.navBarDevelopersLearn }
+      {
+        title: websiteCopyStrings.navBarDevelopersContribute,
+        icon: 'contribute',
+        link: '/contribute'
+      },
+      {
+        title: websiteCopyStrings.navBarDevelopersJoin,
+        icon: 'join',
+        link: '/join'
+      },
+      {
+        title: websiteCopyStrings.navBarDevelopersLearn,
+        icon: 'learn',
+        link: '/learn'
+      }
     ]
   },
   {
     label: websiteCopyStrings.navBarCompany,
     items: [
-      { title: websiteCopyStrings.navBarCompanyAbout },
-      { title: websiteCopyStrings.navBarCompanyCareers },
-      { title: websiteCopyStrings.navBarCompanyContact },
-      { title: websiteCopyStrings.navBarCompanyBlog }
+      {
+        title: websiteCopyStrings.navBarCompanyAbout,
+        icon: 'about',
+        link: '/about'
+      },
+      {
+        title: websiteCopyStrings.navBarCompanyCareers,
+        icon: 'careers',
+        link: '/careers'
+      },
+      {
+        title: websiteCopyStrings.navBarCompanyEvents,
+        icon: 'events',
+        link: '/events'
+      },
+      {
+        title: websiteCopyStrings.navBarCompanyNews,
+        icon: 'news',
+        link: '/news'
+      },
+      {
+        title: websiteCopyStrings.navBarCompanyContact,
+        icon: 'contact',
+        link: '/contact'
+      }
     ]
   }
 ]

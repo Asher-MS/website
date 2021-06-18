@@ -11,6 +11,8 @@ export const websiteCopyStrings = {
   navBarDevelopersJoin: 'Join',
   navBarCompanyAbout: 'About us',
   navBarCompanyCareers: 'Careers',
+  navBarCompanyEvents: 'Events',
+  navBarCompanyNews: 'News',
   navBarCompanyContact: 'Contact us',
   navBarCompanyBlog: 'Blog',
   buttonCallToAction: 'Try it out!'
