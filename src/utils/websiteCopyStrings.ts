@@ -10,5 +10,22 @@ export const websiteCopyStrings = {
     'Thrive in the Open Source community! Help Jina grow by contributing and benefit from wonderful work done by others!',
   valuePropositionPlugAndPlayTitle: 'Plug and play',
   valuePropositionPlugAndPlayDescription:
-    'Easily extend and customize leveraging community-driven components. Build search pipelines within seconds.'
+    'Easily extend and customize leveraging community-driven components. Build search pipelines within seconds.',
+  navBarHome: 'Home',
+  navBarProducts: 'Products',
+  navBarDeveloper: 'Developer',
+  navBarCompany: 'Company',
+  navBarProductJinaCore: 'Jina Core',
+  navBarProductJinaHub: 'Jina Hub',
+  navBarProductJinaDashboard: 'Jina Dashboard',
+  navBarDevelopersContribute: 'Contribute',
+  navBarDevelopersLearn: 'Learn',
+  navBarDevelopersJoin: 'Join',
+  navBarCompanyAbout: 'About us',
+  navBarCompanyCareers: 'Careers',
+  navBarCompanyEvents: 'Events',
+  navBarCompanyNews: 'News',
+  navBarCompanyContact: 'Contact us',
+  navBarCompanyBlog: 'Blog',
+  buttonCallToAction: 'Try it out!'
 }

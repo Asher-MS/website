@@ -1,9 +1,5 @@
 import React from 'react'
-
-import Link from 'next/link'
-
 import { Background } from '../background/Background'
-import { Button } from '../button/Button'
 import { HeroOneButton } from '../hero/HeroOneButton'
 import { Section } from '../layout/Section'
 
@@ -18,13 +14,6 @@ const Hero = () => (
           </>
         }
         description="The easiest way to build React landing page in seconds."
-        button={
-          <Link href="/">
-            <a>
-              <Button xl>Start your 14-day Free Trial</Button>
-            </a>
-          </Link>
-        }
         image={{
           src: '/assets/images/hero-image.png',
           alt: 'Hero screenshot'
