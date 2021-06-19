@@ -1,5 +1,4 @@
 import React from 'react'
-
 import className from 'classnames'
 
 export type DivProps = React.HTMLAttributes<HTMLDivElement>;

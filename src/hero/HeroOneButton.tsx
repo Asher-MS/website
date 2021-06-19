@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react'
 type IHeroOneButtonProps = {
   title: ReactNode;
   description: string;
-  button: ReactNode;
+  button?: ReactNode;
   image?: {
     src: string;
     alt: string;
