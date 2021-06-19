@@ -1,22 +1,17 @@
 import React from 'react'
 
-import Base from '../template/Base'
 import Meta from '../layout/Meta'
+import PageWithHeaderAndFooter from '../layout/PageWithHeaderAndFooter'
 
-const Index = () => (
+const Hub = () => (
   <>
     <Meta
       title="Jina AI | Jina AI is a Neural Search Company"
       description="Open source neural search ecosystem for businesses and developers, allowing anyone to search any kind of data with high availability and scalability."
       canonical="https://jina.ai/"
     />
-    <Base />
-    <style global jsx>{`
-      body {
-        font-family: Poppins;
-      }
-    `}</style>
+    <PageWithHeaderAndFooter>Hub</PageWithHeaderAndFooter>
   </>
 )
 
-export default Index
+export default Hub

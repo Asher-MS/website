@@ -8,22 +8,17 @@ interface IButtonProps extends DivProps {
   secondary?: boolean;
   full?: boolean;
   fullRounded?: boolean;
-  children: string;
 }
 
 const Button = (props: IButtonProps) => {
-  const btnClass = className(
-    'btn',
-    {
-      'btn-xl': props.xl,
-      'btn-base': !props.xl,
-      'btn-secondary': props.secondary,
-      'btn-primary': !props.secondary,
-      'btn-full-rounded': !props.fullRounded,
-      'w-full': props.full
-    },
-    props.className
-  )
+  const btnClass = className('btn', props.className, {
+    'btn-xl': props.xl,
+    'btn-base': !props.xl,
+    'btn-secondary': props.secondary,
+    'btn-primary': !props.secondary,
+    'btn-full-rounded': !props.fullRounded,
+    'w-full': props.full
+  })
 
   return (
     <div className={btnClass}>
@@ -60,7 +55,7 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-secondary:hover {
-            @apply bg-gray-400;
+            @apply bg-secondary-600;
           }
         `}
       </style>
