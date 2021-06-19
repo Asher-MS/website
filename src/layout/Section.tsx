@@ -15,16 +15,6 @@ const Section = (props: ISectionProps) => (
       props.yPadding ? props.yPadding : 'py-16'
     } ${props.className}`}
   >
-    {(props.title || props.subtitle || props.description) && (
-      <div className="mb-12 text-center">
-        {props.subtitle && (
-          <div className="text-primary-500 text-sm font-bold">{props.subtitle}</div>
-        )}
-        {props.title && <h2 className="text-4xl text-gray-900 font-bold">{props.title}</h2>}
-        {props.description && <div className="mt-4 text-xl md:px-20">{props.description}</div>}
-      </div>
-    )}
-
     {props.children}
   </div>
 )
