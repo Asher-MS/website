@@ -1,18 +1,17 @@
 import React from 'react'
-
 import className from 'classnames'
 
-type IButtonProps = {
+export type DivProps = React.HTMLAttributes<HTMLDivElement>;
+
+interface IButtonProps extends DivProps {
   xl?: boolean;
   secondary?: boolean;
   full?: boolean;
   fullRounded?: boolean;
-  children: string;
-};
+}
 
 const Button = (props: IButtonProps) => {
-  const btnClass = className({
-    btn: true,
+  const btnClass = className('btn', props.className, {
     'btn-xl': props.xl,
     'btn-base': !props.xl,
     'btn-secondary': props.secondary,
@@ -28,7 +27,7 @@ const Button = (props: IButtonProps) => {
       <style jsx>
         {`
           .btn {
-            @apply inline-block rounded-md text-center;
+            @apply rounded-md text-center;
           }
 
           .btn-base {
