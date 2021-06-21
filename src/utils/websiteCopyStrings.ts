@@ -35,6 +35,8 @@ export const websiteCopyStrings = {
   navBarCompanyContact: 'Contact us',
   navBarCompanyBlog: 'Blog',
   navBarButtonCallToAction: 'Try it out!',
+  aboutInvestorsSectionTitlePart1: 'Our',
+  aboutInvestorsSectionTitlePart2: 'Investors',
   footerPhoneNumber: '+880 112 345 678',
   footerAddress: '711-2880 Nulla St. Mankato Mississippi 96522',
   footerCompany: 'Company',
