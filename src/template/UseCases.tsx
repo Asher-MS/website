@@ -115,26 +115,23 @@ function UseCases () {
         </h2>
       </div>
       <Carousel renderArrowPrev={ArrowPrev} renderArrowNext={ArrowNext}>
-        <UseCaseCard
-          src="https://summalinguae.com/wp-content/uploads/2017/03/pexels-jessica-lewis-3405456-scaled.jpg"
-          title="GAMING"
-          link="www.google.de"
-        />
-        <UseCaseCard
-          src="https://summalinguae.com/wp-content/uploads/2017/03/pexels-jessica-lewis-3405456-scaled.jpg"
-          title="PLACEHOLDER"
-          link="www.google.de"
-        />
-        <UseCaseCard
-          src="https://summalinguae.com/wp-content/uploads/2017/03/pexels-jessica-lewis-3405456-scaled.jpg"
-          title="PLACEHOLDER"
-          link="www.google.de"
-        />
-        <UseCaseCard
-          src="https://summalinguae.com/wp-content/uploads/2017/03/pexels-jessica-lewis-3405456-scaled.jpg"
-          title="PLACEHOLDER"
-          link="www.google.de"
-        />
+        <div>
+          <UseCaseCard
+            src="/assets/images/use-case-ecommerce.png"
+            title="ECOMMERCE"
+            link="www.google.de"
+          />
+          <UseCaseCard
+            src="/assets/images/use-case-gaming.png"
+            title="GAMING"
+            link="www.google.de"
+          />
+          <UseCaseCard
+            src="/assets/images/use-case-academy.png"
+            title="ACADEMY"
+            link="www.google.de"
+          />
+        </div>
       </Carousel>
     </Section>
   )
