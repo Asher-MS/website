@@ -34,7 +34,7 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-base {
-            @apply text-lg font-semibold py-2 px-4;
+            @apply text-lg font-semibold;
           }
 
           .btn-xl {
@@ -54,11 +54,11 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-secondary {
-            @apply bg-gray-300;
+            @apply bg-secondary-500 text-black;
           }
 
           .btn-secondary:hover {
-            @apply bg-gray-400;
+            @apply bg-secondary-600;
           }
 
           .btn-tertiary {

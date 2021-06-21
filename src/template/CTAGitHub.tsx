@@ -7,7 +7,7 @@ import Icon from './Icon'
 
 const CTAGitHub = () => {
   return (
-    <div className="relative py-20 bg-gray-100">
+    <div className="relative py-20 bg-gray-100 overflow-hidden">
       <div className="w-3/6 mx-auto">
         <CTAGitHubBackground />
         <div className="w-5/6">

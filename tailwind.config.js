@@ -14,7 +14,9 @@ module.exports = {
       '3xl': '1.875rem',
       '4xl': '2.25rem',
       '5xl': '3rem',
-      '6xl': '4rem'
+      '6xl': '4rem',
+      '7xl': '5.3rem',
+      '8xl': '6rem'
     },
     extend: {
       colors: {
@@ -28,6 +30,10 @@ module.exports = {
           700: '#32C8CD',
           800: '#2C2069',
           900: '#1D1546'
+        },
+        secondary: {
+          500: '#FBCB67',
+          600: '#F59E0B'
         },
         gray: {
           100: '#F0F0F0',
