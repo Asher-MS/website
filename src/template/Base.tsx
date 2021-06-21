@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Hero from './Hero'
+import CTAGitHub from './CTAGitHub'
 import Features from './Features'
 import { Footer } from './Footer'
 import NavBar from './NavBar'
@@ -10,6 +11,7 @@ const Base = () => (
     <NavBar />
     <Hero />
     <Features />
+    <CTAGitHub />
     <Footer />
   </div>
 )

@@ -1,119 +1,122 @@
 import React from 'react'
-
 import Link from 'next/link'
 
 import { Background } from '../background/Background'
 import { FooterCompanyInfo } from '../footer/FooterCompanyInfo'
 import { FooterLinks } from '../footer/FooterLinks'
 import { FooterTwoRowsCopyright } from '../footer/FooterTwoRowsCopyright'
-import { Section } from '../layout/Section'
 import { Config } from '../utils/Config'
-import { Logo } from './Logo'
+import { LogoWhite } from './Logo'
+import { websiteCopyStrings } from '../utils/websiteCopyStrings'
 
 const Footer = () => (
-  <Background color="bg-gray-100">
-    <Section>
-      <FooterTwoRowsCopyright siteName={Config.site_name}>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-6">
-          <div className="col-span-1 sm:col-span-2">
-            <FooterCompanyInfo
-              logo={<Logo />}
-              description={Config.description}
-            />
+  <div>
+    <Background color="bg-primary-500" className="text-white">
+      <div className="flex justify-between">
+        <div className="footer-left-margin"></div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 py-16">
+          <div className="col-span-1">
+            <FooterCompanyInfo logo={<LogoWhite />} description={Config.description} />
           </div>
 
-          <FooterLinks title="Product">
+          <FooterLinks title={websiteCopyStrings.footerCompany}>
             <li>
               <Link href="/">
-                <a>First link</a>
+                <a>{websiteCopyStrings.footerCompanyAbout}</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Second link</a>
+                <a>{websiteCopyStrings.footerCompanyCareers}</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Third link</a>
+                <a>{websiteCopyStrings.footerCompanyContact}</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Forth link</a>
-              </Link>
-            </li>
-          </FooterLinks>
-          <FooterLinks title="Resources">
-            <li>
-              <Link href="/">
-                <a>First link</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Second link</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Third link</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Forth link</a>
+                <a>{websiteCopyStrings.footerCompanyBlog}</a>
               </Link>
             </li>
           </FooterLinks>
-          <FooterLinks title="Contact">
+          <FooterLinks title={websiteCopyStrings.footerProducts}>
             <li>
               <Link href="/">
-                <a>First link</a>
+                <a>{websiteCopyStrings.footerProductsCore}</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Second link</a>
+                <a>{websiteCopyStrings.footerProductsHub}</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Third link</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Forth link</a>
+                <a>{websiteCopyStrings.footerProductsDashboard}</a>
               </Link>
             </li>
           </FooterLinks>
-          <FooterLinks title="Legal">
+          <FooterLinks title={websiteCopyStrings.footerDevelopers}>
             <li>
               <Link href="/">
-                <a>First link</a>
+                <a>{websiteCopyStrings.footerDevelopersContribute}</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Second link</a>
+                <a>{websiteCopyStrings.footerDevelopersLearn}</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Third link</a>
+                <a>{websiteCopyStrings.footerDevelopersJoin}</a>
+              </Link>
+            </li>
+          </FooterLinks>
+          <FooterLinks title={websiteCopyStrings.footerSocials}>
+            <li>
+              <Link href="/">
+                <a>{websiteCopyStrings.footerSocialsGitHub}</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Forth link</a>
+                <a>{websiteCopyStrings.footerSocialsLinkedin}</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/">
+                <a>{websiteCopyStrings.footerSocialsTwitter}</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/">
+                <a>{websiteCopyStrings.footerSocialsSlack}</a>
               </Link>
             </li>
           </FooterLinks>
         </div>
-      </FooterTwoRowsCopyright>
-    </Section>
-  </Background>
+        <div className="footer-right-margin"></div>
+      </div>
+      <FooterTwoRowsCopyright siteName={Config.site_name}></FooterTwoRowsCopyright>
+    </Background>
+    <style jsx>
+      {`
+        .footer-left-margin {
+          width: 40rem;
+          height: inherit;
+          background: no-repeat 40% 20% / 20% url('/assets/images/planet-beige.svg');
+        }
+        .footer-right-margin {
+          width: 16rem;
+          height: inherit;
+          background: no-repeat 10% 10% / 50% url('/assets/images/planet-green.svg');
+        }
+      `}
+    </style>
+  </div>
 )
 
 export { Footer }

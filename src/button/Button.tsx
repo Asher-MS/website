@@ -5,7 +5,9 @@ export type DivProps = React.HTMLAttributes<HTMLDivElement>;
 
 interface IButtonProps extends DivProps {
   xl?: boolean;
+  primary?: boolean;
   secondary?: boolean;
+  tertiary?: boolean;
   full?: boolean;
   fullRounded?: boolean;
 }
@@ -14,8 +16,9 @@ const Button = (props: IButtonProps) => {
   const btnClass = className('btn', props.className, {
     'btn-xl': props.xl,
     'btn-base': !props.xl,
+    'btn-primary': props.primary,
     'btn-secondary': props.secondary,
-    'btn-primary': !props.secondary,
+    'btn-tertiary': props.tertiary,
     'btn-full-rounded': !props.fullRounded,
     'w-full': props.full
   })
@@ -27,7 +30,7 @@ const Button = (props: IButtonProps) => {
       <style jsx>
         {`
           .btn {
-            @apply rounded-md text-center;
+            @apply text-center;
           }
 
           .btn-base {
@@ -56,6 +59,15 @@ const Button = (props: IButtonProps) => {
 
           .btn-secondary:hover {
             @apply bg-secondary-600;
+          }
+
+          .btn-tertiary {
+            @apply bg-white;
+            border: 1px solid #999999;
+          }
+
+          .btn-tertiary:hover {
+            @apply bg-gray-200;
           }
         `}
       </style>
