@@ -35,6 +35,10 @@ export const websiteCopyStrings = {
   navBarCompanyContact: 'Contact us',
   navBarCompanyBlog: 'Blog',
   navBarButtonCallToAction: 'Try it out!',
+  aboutWhyWeStartedJinaTitlePart1: 'Why we started',
+  aboutWhyWeStartedJinaTitlePart2: 'Jina',
+  aboutWhyWeStartedJinaDescription:
+    'Data is transforming nowadays while the design pattern to process such information needs to be up to date. We believe, Jina is the solution to keep up with the emerging needs for all kinds of data search.',
   footerPhoneNumber: '+880 112 345 678',
   footerAddress: '711-2880 Nulla St. Mankato Mississippi 96522',
   footerCompany: 'Company',
