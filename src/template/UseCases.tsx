@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { Section } from '../layout/Section'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
@@ -8,6 +8,29 @@ type UseCaseCardProps = {
   title: string;
   link: string;
 };
+const arrowStyles = {
+  position: 'absolute',
+  zIndex: 2,
+  top: 'calc(50% - 15px)',
+  width: 30,
+  height: 30,
+  cursor: 'pointer'
+}
+
+function ArrowNext (onClickHandler: () => void, hasNext: boolean, label: string): ReactNode {
+  return (
+    hasNext && (
+      <button
+        type="button"
+        onClick={onClickHandler}
+        title={label}
+        style={{ ...arrowStyles, right: 15 }}
+      >
+        +
+      </button>
+    )
+  )
+}
 
 function UseCaseCard ({ src, title, link }: UseCaseCardProps) {
   return (
@@ -23,6 +46,7 @@ function UseCaseCard ({ src, title, link }: UseCaseCardProps) {
             border-radius: 8px;
             filter: brightness(60%) grayscale(30%);
           }
+
           .title {
             font-weight: 600;
             font-size: 24px;
@@ -54,7 +78,21 @@ function UseCases () {
           Use <span className="text-primary-500">Cases</span>
         </h2>
       </div>
-      <Carousel>
+      <Carousel
+        renderArrowPrev={(onClickHandler, hasPrev, label) =>
+          hasPrev && (
+            <button
+              type="button"
+              onClick={onClickHandler}
+              title={label}
+              style={{ ...arrowStyles, left: 15 }}
+            >
+              -
+            </button>
+          )
+        }
+        renderArrowNext={ArrowNext}
+      >
         <UseCaseCard
           src="https://summalinguae.com/wp-content/uploads/2017/03/pexels-jessica-lewis-3405456-scaled.jpg"
           title="GAMING"
