@@ -59,7 +59,7 @@ const NavbarTwoColumns = (props: INavbarProps) => {
 
       <Button fullRounded className="flex items-center justify-center">
         <Icon name="GitHub" className="mr-4 w-7" />
-        <span className="mr-4">{websiteCopyStrings.buttonCallToAction}</span>
+        <span className="mr-4">{websiteCopyStrings.navBarButtonCallToAction}</span>
       </Button>
 
       <style jsx>

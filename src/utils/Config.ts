@@ -1,6 +1,6 @@
 export const Config = {
-  site_name: 'Starter',
+  site_name: 'Jina AI, Ltd',
   description:
-    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ducimus animi perferendis, placeat fugit.',
+    'Open source neural search ecosystem for businesses and developers, allowing anyone to search any kind of data with high availability and scalability.',
   locale: 'en'
 }
