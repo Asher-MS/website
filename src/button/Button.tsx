@@ -1,22 +1,24 @@
 import React from 'react'
-
 import className from 'classnames'
 
-type IButtonProps = {
+export type DivProps = React.HTMLAttributes<HTMLDivElement>;
+
+interface IButtonProps extends DivProps {
   xl?: boolean;
+  primary?: boolean;
   secondary?: boolean;
+  tertiary?: boolean;
   full?: boolean;
   fullRounded?: boolean;
-  children: string;
-};
+}
 
 const Button = (props: IButtonProps) => {
-  const btnClass = className({
-    btn: true,
+  const btnClass = className('btn', props.className, {
     'btn-xl': props.xl,
     'btn-base': !props.xl,
+    'btn-primary': props.primary,
     'btn-secondary': props.secondary,
-    'btn-primary': !props.secondary,
+    'btn-tertiary': props.tertiary,
     'btn-full-rounded': !props.fullRounded,
     'w-full': props.full
   })
@@ -28,11 +30,11 @@ const Button = (props: IButtonProps) => {
       <style jsx>
         {`
           .btn {
-            @apply inline-block rounded-md text-center;
+            @apply text-center;
           }
 
           .btn-base {
-            @apply text-lg font-semibold py-2 px-4;
+            @apply text-lg font-semibold;
           }
 
           .btn-xl {
@@ -52,11 +54,20 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-secondary {
-            @apply bg-gray-300;
+            @apply bg-secondary-500 text-black;
           }
 
           .btn-secondary:hover {
-            @apply bg-gray-400;
+            @apply bg-secondary-600;
+          }
+
+          .btn-tertiary {
+            @apply bg-white;
+            border: 1px solid #999999;
+          }
+
+          .btn-tertiary:hover {
+            @apply bg-gray-200;
           }
         `}
       </style>

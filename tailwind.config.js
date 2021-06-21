@@ -1,5 +1,8 @@
 module.exports = {
-  purge: ['./src/**/*.{js,ts,jsx,tsx}'],
+  purge: {
+    enabled: process.env.NODE_ENV !== 'development',
+    content: ['./src/**/*.{js,ts,jsx,tsx}']
+  },
   theme: {
     fontSize: {
       xs: '0.75rem',
@@ -11,7 +14,9 @@ module.exports = {
       '3xl': '1.875rem',
       '4xl': '2.25rem',
       '5xl': '3rem',
-      '6xl': '4rem'
+      '6xl': '4rem',
+      '7xl': '5.3rem',
+      '8xl': '6rem'
     },
     extend: {
       colors: {
@@ -19,22 +24,26 @@ module.exports = {
           100: '#EFEDFD',
           200: '#D8D1FA',
           300: '#C0B5F7',
-          400: '#917EF0',
+          400: '#00AEAC',
           500: '#009191',
-          600: '#583FD3',
-          700: '#3B2A8C',
+          600: '#008181',
+          700: '#32C8CD',
           800: '#2C2069',
           900: '#1D1546'
         },
+        secondary: {
+          500: '#FBCB67',
+          600: '#F59E0B'
+        },
         gray: {
-          100: '#f7fafc',
-          200: '#edf2f7',
+          100: '#F0F0F0',
+          200: '#EBEBEB',
           300: '#e2e8f0',
           400: '#cbd5e0',
-          500: '#a0aec0',
-          600: '#718096',
+          500: '#BDBDBD',
+          600: '#666666',
           700: '#4a5568',
-          800: '#2d3748',
+          800: '#313358',
           900: '#1a202c'
         },
         green: {
@@ -47,6 +56,12 @@ module.exports = {
           700: '#2f855a',
           800: '#276749',
           900: '#22543d'
+        },
+        amber: {
+          500: '#FBCB67'
+        },
+        red: {
+          500: '#EB6161'
         }
       },
       lineHeight: {
@@ -58,7 +73,8 @@ module.exports = {
     }
   },
   variants: {
-    margin: ['responsive', 'first']
+    margin: ['responsive', 'first'],
+    display: ['group-hover']
   },
   plugins: []
 }
