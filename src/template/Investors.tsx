@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import { Section } from '../layout/Section'
 import { websiteCopyStrings } from '../utils/websiteCopyStrings'
 
@@ -16,14 +15,9 @@ const Investors = () => {
         </h2>
       </div>
       <div className="flex justify-around max-w-screen-lg mx-auto">
-        <Image
-          src="/assets/images/ggv-investor.png"
-          alt="GGV Capial Logo"
-          width={415}
-          height={64}
-        />
-        <Image src={'/assets/images/sap-investor.png'} alt="SAP.io Logo" width={152} height={64} />
-        <Image
+        <img src="/assets/images/ggv-investor.png" alt="GGV Capial Logo" width={415} height={64} />
+        <img src={'/assets/images/sap-investor.png'} alt="SAP.io Logo" width={152} height={64} />
+        <img
           src={'/assets/images/yunqi-investor.png'}
           alt="YUNQI Partners Logo"
           width={204}
