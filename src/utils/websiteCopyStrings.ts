@@ -56,5 +56,9 @@ export const websiteCopyStrings = {
   footerSocialsTwitter: 'Twitter',
   footerSocialsSlack: 'Slack',
   navBarCompanyEvents: 'Events',
-  navBarCompanyNews: 'News'
+  navBarCompanyNews: 'News',
+  subscribeTitle: 'Never Miss an Update',
+  subscribeSubtitle: 'Stay up to date with our latest news',
+  subscribeButtonLabel: 'Subscribe',
+  subscribeInputPlaceholder: 'Your email'
 }
