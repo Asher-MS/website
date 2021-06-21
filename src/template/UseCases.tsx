@@ -8,25 +8,61 @@ type UseCaseCardProps = {
   title: string;
   link: string;
 };
-const arrowStyles = {
-  position: 'absolute',
-  zIndex: 2,
-  top: 'calc(50% - 15px)',
-  width: 30,
-  height: 30,
-  cursor: 'pointer'
+
+function ArrowPrev (onClickHandler: () => void, hasPrev: boolean, label: string): ReactNode {
+  return (
+    hasPrev && (
+      <button type="button" onClick={onClickHandler} title={label} className="nextButton">
+        <style jsx>
+          {`
+            .nextButton {
+              border-radius: 60px;
+              position: absolute;
+              z-index: 4;
+              top: calc(50% - 15px);
+              width: 60px;
+              height: 60px;
+              cursor: pointer;
+              background: #ffffff;
+              box-shadow: 8px 8px 36px -18px rgba(1, 57, 57, 0.442623);
+            }
+
+            .nextButton:focus {
+              outline: 0;
+            }
+          `}
+        </style>
+        <span style={{ color: 'black' }}>{'<'}</span>
+      </button>
+    )
+  )
 }
 
 function ArrowNext (onClickHandler: () => void, hasNext: boolean, label: string): ReactNode {
   return (
     hasNext && (
-      <button
-        type="button"
-        onClick={onClickHandler}
-        title={label}
-        style={{ ...arrowStyles, right: 15 }}
-      >
-        +
+      <button type="button" onClick={onClickHandler} title={label} className="nextButton">
+        <style jsx>
+          {`
+            .nextButton {
+              border-radius: 60px;
+              position: absolute;
+              z-index: 2;
+              top: calc(50% - 15px);
+              width: 60px;
+              height: 60px;
+              cursor: pointer;
+              background: #ffffff;
+              right: 0px;
+              box-shadow: 8px 8px 36px -18px rgba(1, 57, 57, 0.442623);
+            }
+
+            .nextButton:focus {
+              outline: 0;
+            }
+          `}
+        </style>
+        <span style={{ color: 'black' }}>{'>'}</span>
       </button>
     )
   )
@@ -78,21 +114,7 @@ function UseCases () {
           Use <span className="text-primary-500">Cases</span>
         </h2>
       </div>
-      <Carousel
-        renderArrowPrev={(onClickHandler, hasPrev, label) =>
-          hasPrev && (
-            <button
-              type="button"
-              onClick={onClickHandler}
-              title={label}
-              style={{ ...arrowStyles, left: 15 }}
-            >
-              -
-            </button>
-          )
-        }
-        renderArrowNext={ArrowNext}
-      >
+      <Carousel renderArrowPrev={ArrowPrev} renderArrowNext={ArrowNext}>
         <UseCaseCard
           src="https://summalinguae.com/wp-content/uploads/2017/03/pexels-jessica-lewis-3405456-scaled.jpg"
           title="GAMING"
