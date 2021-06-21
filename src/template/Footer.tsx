@@ -14,8 +14,8 @@ const Footer = () => (
     <Background color="bg-primary-500" className="text-white">
       <div className="flex justify-between">
         <div className="footer-left-margin"></div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 py-16">
-          <div className="col-span-1">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-6 py-16">
+          <div className="col-span-2 pr-4">
             <FooterCompanyInfo logo={<LogoWhite />} description={Config.description} />
           </div>
 
@@ -105,9 +105,9 @@ const Footer = () => (
     <style jsx>
       {`
         .footer-left-margin {
-          width: 40rem;
+          width: 20rem;
           height: inherit;
-          background: no-repeat 40% 20% / 20% url('/assets/images/planet-beige.svg');
+          background: no-repeat 40% 20% / 30% url('/assets/images/planet-beige.svg');
         }
         .footer-right-margin {
           width: 16rem;
