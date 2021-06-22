@@ -18,10 +18,6 @@ const FooterLinks = (props: IFooterLinksProps) => (
         .footer-links :global(li) {
           @apply mt-1;
         }
-
-        .footer-links :global(li a:hover) {
-          @apply text-primary-600;
-        }
       `}
     </style>
   </div>

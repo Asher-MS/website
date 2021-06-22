@@ -16,7 +16,10 @@ interface DropdownProps extends DivProps {
 const Dropdown = ({ dropDownLabel, dropDownItems }: DropdownProps) => {
   return (
     <div className="group inline-block relative">
-      <button className="text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
+      <button
+        className="text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center"
+        aria-label={`Open ${dropDownLabel} dropdown`}
+      >
         <span className="mr-1 font-bold">{dropDownLabel}</span>
         <svg
           className="fill-current h-4 w-4 mt-2"
