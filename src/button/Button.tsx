@@ -46,7 +46,7 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-primary {
-            @apply text-white bg-primary-500 rounded-full;
+            @apply text-white bg-primary-600 rounded-full;
           }
 
           .btn-primary:hover {

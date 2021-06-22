@@ -21,78 +21,78 @@ const Footer = () => (
 
           <FooterLinks title={websiteCopyStrings.footerCompany}>
             <li>
-              <Link href="/">
+              <Link href="/about">
                 <a>{websiteCopyStrings.footerCompanyAbout}</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/careers">
                 <a>{websiteCopyStrings.footerCompanyCareers}</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/contact">
                 <a>{websiteCopyStrings.footerCompanyContact}</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/blog">
                 <a>{websiteCopyStrings.footerCompanyBlog}</a>
               </Link>
             </li>
           </FooterLinks>
           <FooterLinks title={websiteCopyStrings.footerProducts}>
             <li>
-              <Link href="/">
+              <Link href="/core">
                 <a>{websiteCopyStrings.footerProductsCore}</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/hub">
                 <a>{websiteCopyStrings.footerProductsHub}</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/dashboard">
                 <a>{websiteCopyStrings.footerProductsDashboard}</a>
               </Link>
             </li>
           </FooterLinks>
           <FooterLinks title={websiteCopyStrings.footerDevelopers}>
             <li>
-              <Link href="/">
+              <Link href="/contribute">
                 <a>{websiteCopyStrings.footerDevelopersContribute}</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/learn">
                 <a>{websiteCopyStrings.footerDevelopersLearn}</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/join">
                 <a>{websiteCopyStrings.footerDevelopersJoin}</a>
               </Link>
             </li>
           </FooterLinks>
           <FooterLinks title={websiteCopyStrings.footerSocials}>
             <li>
-              <Link href="/">
+              <Link href="https://github.com/jina-ai/jina/">
                 <a>{websiteCopyStrings.footerSocialsGitHub}</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="https://www.linkedin.com/company/jinaai/">
                 <a>{websiteCopyStrings.footerSocialsLinkedin}</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="https://twitter.com/jinaAI_/">
                 <a>{websiteCopyStrings.footerSocialsTwitter}</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="https://jina-ai.slack.com/">
                 <a>{websiteCopyStrings.footerSocialsSlack}</a>
               </Link>
             </li>
