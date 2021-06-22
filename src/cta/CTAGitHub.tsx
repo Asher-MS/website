@@ -3,7 +3,7 @@ import React from 'react'
 import { Button } from '../button/Button'
 import { websiteCopyStrings } from '../utils/websiteCopyStrings'
 import CTAGitHubBackground from './CTAGitHubBackground'
-import Icon from './Icon'
+import Icon from '../template/Icon'
 
 const CTAGitHub = () => {
   return (
