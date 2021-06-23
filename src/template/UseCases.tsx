@@ -38,7 +38,7 @@ function ArrowPrev (onClickHandler: () => void, hasPrev: boolean, label: string)
             }
           `}
         </style>
-        <img className="arrow" src={'/assets/images/arrow-left.svg'} />
+        <img alt="arrowLeft" className="arrow" src={'/assets/images/arrow-left.svg'} />
       </button>
     )
   )
@@ -75,7 +75,7 @@ function ArrowNext (onClickHandler: () => void, hasNext: boolean, label: string)
             }
           `}
         </style>
-        <img className="arrow" src={'/assets/images/arrow-right.svg'} />
+        <img alt="arrowRight" className="arrow" src={'/assets/images/arrow-right.svg'} />
       </button>
     )
   )
@@ -111,7 +111,7 @@ function UseCaseCard ({ src, title }: UseCaseCardProps) {
           }
         `}
       </style>
-      <img className="backGroundImage" src={src} />
+      <img alt="useCase" className="backGroundImage" src={src} />
       <div className="centered">
         <span className="title">{title}</span>
       </div>
