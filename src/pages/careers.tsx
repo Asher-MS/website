@@ -2,6 +2,7 @@ import React from 'react'
 
 import Meta from '../layout/Meta'
 import PageWithHeaderAndFooter from '../layout/PageWithHeaderAndFooter'
+import WorkingWithUs from '../template/WorkingWithUs'
 import WhatWeStandFor from '../template/WhatWeStandFor'
 
 const Careers = () => (
@@ -13,6 +14,7 @@ const Careers = () => (
     />
     <PageWithHeaderAndFooter>
       <WhatWeStandFor />
+      <WorkingWithUs />
     </PageWithHeaderAndFooter>
   </>
 )
