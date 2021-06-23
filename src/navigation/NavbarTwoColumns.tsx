@@ -35,6 +35,7 @@ const NavbarTwoColumns = (props: INavbarProps) => {
           className="p-3 text-gray-900 rounded-md hover:bg-white"
           onClick={handleShowMenu}
           type="button"
+          aria-label="show menu"
         >
           <svg
             className="stroke-current h-6 w-6"
