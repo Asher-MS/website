@@ -131,7 +131,12 @@ function UseCases () {
           Use <span className="text-primary-500">Cases</span>
         </h2>
       </div>
-      <Carousel renderArrowPrev={ArrowPrev} renderArrowNext={ArrowNext}>
+      <Carousel
+        showIndicators={false}
+        showStatus={false}
+        renderArrowPrev={ArrowPrev}
+        renderArrowNext={ArrowNext}
+      >
         <UseCaseSet />
         <UseCaseSet />
         <UseCaseSet />
