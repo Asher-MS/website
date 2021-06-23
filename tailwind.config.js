@@ -62,6 +62,9 @@ module.exports = {
         },
         red: {
           500: '#EB6161'
+        },
+        blue: {
+          500: '#4DADF7'
         }
       },
       lineHeight: {
