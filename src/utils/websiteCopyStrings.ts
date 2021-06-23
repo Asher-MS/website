@@ -20,6 +20,14 @@ export const websiteCopyStrings = {
   valuePropositionPlugAndPlayTitle: 'Plug and play',
   valuePropositionPlugAndPlayDescription:
     'Easily extend and customize leveraging community-driven components. Build search pipelines within seconds.',
+  careersWorkingWithUsSectionHeadingPart1: 'Working with',
+  careersWorkingWithUsSectionHeadingPart2: 'Us',
+  careersWorkingWithUsNationalitiesTitle: 'Nationalities',
+  careersWorkingWithUsNationalitiesAmount: '11+',
+  careersWorkingWithUsLanguagesTitle: 'Languages',
+  careersWorkingWithUsLanguagesAmount: '12+',
+  careersWorkingWithUsTechnologiesTitle: 'Technoloies',
+  careersWorkingWithUsTechnologiesAmount: '20+',
   navBarHome: 'Home',
   navBarProducts: 'Products',
   navBarDeveloper: 'Developer',
@@ -45,6 +53,8 @@ export const websiteCopyStrings = {
   Offices2Description: 'Some description',
   Offices3TitlePart2: 'Global',
   Offices3Description: 'Some description',
+  aboutInvestorsSectionTitlePart1: 'Our',
+  aboutInvestorsSectionTitlePart2: 'Investors',
   footerPhoneNumber: '+880 112 345 678',
   footerAddress: '711-2880 Nulla St. Mankato Mississippi 96522',
   footerCompany: 'Company',
@@ -66,5 +76,25 @@ export const websiteCopyStrings = {
   footerSocialsTwitter: 'Twitter',
   footerSocialsSlack: 'Slack',
   navBarCompanyEvents: 'Events',
-  navBarCompanyNews: 'News'
+  navBarCompanyNews: 'News',
+  careersWhatWeStandForSectionTitlePart1: 'What We',
+  careersWhatWeStandForSectionTitlePart2: 'Stand for',
+  careersWhatWeStandForTitle1: 'We believe in open source',
+  careersWhatWeStandForDescription1:
+    'We are all open source evangelists and believe that open source is the right approach to make deep learning technology truly accessible.',
+  careersWhatWeStandForTitle2: 'We are a global team',
+  careersWhatWeStandForDescription2:
+    'We have offices in Berlin and Beijing and some of our teammates work completely remote around the world.',
+  careersWhatWeStandForTitle3: 'We stick to our values',
+  careersWhatWeStandForDescription3:
+    'We work on moral and ethical principles like honesty, integrity, dependability, and trustworthiness.',
+  careersWhatWeStandForTitle4: 'We welcome fresh perspectives',
+  careersWhatWeStandForDescription4:
+    "We respect each other's unique cultures, beliefs, skills, and qualities. And we work towards creating a safe, fair, and inclusive working environment.",
+  careersWhatWeStandForTitle5: 'We encourage ownership',
+  careersWhatWeStandForDescription5:
+    'We encourage everyone to take ownership of their work and show high autonomy. Take initiative, step up for your ideas, and commit to execution and performance.',
+  careersWhatWeStandForTitle6: 'We work together as one',
+  careersWhatWeStandForDescription6:
+    'Collaboration is essential, whether that’s inside or between teams. It means less wasted effort and makes for better work. We aim to work closely and transparently and bring the right people in as early as possible.'
 }

@@ -3,6 +3,8 @@ import React from 'react'
 import Meta from '../layout/Meta'
 import PageWithHeaderAndFooter from '../layout/PageWithHeaderAndFooter'
 import Offices from '../template/Offices'
+import WorkingWithUs from '../template/WorkingWithUs'
+import WhatWeStandFor from '../template/WhatWeStandFor'
 
 const Careers = () => (
   <>
@@ -12,6 +14,8 @@ const Careers = () => (
       canonical="https://jina.ai/"
     />
     <PageWithHeaderAndFooter>
+      <WhatWeStandFor />
+      <WorkingWithUs />
       <Offices />
     </PageWithHeaderAndFooter>
   </>
