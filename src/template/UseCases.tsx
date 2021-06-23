@@ -31,9 +31,14 @@ function ArrowPrev (onClickHandler: () => void, hasPrev: boolean, label: string)
             .nextButton:focus {
               outline: 0;
             }
+
+            .arrow {
+              height: 20px;
+              width: auto;
+            }
           `}
         </style>
-        <span style={{ color: 'black' }}>{'<'}</span>
+        <img className="arrow" src={'/assets/images/arrow-left.svg'} />
       </button>
     )
   )
@@ -63,9 +68,14 @@ function ArrowNext (onClickHandler: () => void, hasNext: boolean, label: string)
             .nextButton:focus {
               outline: 0;
             }
+
+            .arrow {
+              height: 20px;
+              width: auto;
+            }
           `}
         </style>
-        <span style={{ color: 'black' }}>{'>'}</span>
+        <img className="arrow" src={'/assets/images/arrow-right.svg'} />
       </button>
     )
   )
