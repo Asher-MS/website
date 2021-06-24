@@ -7,7 +7,7 @@ const venusRevolutionTimePeriod = 8
 const earthRevolutionTimePeriod = 12
 const marsRevolutionTimePeriod = 20
 
-export const solarSystemSize = 80
+export const solarSystemSize = 100
 
 const HeroAnimation = () => {
   return (
@@ -46,11 +46,12 @@ const HeroAnimation = () => {
           .solar-system-container {
             width: ${solarSystemSize}rem;
             height: ${solarSystemSize}rem;
-            top: -90%;
-            right: -30%;
+            top: -120%;
+            right: -40%;
           }
           .solarsystem {
             position: relative;
+            width: ${solarSystemSize}rem;
             height: ${solarSystemSize}rem;
             list-style: none;
             transition: all 0.09s ease-in;
@@ -65,6 +66,7 @@ const HeroAnimation = () => {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            z-index: 100;
           }
           .solarsystem li.mercury {
             width: 28%;

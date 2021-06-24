@@ -16,6 +16,7 @@ const Orbits = ({ children }: DivProps) => (
         /* Solar System Styles */
         .solarsystem {
           position: relative;
+          width: ${solarSystemSize}rem;
           height: ${solarSystemSize}rem;
           list-style: none;
           overflow: hidden;

@@ -72,6 +72,9 @@ module.exports = {
       },
       opacity: {
         10: '.1'
+      },
+      zIndex: {
+        '-10': '-10'
       }
     }
   },
