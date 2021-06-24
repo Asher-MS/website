@@ -60,7 +60,7 @@ export const PlanetDashboard = ({ className, rotationPeriod }: PlanetProps) => (
 
 export const PlanetWithMoon = () => (
   <div className={''}>
-    <PlanetCore rotationPeriod={8} className="relative">
+    <PlanetCore rotationPeriod={40} className="relative">
       <div className="absolute top-1/2 left-1/2">
         <div className="planet-moon-axis relative">
           <div className="absolute bg-primary-400 w-4 h-4 -top-12 -left-12 rounded-full"></div>

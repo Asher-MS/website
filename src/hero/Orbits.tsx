@@ -9,6 +9,7 @@ const Orbits = ({ children }: DivProps) => (
       <li className="venus"> </li>
       <li className="earth"> </li>
       <li className="mars"> </li>
+      <li className="jupiter"> </li>
     </ul>
     {children}
     <style jsx>
@@ -28,15 +29,24 @@ const Orbits = ({ children }: DivProps) => (
         }
 
         .solarsystem li.mercury {
+          width: 16%;
+          height: 16%;
+          border-radius: 50%;
+          top: 40%;
+          left: 40%;
+          z-index: 99;
+        }
+
+        .solarsystem li.venus {
           width: 32%;
           height: 32%;
           border-radius: 50%;
           top: 32%;
           left: 32%;
-          z-index: 99;
+          z-index: 98;
         }
 
-        .solarsystem li.venus {
+        .solarsystem li.earth {
           width: 48%;
           height: 48%;
           border-radius: 50%;
@@ -45,7 +55,7 @@ const Orbits = ({ children }: DivProps) => (
           z-index: 99;
         }
 
-        .solarsystem li.earth {
+        .solarsystem li.mars {
           width: 64%;
           height: 64%;
           border-radius: 50%;
@@ -54,7 +64,7 @@ const Orbits = ({ children }: DivProps) => (
           z-index: 98;
         }
 
-        .solarsystem li.mars {
+        .solarsystem li.jupiter {
           width: 80%;
           height: 80%;
           border-radius: 50%;

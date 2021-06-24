@@ -2,10 +2,10 @@ import React from 'react'
 import Orbits from './Orbits'
 import { PlanetCode, PlanetCore, PlanetDashboard, PlanetHub, PlanetWithMoon } from './Planets'
 
-const mercuryRevolutionTimePeriod = 4
-const venusRevolutionTimePeriod = 8
-const earthRevolutionTimePeriod = 12
-const marsRevolutionTimePeriod = 20
+const mercuryRevolutionTimePeriod = 20
+const venusRevolutionTimePeriod = 40
+const earthRevolutionTimePeriod = 60
+const marsRevolutionTimePeriod = 100
 
 export const solarSystemSize = 100
 
