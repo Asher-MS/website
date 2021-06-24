@@ -1,23 +1,40 @@
 import React from 'react'
-import { PlanetCode, PlanetCore, PlanetDashboard, PlanetHub } from './Planets'
+import Orbits from './Orbits'
+import { PlanetCode, PlanetCore, PlanetDashboard, PlanetHub, PlanetWithMoon } from './Planets'
+
+const mercuryRevolutionTimePeriod = 4
+const venusRevolutionTimePeriod = 8
+const earthRevolutionTimePeriod = 12
+const marsRevolutionTimePeriod = 20
 
 const HeroAnimation = () => {
   return (
     <div>
       <ul className="solarsystem">
         <li className="mercury">
-          <PlanetCode />
+          <PlanetCode rotationPeriod={mercuryRevolutionTimePeriod} />
         </li>
-        <li className="venus">
-          <PlanetCore />
+        <li className="venus flex justify-between">
+          <div className="flex flex-col justify-between">
+            <PlanetCore rotationPeriod={venusRevolutionTimePeriod} className="" />
+            <PlanetCode rotationPeriod={venusRevolutionTimePeriod} className="" />
+          </div>
+          <div className="flex flex-col justify-between">
+            <PlanetCore rotationPeriod={venusRevolutionTimePeriod} className="" />
+            <PlanetWithMoon />
+          </div>
         </li>
-        <li className="earth">
-          <PlanetHub />
+        <li className="earth flex">
+          <div className="flex flex-col justify-between">
+            <PlanetHub rotationPeriod={earthRevolutionTimePeriod} className="" />
+            <PlanetDashboard rotationPeriod={earthRevolutionTimePeriod} className="" />
+          </div>
         </li>
         <li className="mars">
-          <PlanetDashboard />
+          <PlanetDashboard rotationPeriod={marsRevolutionTimePeriod} />
         </li>
       </ul>
+      <Orbits />
       <style jsx>
         {`
           /* Solar System Styles */
@@ -29,7 +46,6 @@ const HeroAnimation = () => {
             overflow: hidden;
           }
           .solarsystem li {
-            display: block;
             position: absolute;
             border: 1px solid #777777;
           }
@@ -81,19 +97,16 @@ const HeroAnimation = () => {
           }
 
           .solarsystem li.mercury {
-            animation-duration: 5s;
+            animation-duration: ${mercuryRevolutionTimePeriod}s;
           }
           .solarsystem li.venus {
-            animation-duration: 8s;
+            animation-duration: ${venusRevolutionTimePeriod}s;
           }
           .solarsystem li.earth {
-            animation-duration: 12s;
-          }
-          .solarsystem li.earth span {
-            animation-duration: 2s;
+            animation-duration: ${earthRevolutionTimePeriod}s;
           }
           .solarsystem li.mars {
-            animation-duration: 20s;
+            animation-duration: ${marsRevolutionTimePeriod}s;
           }
           @keyframes revolute {
             from {

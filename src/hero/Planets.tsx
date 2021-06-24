@@ -7,6 +7,10 @@ type RotateStyleProps = {
   duration: number;
 };
 
+interface PlanetProps extends DivProps {
+  rotationPeriod: number;
+}
+
 const RotateStyles = ({ planetSuffix, duration }: RotateStyleProps) => (
   <style jsx>
     {`
@@ -28,30 +32,41 @@ const RotateStyles = ({ planetSuffix, duration }: RotateStyleProps) => (
   </style>
 )
 
-export const PlanetHub = ({ className }: DivProps) => (
+export const PlanetHub = ({ className, rotationPeriod }: PlanetProps) => (
   <div className={`${className} planet-hub bg-yellow-500 rounded-full p-4 w-16 h-16`}>
     <Icon name="hub-white" className="" />
-    <RotateStyles planetSuffix="hub" duration={12} />
+    <RotateStyles planetSuffix="hub" duration={rotationPeriod} />
   </div>
 )
-export const PlanetCore = ({ className }: DivProps) => (
+export const PlanetCore = ({ className, children, rotationPeriod }: PlanetProps) => (
   <div className={`${className} planet-core bg-red-500 rounded-full p-4 w-16 h-16`}>
     <Icon name="core-white" />
-    <RotateStyles planetSuffix="core" duration={8} />
+    {children}
+    <RotateStyles planetSuffix="core" duration={rotationPeriod} />
   </div>
 )
-export const PlanetCode = ({ className }: DivProps) => (
+export const PlanetCode = ({ className, rotationPeriod }: PlanetProps) => (
   <div className={`${className} planet-code bg-blue-500 rounded-full p-4 w-16 h-16`}>
     <Icon name="code-white" className="rotate-90" />
-    <RotateStyles planetSuffix="code" duration={5} />
+    <RotateStyles planetSuffix="code" duration={rotationPeriod} />
   </div>
 )
-export const PlanetDashboard = ({ className }: DivProps) => (
+export const PlanetDashboard = ({ className, rotationPeriod }: PlanetProps) => (
   <div className={`${className} planet-dashboard bg-primary-500 rounded-full p-4 w-16 h-16`}>
     <Icon name="dashboard-white" />
-    <RotateStyles planetSuffix="dashboard" duration={20} />
+    <RotateStyles planetSuffix="dashboard" duration={rotationPeriod} />
   </div>
 )
-export const PlaneGreen = ({ className }: DivProps) => (
-  <div className={`${className} planet bg-primary-500 rounded-full p-4 w-16 h-16`}></div>
+
+export const PlanetWithMoon = () => (
+  <div className={''}>
+    <PlanetCore rotationPeriod={8} className="relative">
+      <div className="absolute top-1/2 left-1/2">
+        <div className="planet-moon-axis relative">
+          <div className="absolute bg-primary-400 w-4 h-4 -top-12 -left-12 rounded-full"></div>
+          <RotateStyles planetSuffix="moon-axis" duration={2} />
+        </div>
+      </div>
+    </PlanetCore>
+  </div>
 )
