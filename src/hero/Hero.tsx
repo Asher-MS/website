@@ -4,9 +4,10 @@ import { websiteCopyStrings } from '../utils/websiteCopyStrings'
 import { Background } from '../background/Background'
 import { Button } from '../button/Button'
 import { Section } from '../layout/Section'
+import HeroAnimation from './HeroAnimation'
 
 const Hero = () => (
-  <Background color="bg-white">
+  <Background color="bg-white relative overflow-hidden">
     <Section yPadding="pt-20 pb-3">
       <h1 className="text-7xl font-bold text-black w-6/12">{websiteCopyStrings.heroHeadline}</h1>
       <p className="w-4/12">{websiteCopyStrings.heroDescription}</p>
@@ -19,6 +20,7 @@ const Hero = () => (
         </Button>
       </div>
     </Section>
+    <HeroAnimation />
   </Background>
 )
 

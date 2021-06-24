@@ -7,82 +7,98 @@ const venusRevolutionTimePeriod = 8
 const earthRevolutionTimePeriod = 12
 const marsRevolutionTimePeriod = 20
 
+export const solarSystemSize = 80
+
 const HeroAnimation = () => {
   return (
-    <div>
-      <ul className="solarsystem">
-        <li className="mercury">
-          <PlanetCode rotationPeriod={mercuryRevolutionTimePeriod} />
-        </li>
-        <li className="venus flex justify-between">
-          <div className="flex flex-col justify-between">
-            <PlanetCore rotationPeriod={venusRevolutionTimePeriod} className="" />
-            <PlanetCode rotationPeriod={venusRevolutionTimePeriod} className="" />
-          </div>
-          <div className="flex flex-col justify-between">
-            <PlanetCore rotationPeriod={venusRevolutionTimePeriod} className="" />
-            <PlanetWithMoon />
-          </div>
-        </li>
-        <li className="earth flex">
-          <div className="flex flex-col justify-between">
-            <PlanetHub rotationPeriod={earthRevolutionTimePeriod} className="" />
-            <PlanetDashboard rotationPeriod={earthRevolutionTimePeriod} className="" />
-          </div>
-        </li>
-        <li className="mars">
-          <PlanetDashboard rotationPeriod={marsRevolutionTimePeriod} />
-        </li>
-      </ul>
-      <Orbits />
+    <div className="solar-system-container absolute">
+      <Orbits>
+        <div className="absolute w-full top-0 planets-container">
+          <ul className="solarsystem">
+            <li className="mercury">
+              <PlanetCode rotationPeriod={mercuryRevolutionTimePeriod} />
+            </li>
+            <li className="venus flex justify-between">
+              <div className="flex flex-col justify-between">
+                <PlanetCore rotationPeriod={venusRevolutionTimePeriod} className="" />
+                <PlanetCode rotationPeriod={venusRevolutionTimePeriod} className="" />
+              </div>
+              <div className="flex flex-col justify-between">
+                <PlanetCore rotationPeriod={venusRevolutionTimePeriod} className="" />
+                <PlanetWithMoon />
+              </div>
+            </li>
+            <li className="earth flex">
+              <div className="flex flex-col justify-between">
+                <PlanetHub rotationPeriod={earthRevolutionTimePeriod} className="" />
+                <PlanetDashboard rotationPeriod={earthRevolutionTimePeriod} className="" />
+              </div>
+            </li>
+            <li className="mars">
+              <PlanetDashboard rotationPeriod={marsRevolutionTimePeriod} />
+            </li>
+          </ul>
+        </div>
+      </Orbits>
       <style jsx>
         {`
           /* Solar System Styles */
+          .solar-system-container {
+            width: ${solarSystemSize}rem;
+            height: ${solarSystemSize}rem;
+            top: -90%;
+            right: -30%;
+          }
           .solarsystem {
             position: relative;
-            height: 640px;
+            height: ${solarSystemSize}rem;
             list-style: none;
             transition: all 0.09s ease-in;
             overflow: hidden;
           }
           .solarsystem li {
             position: absolute;
-            border: 1px solid #777777;
           }
-
+          .planets-container {
+            width: ${solarSystemSize}rem;
+            height: ${solarSystemSize}rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
           .solarsystem li.mercury {
-            width: 16rem;
-            height: 16rem;
-            border-radius: 8rem;
-            top: 12rem;
-            left: 28rem;
+            width: 28%;
+            height: 28%;
+            border-radius: 50%;
+            top: 34%;
+            left: 34%;
             z-index: 99;
           }
 
           .solarsystem li.venus {
-            width: 24rem;
-            height: 24rem;
-            border-radius: 12rem;
-            top: 8rem;
-            left: 24rem;
+            width: 39%;
+            height: 39%;
+            border-radius: 50%;
+            top: 29%;
+            left: 29%;
             z-index: 98;
           }
 
           .solarsystem li.earth {
-            width: 32rem;
-            height: 32rem;
-            border-radius: 16rem;
-            top: 4rem;
-            left: 20rem;
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+            top: 23%;
+            left: 23%;
             z-index: 97;
           }
 
           .solarsystem li.mars {
-            width: 40rem;
-            height: 40rem;
-            border-radius: 20rem;
-            top: 0;
-            left: 16rem;
+            width: 62%;
+            height: 62%;
+            border-radius: 50%;
+            top: 17%;
+            left: 17%;
             z-index: 96;
           }
 

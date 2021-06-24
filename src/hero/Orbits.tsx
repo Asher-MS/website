@@ -1,19 +1,22 @@
 import React from 'react'
+import { DivProps } from '../button/Button'
+import { solarSystemSize } from './HeroAnimation'
 
-const Orbits = () => (
-  <div>
+const Orbits = ({ children }: DivProps) => (
+  <div className="relative">
     <ul className="solarsystem">
       <li className="mercury"> </li>
       <li className="venus"> </li>
       <li className="earth"> </li>
       <li className="mars"> </li>
     </ul>
+    {children}
     <style jsx>
       {`
         /* Solar System Styles */
         .solarsystem {
           position: relative;
-          height: 640px;
+          height: ${solarSystemSize}rem;
           list-style: none;
           overflow: hidden;
         }
@@ -24,39 +27,39 @@ const Orbits = () => (
         }
 
         .solarsystem li.mercury {
-          width: 16rem;
-          height: 16rem;
-          border-radius: 8rem;
-          top: 12rem;
-          left: 28rem;
+          width: 32%;
+          height: 32%;
+          border-radius: 50%;
+          top: 32%;
+          left: 32%;
           z-index: 99;
         }
 
         .solarsystem li.venus {
-          width: 24rem;
-          height: 24rem;
-          border-radius: 12rem;
-          top: 8rem;
-          left: 24rem;
-          z-index: 98;
+          width: 48%;
+          height: 48%;
+          border-radius: 50%;
+          top: 24%;
+          left: 24%;
+          z-index: 99;
         }
 
         .solarsystem li.earth {
-          width: 32rem;
-          height: 32rem;
-          border-radius: 16rem;
-          top: 4rem;
-          left: 20rem;
-          z-index: 97;
+          width: 64%;
+          height: 64%;
+          border-radius: 50%;
+          top: 16%;
+          left: 16%;
+          z-index: 98;
         }
 
         .solarsystem li.mars {
-          width: 40rem;
-          height: 40rem;
-          border-radius: 20rem;
-          top: 0;
-          left: 16rem;
-          z-index: 96;
+          width: 80%;
+          height: 80%;
+          border-radius: 50%;
+          top: 8%;
+          left: 8%;
+          z-index: 97;
         }
       `}
     </style>
