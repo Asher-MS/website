@@ -6,7 +6,7 @@ import { websiteCopyStrings } from '../utils/websiteCopyStrings'
 import Icon from './Icon'
 
 const Features = () => (
-  <Section>
+  <Section yPadding="pb-16">
     <div className="text-center font-bold text-4xl mb-20">
       <h2 className="text-black">
         Why <span className="text-primary-500">Jina</span>

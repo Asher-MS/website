@@ -7,12 +7,11 @@ interface PlanetProps extends DivProps {
   name?: string;
 }
 
-export const Planet = ({ className, children, rotationPeriod, name }: PlanetProps) => (
-  <div className={`${className} planet-${name} bg-yellow-500 rounded-full p-4 w-16 h-16`}>
-    <Icon name={`${name}-white`} className="" />
-    <div className="absolute top-1/2 left-1/2">
-      <div className="moon-axis relative">{children}</div>
-    </div>
+export const Planet = ({ className, rotationPeriod, name }: PlanetProps) => (
+  <div
+    className={`${className} planet-${name} bg-yellow-500 rounded-full flex place-items-center place-content-center`}
+  >
+    <Icon name={`${name}-white`} className="w-2/3 h-2/3" />
     <style jsx>
       {`
         @keyframes revolute {
@@ -28,12 +27,6 @@ export const Planet = ({ className, children, rotationPeriod, name }: PlanetProp
           animation-timing-function: linear;
           animation-name: revolute;
           animation-duration: ${rotationPeriod}s;
-        }
-        .moon-axis {
-          animation-iteration-count: infinite;
-          animation-timing-function: linear;
-          animation-name: revolute;
-          animation-duration: 2s;
         }
       `}
     </style>
@@ -64,27 +57,18 @@ export const PlanetDashboard = ({ className, children, rotationPeriod }: PlanetP
     {children}
   </Planet>
 )
-
-export const PlanetCoreWithMoon = ({ rotationPeriod }: PlanetProps) => (
-  <div className={''}>
-    <PlanetCore rotationPeriod={rotationPeriod} className="relative">
-      <MoonPrimary />
-    </PlanetCore>
-  </div>
+export const PlanetText = ({ className, children, rotationPeriod }: PlanetProps) => (
+  <Planet name="text" className={`${className} bg-primary-500`} rotationPeriod={rotationPeriod}>
+    {children}
+  </Planet>
 )
-
-export const PlanetHubWithTorroidMoon = ({ rotationPeriod }: PlanetProps) => (
-  <div className={''}>
-    <PlanetHub rotationPeriod={rotationPeriod} className="relative">
-      <MoonRedTorroid />
-    </PlanetHub>
-  </div>
+export const PlanetVideo = ({ className, children, rotationPeriod }: PlanetProps) => (
+  <Planet name="video" className={`${className} bg-yellow-500`} rotationPeriod={rotationPeriod}>
+    {children}
+  </Planet>
 )
-
-const MoonPrimary = () => (
-  <div className="absolute bg-primary-400 w-4 h-4 -top-12 -left-12 rounded-full"></div>
-)
-
-const MoonRedTorroid = () => (
-  <div className="absolute ring-4 ring-red-500 w-4 h-4 -top-12 -left-12 rounded-full"></div>
+export const PlanetImage = ({ className, children, rotationPeriod }: PlanetProps) => (
+  <Planet name="image" className={`${className} bg-red-500`} rotationPeriod={rotationPeriod}>
+    {children}
+  </Planet>
 )

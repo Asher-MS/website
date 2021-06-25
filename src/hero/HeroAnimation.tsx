@@ -5,8 +5,9 @@ import {
   PlanetCore,
   PlanetDashboard,
   PlanetHub,
-  PlanetCoreWithMoon,
-  PlanetHubWithTorroidMoon
+  PlanetText,
+  PlanetImage,
+  PlanetVideo
 } from './Planets'
 
 const mercuryRevolutionTimePeriod = 20
@@ -15,7 +16,7 @@ const earthRevolutionTimePeriod = 60
 const marsRevolutionTimePeriod = 100
 const jupiterRevolutionTimePeriod = 144
 
-export const solarSystemSize = 120
+export const solarSystemSize = 110
 
 const HeroAnimation = () => {
   return (
@@ -24,37 +25,38 @@ const HeroAnimation = () => {
         <div className="absolute w-full top-0 planets-container">
           <ul className="solarsystem">
             <li className="mercury flex justify-between">
-              <PlanetCode rotationPeriod={mercuryRevolutionTimePeriod} />
+              <PlanetCode rotationPeriod={mercuryRevolutionTimePeriod} className="w-12 h-12" />
+              <PlanetImage rotationPeriod={mercuryRevolutionTimePeriod} className="w-12 h-12" />
             </li>
             <li className="venus flex justify-between">
               <div className="flex flex-col justify-between">
-                <PlanetCore rotationPeriod={venusRevolutionTimePeriod} className="" />
-                <PlanetCode rotationPeriod={venusRevolutionTimePeriod} className="" />
+                <PlanetVideo rotationPeriod={venusRevolutionTimePeriod} className="w-16 h-16" />
+                <PlanetText rotationPeriod={venusRevolutionTimePeriod} className="w-16 h-16" />
               </div>
               <div className="flex flex-col justify-between">
-                <PlanetCore rotationPeriod={venusRevolutionTimePeriod} className="" />
-                <PlanetCoreWithMoon rotationPeriod={venusRevolutionTimePeriod} />
+                <PlanetCore rotationPeriod={venusRevolutionTimePeriod} className="w-16 h-16" />
+                <PlanetCore rotationPeriod={venusRevolutionTimePeriod} className="w-16 h-16" />
               </div>
             </li>
             <li className="earth flex">
               <div className="flex flex-col justify-between">
-                <PlanetHub rotationPeriod={earthRevolutionTimePeriod} className="" />
-                <PlanetDashboard rotationPeriod={earthRevolutionTimePeriod} className="" />
+                <PlanetHub rotationPeriod={earthRevolutionTimePeriod} className="w-20 h-20" />
+                <PlanetDashboard rotationPeriod={earthRevolutionTimePeriod} className="w-20 h-20" />
               </div>
             </li>
             <li className="mars flex justify-between">
               <div className="flex flex-col justify-between">
-                <PlanetHubWithTorroidMoon rotationPeriod={marsRevolutionTimePeriod} className="" />
+                <PlanetHub rotationPeriod={marsRevolutionTimePeriod} className="w-24 h-24" />
               </div>
             </li>
             <li className="jupiter flex justify-between">
               <div className="flex flex-col justify-between">
-                <PlanetCore rotationPeriod={jupiterRevolutionTimePeriod} className="" />
-                <PlanetCode rotationPeriod={jupiterRevolutionTimePeriod} className="" />
+                <PlanetCore rotationPeriod={jupiterRevolutionTimePeriod} className="h-28 w-28" />
+                <PlanetCode rotationPeriod={jupiterRevolutionTimePeriod} className="h-28 w-28" />
               </div>
               <div className="flex flex-col justify-between">
-                <PlanetCore rotationPeriod={jupiterRevolutionTimePeriod} className="" />
-                <PlanetCoreWithMoon rotationPeriod={jupiterRevolutionTimePeriod} />
+                <PlanetCore rotationPeriod={jupiterRevolutionTimePeriod} className="h-28 w-28" />
+                <PlanetCore rotationPeriod={jupiterRevolutionTimePeriod} className="h-28 w-28" />
               </div>
             </li>
           </ul>
@@ -66,8 +68,38 @@ const HeroAnimation = () => {
           .solar-system-container {
             width: ${solarSystemSize}rem;
             height: ${solarSystemSize}rem;
-            top: -145%;
-            right: -48%;
+            top: -117%;
+            right: -44%;
+          }
+          @media (min-width: 1024px) {
+            .solar-system-container {
+              top: -73%;
+              right: -108%;
+            }
+          }
+          @media (min-width: 1280px) {
+            .solar-system-container {
+              top: -112%;
+              right: -77%;
+            }
+          }
+          @media (min-width: 1440px) {
+            .solar-system-container {
+              top: -117%;
+              right: -59%;
+            }
+          }
+          @media (min-width: 1536px) {
+            .solar-system-container {
+              top: -117%;
+              right: -44%;
+            }
+          }
+          @media (min-width: 1920px) {
+            .solar-system-container {
+              top: -117%;
+              right: -44%;
+            }
           }
           .solarsystem {
             position: relative;
@@ -107,29 +139,29 @@ const HeroAnimation = () => {
           }
 
           .solarsystem li.earth {
-            width: 37.5%;
-            height: 37.5%;
+            width: 38.5%;
+            height: 38.5%;
             border-radius: 0%;
-            top: 29.3%;
-            left: 29.3%;
+            top: 28.7%;
+            left: 28.7%;
             z-index: 97;
           }
 
           .solarsystem li.mars {
-            width: 48.5%;
-            height: 48.5%;
+            width: 51%;
+            height: 51%;
             border-radius: 0%;
-            top: 23.5%;
-            left: 23.5%;
+            top: 22.5%;
+            left: 22.5%;
             z-index: 96;
           }
 
           .solarsystem li.jupiter {
-            width: 60%;
-            height: 60%;
+            width: 63%;
+            height: 63%;
             border-radius: 0%;
-            top: 18%;
-            left: 18%;
+            top: 16.5%;
+            left: 16.5%;
             z-index: 96;
           }
 

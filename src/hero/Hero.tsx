@@ -8,7 +8,7 @@ import HeroAnimation from './HeroAnimation'
 
 const Hero = () => (
   <Background color="bg-white" className="relative overflow-hidden -z-10">
-    <Section yPadding="pt-20 pb-3">
+    <Section yPadding="pt-20 pb-20">
       <h1 className="text-7xl font-bold text-black w-6/12">{websiteCopyStrings.heroHeadline}</h1>
       <p className="w-4/12">{websiteCopyStrings.heroDescription}</p>
       <div className="flex mt-8 mb-40">
