@@ -1,13 +1,21 @@
 import React from 'react'
 import Orbits from './Orbits'
-import { PlanetCode, PlanetCore, PlanetDashboard, PlanetHub, PlanetCoreWithMoon } from './Planets'
+import {
+  PlanetCode,
+  PlanetCore,
+  PlanetDashboard,
+  PlanetHub,
+  PlanetCoreWithMoon,
+  PlanetHubWithTorroidMoon
+} from './Planets'
 
 const mercuryRevolutionTimePeriod = 20
 const venusRevolutionTimePeriod = 40
 const earthRevolutionTimePeriod = 60
 const marsRevolutionTimePeriod = 100
+const jupiterRevolutionTimePeriod = 144
 
-export const solarSystemSize = 100
+export const solarSystemSize = 120
 
 const HeroAnimation = () => {
   return (
@@ -15,7 +23,7 @@ const HeroAnimation = () => {
       <Orbits>
         <div className="absolute w-full top-0 planets-container">
           <ul className="solarsystem">
-            <li className="mercury">
+            <li className="mercury flex justify-between">
               <PlanetCode rotationPeriod={mercuryRevolutionTimePeriod} />
             </li>
             <li className="venus flex justify-between">
@@ -34,8 +42,20 @@ const HeroAnimation = () => {
                 <PlanetDashboard rotationPeriod={earthRevolutionTimePeriod} className="" />
               </div>
             </li>
-            <li className="mars">
-              <PlanetDashboard rotationPeriod={marsRevolutionTimePeriod} />
+            <li className="mars flex justify-between">
+              <div className="flex flex-col justify-between">
+                <PlanetHubWithTorroidMoon rotationPeriod={marsRevolutionTimePeriod} className="" />
+              </div>
+            </li>
+            <li className="jupiter flex justify-between">
+              <div className="flex flex-col justify-between">
+                <PlanetCore rotationPeriod={jupiterRevolutionTimePeriod} className="" />
+                <PlanetCode rotationPeriod={jupiterRevolutionTimePeriod} className="" />
+              </div>
+              <div className="flex flex-col justify-between">
+                <PlanetCore rotationPeriod={jupiterRevolutionTimePeriod} className="" />
+                <PlanetCoreWithMoon rotationPeriod={jupiterRevolutionTimePeriod} />
+              </div>
             </li>
           </ul>
         </div>
@@ -46,8 +66,8 @@ const HeroAnimation = () => {
           .solar-system-container {
             width: ${solarSystemSize}rem;
             height: ${solarSystemSize}rem;
-            top: -120%;
-            right: -40%;
+            top: -145%;
+            right: -48%;
           }
           .solarsystem {
             position: relative;
@@ -69,38 +89,47 @@ const HeroAnimation = () => {
             z-index: 100;
           }
           .solarsystem li.mercury {
-            width: 28%;
-            height: 28%;
-            border-radius: 50%;
-            top: 34%;
-            left: 34%;
+            width: 14%;
+            height: 14%;
+            border-radius: 0%;
+            top: 41%;
+            left: 41%;
             z-index: 99;
           }
 
           .solarsystem li.venus {
-            width: 39%;
-            height: 39%;
-            border-radius: 50%;
-            top: 29%;
-            left: 29%;
+            width: 26%;
+            height: 26%;
+            border-radius: 0%;
+            top: 35%;
+            left: 35%;
             z-index: 98;
           }
 
           .solarsystem li.earth {
-            width: 50%;
-            height: 50%;
-            border-radius: 50%;
-            top: 23%;
-            left: 23%;
+            width: 37.5%;
+            height: 37.5%;
+            border-radius: 0%;
+            top: 29.3%;
+            left: 29.3%;
             z-index: 97;
           }
 
           .solarsystem li.mars {
-            width: 62%;
-            height: 62%;
-            border-radius: 50%;
-            top: 17%;
-            left: 17%;
+            width: 48.5%;
+            height: 48.5%;
+            border-radius: 0%;
+            top: 23.5%;
+            left: 23.5%;
+            z-index: 96;
+          }
+
+          .solarsystem li.jupiter {
+            width: 60%;
+            height: 60%;
+            border-radius: 0%;
+            top: 18%;
+            left: 18%;
             z-index: 96;
           }
 
@@ -108,9 +137,6 @@ const HeroAnimation = () => {
           .solarsystem li {
             animation-iteration-count: infinite;
             animation-timing-function: linear;
-            animation-name: revolute;
-          }
-          .solarsystem li.earth span {
             animation-name: revolute;
           }
 
@@ -125,6 +151,9 @@ const HeroAnimation = () => {
           }
           .solarsystem li.mars {
             animation-duration: ${marsRevolutionTimePeriod}s;
+          }
+          .solarsystem li.jupiter {
+            animation-duration: ${jupiterRevolutionTimePeriod}s;
           }
           @keyframes revolute {
             from {

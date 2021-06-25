@@ -40,27 +40,29 @@ export const Planet = ({ className, children, rotationPeriod, name }: PlanetProp
   </div>
 )
 
-export const PlanetHub = ({ className, rotationPeriod }: PlanetProps) => (
-  <Planet
-    name="hub"
-    className={`${className} bg-yellow-500`}
-    rotationPeriod={rotationPeriod}
-  ></Planet>
+export const PlanetHub = ({ className, children, rotationPeriod }: PlanetProps) => (
+  <Planet name="hub" className={`${className} bg-yellow-500`} rotationPeriod={rotationPeriod}>
+    {children}
+  </Planet>
 )
 export const PlanetCore = ({ className, children, rotationPeriod }: PlanetProps) => (
   <Planet name="core" className={`${className} bg-red-500`} rotationPeriod={rotationPeriod}>
     {children}
   </Planet>
 )
-export const PlanetCode = ({ className, rotationPeriod }: PlanetProps) => (
-  <Planet name="code" className={`${className} bg-blue-500`} rotationPeriod={rotationPeriod} />
+export const PlanetCode = ({ className, children, rotationPeriod }: PlanetProps) => (
+  <Planet name="code" className={`${className} bg-blue-500`} rotationPeriod={rotationPeriod}>
+    {children}
+  </Planet>
 )
-export const PlanetDashboard = ({ className, rotationPeriod }: PlanetProps) => (
+export const PlanetDashboard = ({ className, children, rotationPeriod }: PlanetProps) => (
   <Planet
     name="dashboard"
     className={`${className} bg-primary-500`}
     rotationPeriod={rotationPeriod}
-  />
+  >
+    {children}
+  </Planet>
 )
 
 export const PlanetCoreWithMoon = ({ rotationPeriod }: PlanetProps) => (
@@ -71,6 +73,18 @@ export const PlanetCoreWithMoon = ({ rotationPeriod }: PlanetProps) => (
   </div>
 )
 
+export const PlanetHubWithTorroidMoon = ({ rotationPeriod }: PlanetProps) => (
+  <div className={''}>
+    <PlanetHub rotationPeriod={rotationPeriod} className="relative">
+      <MoonRedTorroid />
+    </PlanetHub>
+  </div>
+)
+
 const MoonPrimary = () => (
   <div className="absolute bg-primary-400 w-4 h-4 -top-12 -left-12 rounded-full"></div>
+)
+
+const MoonRedTorroid = () => (
+  <div className="absolute ring-4 ring-red-500 w-4 h-4 -top-12 -left-12 rounded-full"></div>
 )
