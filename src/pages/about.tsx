@@ -3,6 +3,8 @@ import React from 'react'
 import Meta from '../layout/Meta'
 import PageWithHeaderAndFooter from '../layout/PageWithHeaderAndFooter'
 import WhyWeStartedJina from '../template/WhyWeStartedJina'
+import Offices from '../template/Offices'
+import Investors from '../template/Investors'
 
 const About = () => (
   <>
@@ -13,6 +15,8 @@ const About = () => (
     />
     <PageWithHeaderAndFooter>
       <WhyWeStartedJina />
+      <Offices />
+      <Investors />
     </PageWithHeaderAndFooter>
   </>
 )
