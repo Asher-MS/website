@@ -43,6 +43,13 @@ export const websiteCopyStrings = {
   navBarCompanyContact: 'Contact us',
   navBarCompanyBlog: 'Blog',
   navBarButtonCallToAction: 'Try it out!',
+  aboutWhyWeStartedJinaTitlePart1: 'Why we started',
+  aboutWhyWeStartedJinaTitlePart2: 'Jina',
+  aboutWhyWeStartedJinaDescriptionPart1:
+    'Deep learning technology is transforming how we interact with and make use of all the data whether it is scientific applications, consumer software or internal enterprise systems.',
+
+  aboutWhyWeStartedJinaDescriptionPart2:
+    'Jina AI was started to provide a solution ready to keep up with the emerging needs for all kinds of search. As the need to process large quantities of data grows, Jina helps you to stay on top of the ever changing data landscape.',
   OfficesSecionTitlePart1: 'Our',
   OfficesSecionTitlePart2: 'Offices',
   Offices1TitlePart1: 'Berlin,',
