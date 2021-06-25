@@ -37,8 +37,11 @@ export const websiteCopyStrings = {
   navBarButtonCallToAction: 'Try it out!',
   aboutWhyWeStartedJinaTitlePart1: 'Why we started',
   aboutWhyWeStartedJinaTitlePart2: 'Jina',
-  aboutWhyWeStartedJinaDescription:
-    'Data is transforming nowadays while the design pattern to process such information needs to be up to date. We believe, Jina is the solution to keep up with the emerging needs for all kinds of data search.',
+  aboutWhyWeStartedJinaDescriptionPart1:
+    'Deep learning technology is transforming how we interact with and make use of all the data whether it is scientific applications, consumer software or internal enterprise systems.',
+
+  aboutWhyWeStartedJinaDescriptionPart2:
+    'Jina AI was started to provide a solution ready to keep up with the emerging needs for all kinds of search. As the need to process large quantities of data grows, Jina helps you to stay on top of the ever changing data landscape.',
   footerPhoneNumber: '+880 112 345 678',
   footerAddress: '711-2880 Nulla St. Mankato Mississippi 96522',
   footerCompany: 'Company',
