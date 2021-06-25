@@ -1,6 +1,6 @@
 import React from 'react'
 import Orbits from './Orbits'
-import { PlanetCode, PlanetCore, PlanetDashboard, PlanetHub, PlanetWithMoon } from './Planets'
+import { PlanetCode, PlanetCore, PlanetDashboard, PlanetHub, PlanetCoreWithMoon } from './Planets'
 
 const mercuryRevolutionTimePeriod = 20
 const venusRevolutionTimePeriod = 40
@@ -25,7 +25,7 @@ const HeroAnimation = () => {
               </div>
               <div className="flex flex-col justify-between">
                 <PlanetCore rotationPeriod={venusRevolutionTimePeriod} className="" />
-                <PlanetWithMoon />
+                <PlanetCoreWithMoon rotationPeriod={venusRevolutionTimePeriod} />
               </div>
             </li>
             <li className="earth flex">

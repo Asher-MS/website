@@ -7,9 +7,12 @@ interface PlanetProps extends DivProps {
   name?: string;
 }
 
-export const Planet = ({ className, rotationPeriod, name }: PlanetProps) => (
+export const Planet = ({ className, children, rotationPeriod, name }: PlanetProps) => (
   <div className={`${className} planet-${name} bg-yellow-500 rounded-full p-4 w-16 h-16`}>
     <Icon name={`${name}-white`} className="" />
+    <div className="absolute top-1/2 left-1/2">
+      <div className="moon-axis relative">{children}</div>
+    </div>
     <style jsx>
       {`
         @keyframes revolute {
@@ -25,6 +28,12 @@ export const Planet = ({ className, rotationPeriod, name }: PlanetProps) => (
           animation-timing-function: linear;
           animation-name: revolute;
           animation-duration: ${rotationPeriod}s;
+        }
+        .moon-axis {
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+          animation-name: revolute;
+          animation-duration: 2s;
         }
       `}
     </style>
@@ -54,14 +63,14 @@ export const PlanetDashboard = ({ className, rotationPeriod }: PlanetProps) => (
   />
 )
 
-export const PlanetWithMoon = () => (
+export const PlanetCoreWithMoon = ({ rotationPeriod }: PlanetProps) => (
   <div className={''}>
-    <PlanetCore rotationPeriod={40} className="relative">
-      <div className="absolute top-1/2 left-1/2">
-        <div className="planet-moon-axis relative">
-          <div className="absolute bg-primary-400 w-4 h-4 -top-12 -left-12 rounded-full"></div>
-        </div>
-      </div>
+    <PlanetCore rotationPeriod={rotationPeriod} className="relative">
+      <MoonPrimary />
     </PlanetCore>
   </div>
+)
+
+const MoonPrimary = () => (
+  <div className="absolute bg-primary-400 w-4 h-4 -top-12 -left-12 rounded-full"></div>
 )
