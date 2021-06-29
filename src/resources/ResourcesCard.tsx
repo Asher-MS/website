@@ -4,7 +4,7 @@ type IResourcesCardProps = {
   icon: ReactNode;
   title: string;
   copy: string;
-  learnMoreLink: ReactNode;
+  learnMoreLink: string;
   buttonColor: string;
   textColor: string;
 };
