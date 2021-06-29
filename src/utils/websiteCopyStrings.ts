@@ -103,5 +103,11 @@ export const websiteCopyStrings = {
     'We encourage everyone to take ownership of their work and show high autonomy. Take initiative, step up for your ideas, and commit to execution and performance.',
   careersWhatWeStandForTitle6: 'We work together as one',
   careersWhatWeStandForDescription6:
-    'Collaboration is essential, whether that’s inside or between teams. It means less wasted effort and makes for better work. We aim to work closely and transparently and bring the right people in as early as possible.'
+    'Collaboration is essential, whether that’s inside or between teams. It means less wasted effort and makes for better work. We aim to work closely and transparently and bring the right people in as early as possible.',
+  learnHeadlinePart1: 'Learn, build, and deploy your ',
+  learnHeadlinePart2: 'neural search ',
+  learnHeadlinePart3: 'app',
+  learnDescription:
+    'We are building an open-source neural search ecosystem, enabling developers and enterprises to build search systems that are fast, scalable, and work with any kind of data.',
+  learnDocumentationButton: 'Read our Documentation'
 }
