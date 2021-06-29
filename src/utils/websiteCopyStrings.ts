@@ -78,5 +78,25 @@ export const websiteCopyStrings = {
     'We encourage everyone to take ownership of their work and show high autonomy. Take initiative, step up for your ideas, and commit to execution and performance.',
   careersWhatWeStandForTitle6: 'We work together as one',
   careersWhatWeStandForDescription6:
-    'Collaboration is essential, whether that’s inside or between teams. It means less wasted effort and makes for better work. We aim to work closely and transparently and bring the right people in as early as possible.'
+    'Collaboration is essential, whether that’s inside or between teams. It means less wasted effort and makes for better work. We aim to work closely and transparently and bring the right people in as early as possible.',
+  contributeResourcesHeaderPart1: 'Resources',
+  contributeResourcesHeaderPart2: 'for contributors',
+  contributeResourcesGitHubTitle: 'GitHub',
+  contributeResourcesGitHubCopy:
+    'Our Flow architecture follows a modular design. Easily plug and play with existing solutions!',
+  contributeResourcesGitHubLearnMoreLink: 'https://github.com/jina-ai/jina',
+  contributeResourcesArticlesTitle: 'Articles',
+  contributeResourcesArticlesCopy:
+    'Our Flow architecture follows a modular design. Easily plug and play with existing solutions!',
+  contributeResourcesArticlesLearnMoreLink: 'https://github.com/jina-ai/jina',
+  contributeResourcesSlackTitle: 'Slack',
+  contributeResourcesSlackCopy:
+    'Our Flow architecture follows a modular design. Easily plug and play with existing solutions!',
+  contributeResourcesSlackLearnMoreLink:
+    'https://join.slack.com/t/jina-ai/shared_invite/zt-rgm1cxdu-v_uuLntO7VB18o8eH_ZHuA',
+  contributeResourcesNewsletterTitle: 'NewsLetter',
+  contributeResourcesNewsletterCopy:
+    'Our Flow architecture follows a modular design. Easily plug and play with existing solutions!',
+  contributeResourcesNewsletterLearnMoreLink: 'https://github.com/jina-ai/jina',
+  contributeResourcesLearnMore: 'Learn more'
 }
