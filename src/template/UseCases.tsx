@@ -17,20 +17,21 @@ function Arrow (direction: 'left' | 'right') {
     onClickHandler: () => void;
     label: string;
   }) => (
-    <button type="button" onClick={onClickHandler} title={label} className={'arrowButton'}>
+    <button
+      type="button"
+      onClick={onClickHandler}
+      title={label}
+      className={
+        '' +
+        'arrowButton absolute z-10 w-16 h-16 cursor-pointer rounded-full bg-white shadow-2xl' +
+        ''
+      }
+    >
       <style jsx>
         {`
             .arrowButton {
-              border-radius: 60px;
-              position: absolute;
-              z-index: 4;
               top: calc(50% - 15px);
               margin-${direction}: 20px;
-              width: 60px;
-              height: 60px;
-              cursor: pointer;
-              background: #ffffff;
-              box-shadow: 8px 8px 36px -18px rgba(1, 57, 57, 2);
               ${direction === 'right' && 'right: 0px;'}
             }
 
@@ -44,7 +45,11 @@ function Arrow (direction: 'left' | 'right') {
             }
           `}
       </style>
-      <img alt="arrowLeft" className="arrow" src={`/assets/images/arrow-${direction}.svg`} />
+      <img
+        alt={`arrow-${direction}`}
+        className="arrow"
+        src={`/assets/images/arrow-${direction}.svg`}
+      />
     </button>
   )
   switch (direction) {
@@ -61,23 +66,12 @@ function Arrow (direction: 'left' | 'right') {
 
 function UseCaseCard ({ src, title }: UseCaseCardProps) {
   return (
-    <div className="card">
+    <div className="w-2xl relative">
       <style jsx>
         {`
-          .card {
-            width: 28.75rem;
-            position: relative;
-          }
-
           .backGroundImage {
             border-radius: 8px;
             filter: brightness(60%) grayscale(30%);
-          }
-
-          .title {
-            font-weight: 600;
-            font-size: 24px;
-            color: white;
           }
 
           /* Centered text */
@@ -91,7 +85,7 @@ function UseCaseCard ({ src, title }: UseCaseCardProps) {
       </style>
       <img alt="useCase" className="backGroundImage" src={src} />
       <div className="centered">
-        <span className="title">{title}</span>
+        <span className="font-bold text-2xl text-white">{title}</span>
       </div>
     </div>
   )
