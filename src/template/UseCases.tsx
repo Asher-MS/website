@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import { Section } from '../layout/Section'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
@@ -9,26 +9,32 @@ type UseCaseCardProps = {
   link: string;
 };
 
-function ArrowPrev (onClickHandler: () => void, hasPrev: boolean, label: string): ReactNode {
-  return (
-    hasPrev && (
-      <button type="button" onClick={onClickHandler} title={label} className="nextButton">
-        <style jsx>
-          {`
-            .nextButton {
+function Arrow (direction: 'left' | 'right') {
+  const ArrowButton = ({
+    onClickHandler,
+    label
+  }: {
+    onClickHandler: () => void;
+    label: string;
+  }) => (
+    <button type="button" onClick={onClickHandler} title={label} className={'arrowButton'}>
+      <style jsx>
+        {`
+            .arrowButton {
               border-radius: 60px;
               position: absolute;
               z-index: 4;
               top: calc(50% - 15px);
-              margin-left: 20px;
+              margin-${direction}: 20px;
               width: 60px;
               height: 60px;
               cursor: pointer;
               background: #ffffff;
               box-shadow: 8px 8px 36px -18px rgba(1, 57, 57, 2);
+              ${direction === 'right' && 'right: 0px;'}
             }
 
-            .nextButton:focus {
+            .arrowButton:focus {
               outline: 0;
             }
 
@@ -37,48 +43,20 @@ function ArrowPrev (onClickHandler: () => void, hasPrev: boolean, label: string)
               width: auto;
             }
           `}
-        </style>
-        <img alt="arrowLeft" className="arrow" src={'/assets/images/arrow-left.svg'} />
-      </button>
-    )
+      </style>
+      <img alt="arrowLeft" className="arrow" src={`/assets/images/arrow-${direction}.svg`} />
+    </button>
   )
-}
-
-function ArrowNext (onClickHandler: () => void, hasNext: boolean, label: string): ReactNode {
-  return (
-    hasNext && (
-      <button type="button" onClick={onClickHandler} title={label} className="nextButton">
-        <style jsx>
-          {`
-            .nextButton {
-              border-radius: 60px;
-              position: absolute;
-              z-index: 2;
-              top: calc(50% - 15px);
-              margin-right: 20px;
-
-              width: 60px;
-              height: 60px;
-              cursor: pointer;
-              background: #ffffff;
-              right: 0px;
-              box-shadow: 8px 8px 36px -18px rgba(1, 57, 57, 2);
-            }
-
-            .nextButton:focus {
-              outline: 0;
-            }
-
-            .arrow {
-              height: 20px;
-              width: auto;
-            }
-          `}
-        </style>
-        <img alt="arrowRight" className="arrow" src={'/assets/images/arrow-right.svg'} />
-      </button>
-    )
-  )
+  switch (direction) {
+    case 'left':
+      return function ArrowLeft (onClickHandler: () => void, hasPrev: boolean, label: string) {
+        return hasPrev && <ArrowButton label={label} onClickHandler={onClickHandler} />
+      }
+    case 'right':
+      return function ArrowRight (onClickHandler: () => void, hasNext: boolean, label: string) {
+        return hasNext && <ArrowButton label={label} onClickHandler={onClickHandler} />
+      }
+  }
 }
 
 function UseCaseCard ({ src, title }: UseCaseCardProps) {
@@ -144,8 +122,8 @@ function UseCases () {
       <Carousel
         showIndicators={false}
         showStatus={false}
-        renderArrowPrev={ArrowPrev}
-        renderArrowNext={ArrowNext}
+        renderArrowPrev={Arrow('left')}
+        renderArrowNext={Arrow('right')}
       >
         <UseCaseSet />
         <UseCaseSet />
