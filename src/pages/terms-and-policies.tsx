@@ -3,6 +3,7 @@ import React from 'react'
 import Meta from '../layout/Meta'
 import PageWithHeaderAndFooter from '../layout/PageWithHeaderAndFooter'
 import { Section } from '../layout/Section'
+import { websiteCopyStrings } from '../utils/websiteCopyStrings'
 import TermsAndPoliciesContent from '../terms-and-policies/TermsAndPoliciesContent'
 import TermsAndPoliciesSidebar from '../terms-and-policies/TermsAndPoliciesSidebar'
 
@@ -14,9 +15,22 @@ const TermsAndPolicies = () => (
       canonical="https://jina.ai/"
     />
     <PageWithHeaderAndFooter>
-      <Section className="flex">
-        <TermsAndPoliciesSidebar />
-        <TermsAndPoliciesContent />
+      <Section>
+        <div className="flex pt-16 pb-40">
+          <div className="w-2/12"></div>
+          <div className="w-10/12">
+            <h2 className="text-center font-bold text-5xl">
+              {websiteCopyStrings.termsAndPoliciesTitle}
+            </h2>
+            <p className="text-center text-gray-600">
+              {websiteCopyStrings.termsAndPoliciesUpdateDate}
+            </p>
+          </div>
+        </div>
+        <div className="flex">
+          <TermsAndPoliciesSidebar />
+          <TermsAndPoliciesContent />
+        </div>
       </Section>
     </PageWithHeaderAndFooter>
   </>

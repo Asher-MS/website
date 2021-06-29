@@ -4,49 +4,67 @@ import { websiteCopyStrings } from '../utils/websiteCopyStrings'
 const TermsAndPoliciesSidebar = () => (
   <div className="w-2/12">
     <ul className="flex flex-col">
-      <li className="mr-6">
+      <li className="mr-6 py-2.5">
         <a className="" href="#subtitle-1">
-          {websiteCopyStrings.termsAndPoliciesSubTitle1}
+          <span className="text-gray-600 font-normal text-base">
+            {websiteCopyStrings.termsAndPoliciesSubTitle1}
+          </span>
         </a>
       </li>
-      <li className="mr-6">
+      <li className="mr-6 py-2.5">
         <a className="" href="#subtitle-2">
-          {websiteCopyStrings.termsAndPoliciesSubTitle2}
+          <span className="text-gray-600 font-normal text-base">
+            {websiteCopyStrings.termsAndPoliciesSubTitle2}
+          </span>
         </a>
       </li>
-      <li className="mr-6">
+      <li className="mr-6 py-2.5">
         <a className="" href="#subtitle-3">
-          {websiteCopyStrings.termsAndPoliciesSubTitle3}
+          <span className="text-gray-600 font-normal text-base">
+            {websiteCopyStrings.termsAndPoliciesSubTitle3}
+          </span>
         </a>
       </li>
-      <li className="mr-6">
+      <li className="mr-6 py-2.5">
         <a className="" href="#subtitle-4">
-          {websiteCopyStrings.termsAndPoliciesSubTitle4}
+          <span className="text-gray-600 font-normal text-base">
+            {websiteCopyStrings.termsAndPoliciesSubTitle4}
+          </span>
         </a>
       </li>
-      <li className="mr-6">
+      <li className="mr-6 py-2.5">
         <a className="" href="#subtitle-5">
-          {websiteCopyStrings.termsAndPoliciesSubTitle5}
+          <span className="text-gray-600 font-normal text-base">
+            {websiteCopyStrings.termsAndPoliciesSubTitle5}
+          </span>
         </a>
       </li>
-      <li className="mr-6">
+      <li className="mr-6 py-2.5">
         <a className="" href="#subtitle-6">
-          {websiteCopyStrings.termsAndPoliciesSubTitle6}
+          <span className="text-gray-600 font-normal text-base">
+            {websiteCopyStrings.termsAndPoliciesSubTitle6}
+          </span>
         </a>
       </li>
-      <li className="mr-6">
+      <li className="mr-6 py-2.5">
         <a className="" href="#subtitle-7">
-          {websiteCopyStrings.termsAndPoliciesSubTitle7}
+          <span className="text-gray-600 font-normal text-base">
+            {websiteCopyStrings.termsAndPoliciesSubTitle7}
+          </span>
         </a>
       </li>
-      <li className="mr-6">
+      <li className="mr-6 py-2.5">
         <a className="" href="#subtitle-8">
-          {websiteCopyStrings.termsAndPoliciesSubTitle8}
+          <span className="text-gray-600 font-normal text-base">
+            {websiteCopyStrings.termsAndPoliciesSubTitle8}
+          </span>
         </a>
       </li>
-      <li className="mr-6">
+      <li className="mr-6 py-2.5">
         <a className="" href="#subtitle-9">
-          {websiteCopyStrings.termsAndPoliciesSubTitle9}
+          <span className="text-gray-600 font-normal text-base">
+            {websiteCopyStrings.termsAndPoliciesSubTitle9}
+          </span>
         </a>
       </li>
     </ul>
