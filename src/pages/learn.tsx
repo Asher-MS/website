@@ -39,16 +39,18 @@ const Learn = () => (
       </Section>
 
       <Section>
-        <div className="grid grid-cols-2 ">
+        <div className="grid grid-cols-2">
           <LearnFeatureCard
             copy={websiteCopyStrings.learnCardNewCopy}
             linkList={websiteCopyStrings.learnCardNewLinkList}
           >
-            <div className="flex flex-row items-center font-bold text-5xl">
+            <div className="flex flex-row items-center font-bold text-3xl">
               <img src="/assets/images/star-icon.svg" className="mr-4" />
               <p>
                 {websiteCopyStrings.learnCardNewTitleUncolored}{' '}
-                <span>{websiteCopyStrings.learnCardNewTitleColored}</span>
+                <span className="text-amber-500">
+                  {websiteCopyStrings.learnCardNewTitleColored}
+                </span>
               </p>
             </div>
           </LearnFeatureCard>
@@ -56,11 +58,13 @@ const Learn = () => (
             copy={websiteCopyStrings.learnCardGetStartedCopy}
             linkList={websiteCopyStrings.learnCardGetStartedLinkList}
           >
-            <div className="flex flex-row items-center font-bold text-5xl">
+            <div className="flex flex-row items-center font-bold text-3xl">
               <img src="/assets/images/rocket-icon.svg" className="mr-4" />
               <p>
                 {websiteCopyStrings.learnCardGetStartedTitleUncolored}{' '}
-                <span>{websiteCopyStrings.learnCardGetStartedTitleColored}</span>
+                <span className="text-red-400">
+                  {websiteCopyStrings.learnCardGetStartedTitleColored}
+                </span>
               </p>
             </div>
           </LearnFeatureCard>
@@ -68,11 +72,13 @@ const Learn = () => (
             copy={websiteCopyStrings.learnCardExploreCopy}
             linkList={websiteCopyStrings.learnCardExploreLinkList}
           >
-            <div className="flex flex-row items-center font-bold text-5xl">
+            <div className="flex flex-row items-center font-bold text-3xl">
               <img src="/assets/images/explore-icon.svg" className="mr-4" />
               <p>
                 {websiteCopyStrings.learnCardExploreTitleUncolored}
-                <span>{websiteCopyStrings.learnCardExploreTitleColored}</span>
+                <span className="text-primary-500">
+                  {websiteCopyStrings.learnCardExploreTitleColored}
+                </span>
               </p>
             </div>
           </LearnFeatureCard>
@@ -80,11 +86,13 @@ const Learn = () => (
             copy={websiteCopyStrings.learnCardVideoCopy}
             linkList={websiteCopyStrings.learnCardVideoLinkList}
           >
-            <div className="flex flex-row items-center font-bold text-5xl">
+            <div className="flex flex-row items-center font-bold text-3xl">
               <img src="/assets/images/video-icon.svg" className="mr-4" />
               <p>
                 {websiteCopyStrings.learnCardVideoTitleUncolored}{' '}
-                <span>{websiteCopyStrings.learnCardVideoTitleColored}</span>
+                <span className="text-primary-700">
+                  {websiteCopyStrings.learnCardVideoTitleColored}
+                </span>
               </p>
             </div>
           </LearnFeatureCard>
@@ -92,11 +100,13 @@ const Learn = () => (
             copy={websiteCopyStrings.learnCardInspiredCopy}
             linkList={websiteCopyStrings.learnCardInspiredLinkList}
           >
-            <div className="flex flex-row items-center font-bold text-5xl">
+            <div className="flex flex-row items-center font-bold text-3xl">
               <img src="/assets/images/light-bulb-icon.svg" className="mr-4" />
               <p>
-                {websiteCopyStrings.learnCardInspiredTitleColored}{' '}
-                <span>{websiteCopyStrings.learnCardInspiredTitleUncolored}</span>
+                <span className="text-amber-600">
+                  {websiteCopyStrings.learnCardInspiredTitleColored}
+                </span>{' '}
+                {websiteCopyStrings.learnCardInspiredTitleUncolored}
               </p>
             </div>
           </LearnFeatureCard>
@@ -104,11 +114,13 @@ const Learn = () => (
             copy={websiteCopyStrings.learnCardProductivityCopy}
             linkList={websiteCopyStrings.learnCardProductivityLinkList}
           >
-            <div className="flex flex-row items-center font-bold text-5xl">
+            <div className="flex flex-row items-center font-bold text-3xl">
               <img src="/assets/images/tips-icon.svg" className="mr-4" />
               <p>
-                {websiteCopyStrings.learnCardProductivityTitleColored}{' '}
-                <span>{websiteCopyStrings.learnCardProductivityTitleUncolored}</span>
+                <span className="text-red-300">
+                  {websiteCopyStrings.learnCardProductivityTitleColored}
+                </span>{' '}
+                {websiteCopyStrings.learnCardProductivityTitleUncolored}
               </p>
             </div>
           </LearnFeatureCard>

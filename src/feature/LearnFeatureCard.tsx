@@ -7,7 +7,7 @@ type ILearnFeatureCardProps = {
 };
 
 const LearnFeatureCard = ({ children, copy, linkList }: ILearnFeatureCardProps) => (
-  <div className="flex flex-col m-36 mb-0">
+  <div className="flex flex-col w-7/12">
     {children}
     <p className="mt-2 text-gray-600 font-normal text-base leading-8">{copy}</p>
     <ul>
