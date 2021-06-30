@@ -5,6 +5,7 @@ import PageWithHeaderAndFooter from '../layout/PageWithHeaderAndFooter'
 import { Section } from '../layout/Section'
 import { websiteCopyStrings } from '../utils/websiteCopyStrings'
 import { Button } from '../button/Button'
+import { LearnFeatureCard } from '../feature/LearnFeatureCard'
 
 const Learn = () => (
   <>
@@ -34,6 +35,81 @@ const Learn = () => (
           <Button primary className="w-64 py-2">
             {websiteCopyStrings.learnDocumentationButton}
           </Button>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="grid grid-cols-2 p-48">
+          <LearnFeatureCard
+            copy="Data is transforming nowadays while the design pattern to process such information needs to be up to date."
+            linkList={[
+              ['What is Neural Search?', 'https://jina.ai/'],
+              ['Install Jina', 'www.golem.de']
+            ]}
+          >
+            <div className="flex flex-row items-center font-bold text-5xl">
+              <img src="/assets/images/star-icon.svg" className="mr-4" />
+              <p>
+                New to <span>jina</span>
+              </p>
+            </div>
+          </LearnFeatureCard>
+          <LearnFeatureCard
+            copy="Data is transforming nowadays while the design pattern to process such information needs to be up to date."
+            linkList={[
+              ['What is Neural Search?', 'https://jina.ai/'],
+              ['Install Jina', 'www.golem.de']
+            ]}
+          >
+            <div className="flex flex-row items-center font-bold text-5xl">
+              <img src="/assets/images/star-icon.svg" className="mr-4" />
+              <p>
+                New to <span>jina</span>
+              </p>
+            </div>
+          </LearnFeatureCard>
+          <LearnFeatureCard
+            copy="Data is transforming nowadays while the design pattern to process such information needs to be up to date."
+            linkList={[
+              ['What is Neural Search?', 'https://jina.ai/'],
+              ['Install Jina', 'www.golem.de']
+            ]}
+          >
+            <div className="flex flex-row items-center font-bold text-5xl">
+              <img src="/assets/images/star-icon.svg" className="mr-4" />
+              <p>
+                New to <span>jina</span>
+              </p>
+            </div>
+          </LearnFeatureCard>
+          <LearnFeatureCard
+            copy="Data is transforming nowadays while the design pattern to process such information needs to be up to date."
+            linkList={[
+              ['What is Neural Search?', 'https://jina.ai/'],
+              ['Install Jina', 'www.golem.de']
+            ]}
+          >
+            <div className="flex flex-row items-center font-bold text-5xl">
+              <img src="/assets/images/star-icon.svg" className="mr-4" />
+              <p>
+                New to <span>jina</span>
+              </p>
+            </div>
+          </LearnFeatureCard>
+          <LearnFeatureCard
+            copy="Data is transforming nowadays while the design pattern to process such information needs to be up to date."
+            linkList={[
+              ['What is Neural Search?', 'https://jina.ai/'],
+              ['Install Jina', 'www.golem.de']
+            ]}
+          >
+            <div className="flex flex-row items-center font-bold text-5xl">
+              <img src="/assets/images/star-icon.svg" className="mr-4" />
+              <p>
+                New to <span>jina</span>
+              </p>
+            </div>
+          </LearnFeatureCard>
         </div>
       </Section>
     </PageWithHeaderAndFooter>
