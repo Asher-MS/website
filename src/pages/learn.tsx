@@ -62,7 +62,7 @@ const Learn = () => (
             ]}
           >
             <div className="flex flex-row items-center font-bold text-5xl">
-              <img src="/assets/images/star-icon.svg" className="mr-4" />
+              <img src="/assets/images/rocket-icon.svg" className="mr-4" />
               <p>
                 New to <span>jina</span>
               </p>
@@ -76,7 +76,7 @@ const Learn = () => (
             ]}
           >
             <div className="flex flex-row items-center font-bold text-5xl">
-              <img src="/assets/images/star-icon.svg" className="mr-4" />
+              <img src="/assets/images/explore-icon.svg" className="mr-4" />
               <p>
                 New to <span>jina</span>
               </p>
@@ -90,7 +90,7 @@ const Learn = () => (
             ]}
           >
             <div className="flex flex-row items-center font-bold text-5xl">
-              <img src="/assets/images/star-icon.svg" className="mr-4" />
+              <img src="/assets/images/video-icon.svg" className="mr-4" />
               <p>
                 New to <span>jina</span>
               </p>
@@ -104,7 +104,21 @@ const Learn = () => (
             ]}
           >
             <div className="flex flex-row items-center font-bold text-5xl">
-              <img src="/assets/images/star-icon.svg" className="mr-4" />
+              <img src="/assets/images/light-bulb-icon.svg" className="mr-4" />
+              <p>
+                New to <span>jina</span>
+              </p>
+            </div>
+          </LearnFeatureCard>
+          <LearnFeatureCard
+            copy="Data is transforming nowadays while the design pattern to process such information needs to be up to date."
+            linkList={[
+              ['What is Neural Search?', 'https://jina.ai/'],
+              ['Install Jina', 'www.golem.de']
+            ]}
+          >
+            <div className="flex flex-row items-center font-bold text-5xl">
+              <img src="/assets/images/tips-icon.svg" className="mr-4" />
               <p>
                 New to <span>jina</span>
               </p>
