@@ -39,88 +39,76 @@ const Learn = () => (
       </Section>
 
       <Section>
-        <div className="grid grid-cols-2 p-48">
+        <div className="grid grid-cols-2 ">
           <LearnFeatureCard
-            copy="Data is transforming nowadays while the design pattern to process such information needs to be up to date."
-            linkList={[
-              ['What is Neural Search?', 'https://jina.ai/'],
-              ['Install Jina', 'www.golem.de']
-            ]}
+            copy={websiteCopyStrings.learnCardNewCopy}
+            linkList={websiteCopyStrings.learnCardNewLinkList}
           >
             <div className="flex flex-row items-center font-bold text-5xl">
               <img src="/assets/images/star-icon.svg" className="mr-4" />
               <p>
-                New to <span>jina</span>
+                {websiteCopyStrings.learnCardNewTitleUncolored}{' '}
+                <span>{websiteCopyStrings.learnCardNewTitleColored}</span>
               </p>
             </div>
           </LearnFeatureCard>
           <LearnFeatureCard
-            copy="Data is transforming nowadays while the design pattern to process such information needs to be up to date."
-            linkList={[
-              ['What is Neural Search?', 'https://jina.ai/'],
-              ['Install Jina', 'www.golem.de']
-            ]}
+            copy={websiteCopyStrings.learnCardGetStartedCopy}
+            linkList={websiteCopyStrings.learnCardGetStartedLinkList}
           >
             <div className="flex flex-row items-center font-bold text-5xl">
               <img src="/assets/images/rocket-icon.svg" className="mr-4" />
               <p>
-                New to <span>jina</span>
+                {websiteCopyStrings.learnCardGetStartedTitleUncolored}{' '}
+                <span>{websiteCopyStrings.learnCardGetStartedTitleColored}</span>
               </p>
             </div>
           </LearnFeatureCard>
           <LearnFeatureCard
-            copy="Data is transforming nowadays while the design pattern to process such information needs to be up to date."
-            linkList={[
-              ['What is Neural Search?', 'https://jina.ai/'],
-              ['Install Jina', 'www.golem.de']
-            ]}
+            copy={websiteCopyStrings.learnCardExploreCopy}
+            linkList={websiteCopyStrings.learnCardExploreLinkList}
           >
             <div className="flex flex-row items-center font-bold text-5xl">
               <img src="/assets/images/explore-icon.svg" className="mr-4" />
               <p>
-                New to <span>jina</span>
+                {websiteCopyStrings.learnCardExploreTitleUncolored}
+                <span>{websiteCopyStrings.learnCardExploreTitleColored}</span>
               </p>
             </div>
           </LearnFeatureCard>
           <LearnFeatureCard
-            copy="Data is transforming nowadays while the design pattern to process such information needs to be up to date."
-            linkList={[
-              ['What is Neural Search?', 'https://jina.ai/'],
-              ['Install Jina', 'www.golem.de']
-            ]}
+            copy={websiteCopyStrings.learnCardVideoCopy}
+            linkList={websiteCopyStrings.learnCardVideoLinkList}
           >
             <div className="flex flex-row items-center font-bold text-5xl">
               <img src="/assets/images/video-icon.svg" className="mr-4" />
               <p>
-                New to <span>jina</span>
+                {websiteCopyStrings.learnCardVideoTitleUncolored}{' '}
+                <span>{websiteCopyStrings.learnCardVideoTitleColored}</span>
               </p>
             </div>
           </LearnFeatureCard>
           <LearnFeatureCard
-            copy="Data is transforming nowadays while the design pattern to process such information needs to be up to date."
-            linkList={[
-              ['What is Neural Search?', 'https://jina.ai/'],
-              ['Install Jina', 'www.golem.de']
-            ]}
+            copy={websiteCopyStrings.learnCardInspiredCopy}
+            linkList={websiteCopyStrings.learnCardInspiredLinkList}
           >
             <div className="flex flex-row items-center font-bold text-5xl">
               <img src="/assets/images/light-bulb-icon.svg" className="mr-4" />
               <p>
-                New to <span>jina</span>
+                {websiteCopyStrings.learnCardInspiredTitleColored}{' '}
+                <span>{websiteCopyStrings.learnCardInspiredTitleUncolored}</span>
               </p>
             </div>
           </LearnFeatureCard>
           <LearnFeatureCard
-            copy="Data is transforming nowadays while the design pattern to process such information needs to be up to date."
-            linkList={[
-              ['What is Neural Search?', 'https://jina.ai/'],
-              ['Install Jina', 'www.golem.de']
-            ]}
+            copy={websiteCopyStrings.learnCardProductivityCopy}
+            linkList={websiteCopyStrings.learnCardProductivityLinkList}
           >
             <div className="flex flex-row items-center font-bold text-5xl">
               <img src="/assets/images/tips-icon.svg" className="mr-4" />
               <p>
-                New to <span>jina</span>
+                {websiteCopyStrings.learnCardProductivityTitleColored}{' '}
+                <span>{websiteCopyStrings.learnCardProductivityTitleUncolored}</span>
               </p>
             </div>
           </LearnFeatureCard>

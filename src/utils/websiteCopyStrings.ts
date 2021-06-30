@@ -109,5 +109,54 @@ export const websiteCopyStrings = {
   learnHeadlinePart3: 'app',
   learnDescription:
     'We are building an open-source neural search ecosystem, enabling developers and enterprises to build search systems that are fast, scalable, and work with any kind of data.',
-  learnDocumentationButton: 'Read our Documentation'
+  learnDocumentationButton: 'Read our Documentation',
+  learnCardNewTitleUncolored: 'New to',
+  learnCardNewTitleColored: 'jina',
+  learnCardNewCopy:
+    'Data is transforming nowadays while the design pattern to process such information needs to be up to date.',
+  learnCardNewLinkList: [
+    ['What is Neural Search?', 'www.google.com'],
+    ['Install Jina', 'www.google.com'],
+    ['Jina Fundamentals', 'www.google.com'],
+    ['Jina Documentation', 'www.google.com']
+  ],
+  learnCardGetStartedTitleUncolored: 'Get',
+  learnCardGetStartedTitleColored: 'Started',
+  learnCardGetStartedCopy:
+    'Data is transforming nowadays while the design pattern to process such information needs to be up to date.',
+  learnCardGetStartedLinkList: [
+    ['Jina Hello-world', 'www.google.com'],
+    ['See Jina in action - play with examples', 'www.google.com'],
+    ['Build your first Jina App', 'www.google.com']
+  ],
+  learnCardExploreTitleUncolored: 'Explore the ',
+  learnCardExploreTitleColored: 'jina suite',
+  learnCardExploreCopy:
+    'Data is transforming nowadays while the design pattern to process such information needs to be up to date.',
+  learnCardExploreLinkList: [
+    ['Search with Jina Box', 'www.google.com'],
+    ['Quick tour of Jina Dashboard', 'www.google.com'],
+    ['Upload your App to Jina Hub', 'www.google.com']
+  ],
+  learnCardVideoTitleUncolored: 'Watch our',
+  learnCardVideoTitleColored: 'videos',
+  learnCardVideoCopy:
+    'Data is transforming nowadays while the design pattern to process such information needs to be up to date.',
+  learnCardVideoLinkList: [
+    ['From Zero to Hero - Jina Fundamentals', 'www.google.com'],
+    ['From Zero to Hero - ...', 'www.google.com']
+  ],
+  learnCardInspiredTitleColored: 'Get inspired',
+  learnCardInspiredTitleUncolored: 'by others',
+  learnCardInspiredCopy:
+    'Data is transforming nowadays while the design pattern to process such information needs to be up to date.',
+  learnCardInspiredLinkList: [
+    ['Financial QA article', 'www.google.com'],
+    ['Streamlit article', 'www.google.com']
+  ],
+  learnCardProductivityTitleColored: 'Productivity',
+  learnCardProductivityTitleUncolored: 'Tips',
+  learnCardProductivityCopy:
+    'Data is transforming nowadays while the design pattern to process such information needs to be up to date.',
+  learnCardProductivityLinkList: [['Set up YAML Intellisense in IDE', 'www.google.com']]
 }
