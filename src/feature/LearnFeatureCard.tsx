@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react'
 type ILearnFeatureCardProps = {
   children: ReactNode;
   copy: string;
-  linkList: [string, string][];
+  linkList: string[][];
 };
 
 const LearnFeatureCard = ({ children, copy, linkList }: ILearnFeatureCardProps) => (
