@@ -15,36 +15,36 @@ const Learn = () => (
       canonical="https://jina.ai/"
     />
     <PageWithHeaderAndFooter>
-      <Section yPadding="py-0">
-        <div className="introduction flex items-center flex-col py-32">
-          <style jsx>
-            {`
-              .introduction {
-                background-image: url('/assets/images/learn-background.svg');
-              }
-            `}
-          </style>
-          <h1 className="text-6xl font-bold text-black w-6/12 text-center mb-4">
-            <span>{websiteCopyStrings.learnHeadlinePart1}</span>
-            <span className="text-primary-500">{websiteCopyStrings.learnHeadlinePart2}</span>
-            <span>{websiteCopyStrings.learnHeadlinePart3}</span>
-          </h1>
-          <p className="w-4/12 text-center mb-8 text-gray-600">
-            {websiteCopyStrings.learnDescription}
-          </p>
-          <Button primary className="w-64 py-2">
-            {websiteCopyStrings.learnDocumentationButton}
-          </Button>
-        </div>
-      </Section>
+      <div className="introduction flex items-center flex-col py-32 w-screen">
+        <style jsx>
+          {`
+            .introduction {
+              background-image: url('/assets/images/learn-background.svg');
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+          `}
+        </style>
+        <h1 className="text-6xl font-bold text-black w-6/12 text-center mb-4">
+          <span>{websiteCopyStrings.learnHeadlinePart1}</span>
+          <span className="text-primary-500">{websiteCopyStrings.learnHeadlinePart2}</span>
+          <span>{websiteCopyStrings.learnHeadlinePart3}</span>
+        </h1>
+        <p className="w-4/12 text-center mb-8 text-gray-600">
+          {websiteCopyStrings.learnDescription}
+        </p>
+        <Button primary className="w-64 py-2">
+          {websiteCopyStrings.learnDocumentationButton}
+        </Button>
+      </div>
 
       <Section>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-2 place-items-center ">
           <LearnFeatureCard
             copy={websiteCopyStrings.learnCardNewCopy}
             linkList={websiteCopyStrings.learnCardNewLinkList}
           >
-            <div className="flex flex-row items-center font-bold text-3xl">
+            <div className="flex flex-row items-center font-bold text-4xl">
               <img src="/assets/images/star-icon.svg" className="mr-4" />
               <p>
                 {websiteCopyStrings.learnCardNewTitleUncolored}{' '}
@@ -58,7 +58,7 @@ const Learn = () => (
             copy={websiteCopyStrings.learnCardGetStartedCopy}
             linkList={websiteCopyStrings.learnCardGetStartedLinkList}
           >
-            <div className="flex flex-row items-center font-bold text-3xl">
+            <div className="flex flex-row items-center font-bold text-4xl">
               <img src="/assets/images/rocket-icon.svg" className="mr-4" />
               <p>
                 {websiteCopyStrings.learnCardGetStartedTitleUncolored}{' '}
@@ -72,7 +72,7 @@ const Learn = () => (
             copy={websiteCopyStrings.learnCardExploreCopy}
             linkList={websiteCopyStrings.learnCardExploreLinkList}
           >
-            <div className="flex flex-row items-center font-bold text-3xl">
+            <div className="flex flex-row items-center font-bold text-4xl">
               <img src="/assets/images/explore-icon.svg" className="mr-4" />
               <p>
                 {websiteCopyStrings.learnCardExploreTitleUncolored}
@@ -86,7 +86,7 @@ const Learn = () => (
             copy={websiteCopyStrings.learnCardVideoCopy}
             linkList={websiteCopyStrings.learnCardVideoLinkList}
           >
-            <div className="flex flex-row items-center font-bold text-3xl">
+            <div className="flex flex-row items-center font-bold text-4xl">
               <img src="/assets/images/video-icon.svg" className="mr-4" />
               <p>
                 {websiteCopyStrings.learnCardVideoTitleUncolored}{' '}
@@ -100,8 +100,8 @@ const Learn = () => (
             copy={websiteCopyStrings.learnCardInspiredCopy}
             linkList={websiteCopyStrings.learnCardInspiredLinkList}
           >
-            <div className="flex flex-row items-center font-bold text-3xl">
-              <img src="/assets/images/light-bulb-icon.svg" className="mr-4" />
+            <div className="flex flex-row items-center font-bold text-4xl w-screen">
+              <img src="/assets/images/light-bulb-icon.svg" className="mr-4 " />
               <p>
                 <span className="text-amber-600">
                   {websiteCopyStrings.learnCardInspiredTitleColored}
@@ -114,7 +114,7 @@ const Learn = () => (
             copy={websiteCopyStrings.learnCardProductivityCopy}
             linkList={websiteCopyStrings.learnCardProductivityLinkList}
           >
-            <div className="flex flex-row items-center font-bold text-3xl">
+            <div className="flex flex-row items-center font-bold text-4xl ">
               <img src="/assets/images/tips-icon.svg" className="mr-4" />
               <p>
                 <span className="text-red-300">
