@@ -59,37 +59,37 @@ const Contact = () => (
           </div>
 
           <div className="flex-1">
-            <h2 className="flex flex-row items-center justify-center">
-              {websiteCopyStrings.contactFormSlackHeaderPart1}
-              <img src="/assets/images/data-icon.svg" />
+            <h2 className="flex flex-row items-center justify-center text-2xl font-bold mb-10">
+              <span className="mr-5"> {websiteCopyStrings.contactFormSlackHeaderPart1}</span>
+              <img className="mr-1" src="/assets/images/slack-icon.svg" />
               {websiteCopyStrings.contactFormSlackHeaderPart2}
             </h2>
-            <div className="bg-gray-100 flex flex-col items-center  rounded-full">
-              <h1>
+            <div className="bg-gray-100 flex flex-col items-center  rounded-3xl pt-8 pb-10">
+              <h1 className="text-xl font-bold mb-3 ">
                 {websiteCopyStrings.contactFormHeaderPart1}{' '}
-                <span>{websiteCopyStrings.contactFormHeaderPart2}</span>
+                <span className="text-5xl">{websiteCopyStrings.contactFormHeaderPart2}</span>
               </h1>
-              <p>{websiteCopyStrings.contactFormCopy}</p>
+              <p className="text-gray-600 mb-10">{websiteCopyStrings.contactFormCopy}</p>
               <form className="w-8/12">
                 <input
-                  className="bg-white w-full"
+                  className="bg-white w-full rounded-lg mb-8 px-4 py-3"
                   id="name"
                   type="text"
                   placeholder={websiteCopyStrings.contactFormName}
                 />
                 <input
-                  className="bg-white w-full"
+                  className="bg-white w-full rounded-lg mb-8  px-4 py-3"
                   id="email"
                   type="text"
                   placeholder={websiteCopyStrings.contactFormEmail}
                 />
-                <input
-                  className="bg-white w-full"
+                <textarea
+                  className="bg-white w-full rounded-lg mb-8  px-4 py-3"
                   id="message"
-                  type="text"
                   placeholder={websiteCopyStrings.contactFormMessage}
+                  rows={9}
                 />
-                <Button primary fullRounded>
+                <Button primary fullRounded className="py-4">
                   {websiteCopyStrings.contactFormButton}
                 </Button>
               </form>
