@@ -4,24 +4,25 @@ import IllustrationWithComponentSideBySide from '../template/IllustrationWithCom
 import { websiteCopyStrings } from '../utils/websiteCopyStrings'
 import HeroSectionContent from './HeroSectionContent'
 
-const HeroSectionCareersPage = () => {
+const HeroSectionContributePage = () => {
   return (
     <Section>
       <IllustrationWithComponentSideBySide
-        illustrationSrc="/assets/images/careers-illustration.svg"
+        illustrationSrc="/assets/images/contribute-illustration.svg"
         illustrationAlt="Careers at Jina image"
         illustrationClasses="w-1/2"
+        illustrationPosition="right"
       >
         <HeroSectionContent
-          titlePart1={websiteCopyStrings.careersPageHeroSectionTitlePart1}
-          titlePart2={websiteCopyStrings.careersPageHeroSectionTitlePart2}
-          description={websiteCopyStrings.careersPageHeroSectionDescription}
-          buttonLabel={websiteCopyStrings.careersPageHeroSectionButtonLabel}
-          className="w-4/6 ml-8"
+          titlePart1={websiteCopyStrings.contributePageHeroSectionTitlePart1}
+          titlePart2={websiteCopyStrings.contributePageHeroSectionTitlePart2}
+          description={websiteCopyStrings.contributePageHeroSectionDescription}
+          buttonLabel={websiteCopyStrings.contributePageHeroSectionButtonLabel}
+          className="w-4/6 mr-8"
         />
       </IllustrationWithComponentSideBySide>
     </Section>
   )
 }
 
-export default HeroSectionCareersPage
+export default HeroSectionContributePage
