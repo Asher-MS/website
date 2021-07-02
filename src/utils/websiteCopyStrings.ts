@@ -146,5 +146,8 @@ export const websiteCopyStrings = {
   contactFormName: 'Name',
   contactFormEmail: 'E-mail',
   contactFormMessage: 'Your message',
-  contactFormButton: 'Send'
+  contactFormButton: 'Send',
+  contactFormThankYouHeaderPart1: 'Thank you',
+  contactFormThankYouHeaderPart2: 'for reaching out!',
+  contactFormThankYouCopy: 'Stay up to date with our latest news'
 }
