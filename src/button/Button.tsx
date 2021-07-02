@@ -13,7 +13,7 @@ interface IButtonProps extends DivProps {
 }
 
 const Button = (props: IButtonProps) => {
-  const btnClass = className('btn', props.className, {
+  const btnClass = className('btn cursor-pointer', props.className, {
     'btn-xl': props.xl,
     'btn-base': !props.xl,
     'btn-primary': props.primary,

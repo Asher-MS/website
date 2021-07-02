@@ -13,9 +13,9 @@ type IContactCardProps = {
 
 const ContactCard = ({ title, infoList }: IContactCardProps) => (
   <div>
-    <p>{title}</p>
+    <p className="mb-3">{title}</p>
     {infoList.map((info, idx) => (
-      <p key={`infoListItem-${idx}`}>
+      <p className="text-gray-500" key={`infoListItem-${idx}`}>
         {info} <br />
       </p>
     ))}
@@ -31,9 +31,9 @@ const Contact = () => (
     />
     <PageWithHeaderAndFooter>
       <Section>
-        <div className="flex flex-row">
+        <div className="flex flex-row items-center">
           <div className="flex-1">
-            <h1 className="font-bold">
+            <h1 className="font-bold mb-16">
               <span className="text-4xl">{websiteCopyStrings.contactInfoHeaderPart1} </span>{' '}
               {websiteCopyStrings.contactInfoHeaderPart2}
             </h1>
@@ -61,10 +61,10 @@ const Contact = () => (
           <div className="flex-1">
             <h2 className="flex flex-row items-center justify-center text-2xl font-bold mb-10">
               <span className="mr-5"> {websiteCopyStrings.contactFormSlackHeaderPart1}</span>
-              <img className="mr-1" src="/assets/images/slack-icon.svg" />
+              <img className="mr-1 w-7 " src="/assets/images/slack-icon.svg" />
               {websiteCopyStrings.contactFormSlackHeaderPart2}
             </h2>
-            <div className="bg-gray-100 flex flex-col items-center  rounded-3xl pt-8 pb-10">
+            <div className="bg-gray-100 flex flex-col items-center rounded-3xl pt-8 pb-10">
               <h1 className="text-xl font-bold mb-3 ">
                 {websiteCopyStrings.contactFormHeaderPart1}{' '}
                 <span className="text-5xl">{websiteCopyStrings.contactFormHeaderPart2}</span>
@@ -89,7 +89,7 @@ const Contact = () => (
                   placeholder={websiteCopyStrings.contactFormMessage}
                   rows={9}
                 />
-                <Button primary fullRounded className="py-4">
+                <Button primary fullRounded className="py-3">
                   {websiteCopyStrings.contactFormButton}
                 </Button>
               </form>
