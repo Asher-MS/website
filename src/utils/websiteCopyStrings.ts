@@ -103,5 +103,28 @@ export const websiteCopyStrings = {
     'We encourage everyone to take ownership of their work and show high autonomy. Take initiative, step up for your ideas, and commit to execution and performance.',
   careersWhatWeStandForTitle6: 'We work together as one',
   careersWhatWeStandForDescription6:
-    'Collaboration is essential, whether that’s inside or between teams. It means less wasted effort and makes for better work. We aim to work closely and transparently and bring the right people in as early as possible.'
+    'Collaboration is essential, whether that’s inside or between teams. It means less wasted effort and makes for better work. We aim to work closely and transparently and bring the right people in as early as possible.',
+  contactInfoHeaderPart1: 'Contact',
+  contactInfoHeaderPart2: 'info',
+  contactInfoCard1Header: 'STAY IN TOUCH',
+  contactInfoCard1InfoList: ['711-2880 Nulla St.', 'Mankato Mississippi 96522'],
+  contactInfoCard2Header: 'CONTACT',
+  contactInfoCard2InfoList: [
+    'E: info(@)lift.com.np',
+    'P: +01-4825741, 4825742',
+    'F: +977-1-4825741'
+  ],
+  contactInfoCard3Header: 'WORKING HOURS',
+  contactInfoCard3InfoList: ['Weekdays: 10 AM – 8 PM', 'Weekends: by appoinment'],
+  contactInfoCard4Header: 'SOCIALS',
+  contactInfoCard4InfoList: ['GitHub', 'Twitter', 'Linkedin', 'Slack'],
+  contactFormSlackHeaderPart1: 'Reach out using',
+  contactFormSlackHeaderPart2: 'slack',
+  contactFormHeaderPart1: 'or',
+  contactFormHeaderPart2: 'Email us',
+  contactFormCopy: 'Stay up to date with our latest news',
+  contactFormName: 'Name',
+  contactFormEmail: 'E-mail',
+  contactFormMessage: 'Your message',
+  contactFormButton: 'Send'
 }

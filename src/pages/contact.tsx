@@ -3,6 +3,8 @@ import React from 'react'
 import Meta from '../layout/Meta'
 import PageWithHeaderAndFooter from '../layout/PageWithHeaderAndFooter'
 import { Section } from '../layout/Section'
+import { websiteCopyStrings } from '../utils/websiteCopyStrings'
+import { Button } from '../button/Button'
 
 type IContactCardProps = {
   title: string;
@@ -30,20 +32,69 @@ const Contact = () => (
     <PageWithHeaderAndFooter>
       <Section>
         <div className="flex flex-row">
-          <div>
-            <p className="font-bold">
-              <span className="text-4xl">Contact </span> info
-            </p>
+          <div className="flex-1">
+            <h1 className="font-bold">
+              <span className="text-4xl">{websiteCopyStrings.contactInfoHeaderPart1} </span>{' '}
+              {websiteCopyStrings.contactInfoHeaderPart2}
+            </h1>
 
-            <div className="grid-cols-2">
+            <div className="grid grid-cols-2 gap-10">
               <ContactCard
-                title="STAY IN TOUCH"
-                infoList={['711-2880 Nulla St.', 'Mankato Mississippi 96522']}
+                title={websiteCopyStrings.contactInfoCard1Header}
+                infoList={websiteCopyStrings.contactInfoCard1InfoList}
+              />
+              <ContactCard
+                title={websiteCopyStrings.contactInfoCard2Header}
+                infoList={websiteCopyStrings.contactInfoCard2InfoList}
+              />
+              <ContactCard
+                title={websiteCopyStrings.contactInfoCard3Header}
+                infoList={websiteCopyStrings.contactInfoCard3InfoList}
+              />
+              <ContactCard
+                title={websiteCopyStrings.contactInfoCard4Header}
+                infoList={websiteCopyStrings.contactInfoCard4InfoList}
               />
             </div>
           </div>
 
-          <div></div>
+          <div className="flex-1">
+            <h2 className="flex flex-row items-center justify-center">
+              {websiteCopyStrings.contactFormSlackHeaderPart1}
+              <img src="/assets/images/data-icon.svg" />
+              {websiteCopyStrings.contactFormSlackHeaderPart2}
+            </h2>
+            <div className="bg-gray-100 flex flex-col items-center  rounded-full">
+              <h1>
+                {websiteCopyStrings.contactFormHeaderPart1}{' '}
+                <span>{websiteCopyStrings.contactFormHeaderPart2}</span>
+              </h1>
+              <p>{websiteCopyStrings.contactFormCopy}</p>
+              <form className="w-8/12">
+                <input
+                  className="bg-white w-full"
+                  id="name"
+                  type="text"
+                  placeholder={websiteCopyStrings.contactFormName}
+                />
+                <input
+                  className="bg-white w-full"
+                  id="email"
+                  type="text"
+                  placeholder={websiteCopyStrings.contactFormEmail}
+                />
+                <input
+                  className="bg-white w-full"
+                  id="message"
+                  type="text"
+                  placeholder={websiteCopyStrings.contactFormMessage}
+                />
+                <Button primary fullRounded>
+                  {websiteCopyStrings.contactFormButton}
+                </Button>
+              </form>
+            </div>
+          </div>
         </div>
       </Section>
     </PageWithHeaderAndFooter>
