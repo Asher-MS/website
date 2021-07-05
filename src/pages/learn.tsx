@@ -1,4 +1,5 @@
 import React from 'react'
+import HeroSectionLearnPage from '../hero/HeroSectionLearnPage'
 
 import Meta from '../layout/Meta'
 import PageWithHeaderAndFooter from '../layout/PageWithHeaderAndFooter'
@@ -10,7 +11,9 @@ const Learn = () => (
       description="Open source neural search ecosystem for businesses and developers, allowing anyone to search any kind of data with high availability and scalability."
       canonical="https://jina.ai/"
     />
-    <PageWithHeaderAndFooter>Learn</PageWithHeaderAndFooter>
+    <PageWithHeaderAndFooter>
+      <HeroSectionLearnPage />
+    </PageWithHeaderAndFooter>
   </>
 )
 
