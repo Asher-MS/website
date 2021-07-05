@@ -5,6 +5,7 @@ export type DivProps = React.HTMLAttributes<HTMLDivElement>;
 
 interface IButtonProps extends DivProps {
   xl?: boolean;
+  onClick?: React.MouseEventHandler<HTMLDivElement>;
   primary?: boolean;
   secondary?: boolean;
   tertiary?: boolean;
@@ -13,7 +14,7 @@ interface IButtonProps extends DivProps {
 }
 
 const Button = (props: IButtonProps) => {
-  const btnClass = className('btn', props.className, {
+  const btnClass = className('btn cursor-pointer', props.className, {
     'btn-xl': props.xl,
     'btn-base': !props.xl,
     'btn-primary': props.primary,
@@ -24,7 +25,7 @@ const Button = (props: IButtonProps) => {
   })
 
   return (
-    <div className={btnClass}>
+    <div className={btnClass} onClick={props.onClick}>
       {props.children}
 
       <style jsx>
