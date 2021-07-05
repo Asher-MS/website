@@ -1,3 +1,12 @@
+export const slackLink =
+  'https://join.slack.com/t/jina-ai/shared_invite/zt-rgm1cxdu-v_uuLntO7VB18o8eH_ZHuA'
+export const mapsLink = 'https://goo.gl/maps/kqrnQFsUAjFEqcZo7'
+export const twitterLink = 'https://twitter.com/jinaai_?lang=en'
+export const githubLink = 'https://github.com/jina-ai/jina'
+export const emailAddress = 'hello@jina.ai'
+export const telephoneNumber = '+49 30 814577462'
+export const linkeDinLink = 'https://www.linkedin.com/company/jinaai'
+
 export const websiteCopyStrings = {
   heroHeadline: 'Reimagine search with AI',
   heroDescription:
@@ -109,21 +118,57 @@ export const websiteCopyStrings = {
   contributeResourcesGitHubTitle: 'GitHub',
   contributeResourcesGitHubCopy:
     'Our Flow architecture follows a modular design. Easily plug and play with existing solutions!',
-  contributeResourcesGitHubLearnMoreLink: 'https://github.com/jina-ai/jina',
+  contributeResourcesGitHubLearnMoreLink: githubLink,
   contributeResourcesArticlesTitle: 'Articles',
   contributeResourcesArticlesCopy:
     'Our Flow architecture follows a modular design. Easily plug and play with existing solutions!',
-  contributeResourcesArticlesLearnMoreLink: 'https://github.com/jina-ai/jina',
+  contributeResourcesArticlesLearnMoreLink: githubLink,
   contributeResourcesSlackTitle: 'Slack',
   contributeResourcesSlackCopy:
     'Our Flow architecture follows a modular design. Easily plug and play with existing solutions!',
-  contributeResourcesSlackLearnMoreLink:
-    'https://join.slack.com/t/jina-ai/shared_invite/zt-rgm1cxdu-v_uuLntO7VB18o8eH_ZHuA',
+  contributeResourcesSlackLearnMoreLink: slackLink,
   contributeResourcesNewsletterTitle: 'NewsLetter',
   contributeResourcesNewsletterCopy:
     'Our Flow architecture follows a modular design. Easily plug and play with existing solutions!',
-  contributeResourcesNewsletterLearnMoreLink: 'https://github.com/jina-ai/jina',
+  contributeResourcesNewsletterLearnMoreLink: githubLink,
   contributeResourcesLearnMore: 'Learn more',
+  contactInfoHeaderPart1: 'Contact',
+  contactInfoHeaderPart2: 'info',
+  contactInfoCard1Header: 'STAY IN TOUCH',
+  contactInfoCard1InfoList: [
+    ['Karl-Liebknecht-Str. 5', mapsLink],
+    ['10178 Berlin', mapsLink],
+    ['Germany', mapsLink]
+  ],
+  contactInfoCard2Header: 'CONTACT',
+  contactInfoCard2InfoList: [
+    [`E: ${emailAddress}`, 'mailto: hello@jina.ai'],
+    [`P: ${telephoneNumber}`, 'tel:004930814577462']
+  ],
+  contactInfoCard3Header: 'WORKING HOURS',
+  contactInfoCard3InfoList: [
+    ['Weekdays: 10 AM – 8 PM', ''],
+    ['Weekends: by appoinment', '']
+  ],
+  contactInfoCard4Header: 'SOCIALS',
+  contactInfoCard4InfoList: [
+    ['GitHub', githubLink],
+    ['Twitter', twitterLink],
+    ['Linkedin', linkeDinLink],
+    ['Slack', slackLink]
+  ],
+  contactFormSlackHeaderPart1: 'Reach out using ',
+  contactFormSlackHeaderPart2: ' slack',
+  contactFormHeaderPart1: 'or',
+  contactFormHeaderPart2: 'Email us',
+  contactFormCopy: 'Stay up to date with our latest news',
+  contactFormName: 'Name',
+  contactFormEmail: 'E-mail',
+  contactFormMessage: 'Your message',
+  contactFormButton: 'Send',
+  contactFormThankYouHeaderPart1: 'Thank you',
+  contactFormThankYouHeaderPart2: 'for reaching out!',
+  contactFormThankYouCopy: 'Stay up to date with our latest news',
   joinLearnHeaderPart1: 'Learn',
   joinLearnHeaderPart2: 'more about',
   joinLearnHeaderPart3: 'Jina',
