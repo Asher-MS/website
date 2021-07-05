@@ -123,5 +123,10 @@ export const websiteCopyStrings = {
   contributeResourcesNewsletterCopy:
     'Our Flow architecture follows a modular design. Easily plug and play with existing solutions!',
   contributeResourcesNewsletterLearnMoreLink: 'https://github.com/jina-ai/jina',
-  contributeResourcesLearnMore: 'Learn more'
+  contributeResourcesLearnMore: 'Learn more',
+  joinLearnHeaderPart1: 'Learn',
+  joinLearnHeaderPart2: 'more about',
+  joinLearnHeaderPart3: 'Jina',
+  joinLearnCard1Header: 'Twitter',
+  joinLearnCard1Copy: 'Follow @JinaAI_ on Twitter'
 }

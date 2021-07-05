@@ -2,6 +2,7 @@ import React from 'react'
 
 import Meta from '../layout/Meta'
 import PageWithHeaderAndFooter from '../layout/PageWithHeaderAndFooter'
+import { Section } from '../layout/Section'
 
 const Join = () => (
   <>
@@ -10,7 +11,12 @@ const Join = () => (
       description="Open source neural search ecosystem for businesses and developers, allowing anyone to search any kind of data with high availability and scalability."
       canonical="https://jina.ai/"
     />
-    <PageWithHeaderAndFooter>Join</PageWithHeaderAndFooter>
+
+    <PageWithHeaderAndFooter>
+      <Section>
+        <h2></h2>
+      </Section>
+    </PageWithHeaderAndFooter>
   </>
 )
 
