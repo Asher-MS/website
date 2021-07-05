@@ -3,21 +3,25 @@ import React, { useState } from 'react'
 import Meta from '../layout/Meta'
 import PageWithHeaderAndFooter from '../layout/PageWithHeaderAndFooter'
 import { Section } from '../layout/Section'
-import { websiteCopyStrings } from '../utils/websiteCopyStrings'
+import { slackLink, websiteCopyStrings } from '../utils/websiteCopyStrings'
 import { Button } from '../button/Button'
 
 type IContactCardProps = {
   title: string;
-  infoList: string[];
+  infoList: string[][];
 };
 
 const ContactCard = ({ title, infoList }: IContactCardProps) => (
   <div>
     <p className="mb-3">{title}</p>
-    {infoList.map((info, idx) => (
-      <p className="text-gray-500" key={`infoListItem-${idx}`}>
-        {info} <br />
-      </p>
+    {infoList.map((infoTuple, idx) => (
+      <a
+        className={'text-gray-500 ' + (infoTuple[1] === '' && 'cursor-default')}
+        key={`infoListItem-${idx}`}
+        href={infoTuple[1]}
+      >
+        {infoTuple[0]} <br />
+      </a>
     ))}
   </div>
 )
@@ -109,11 +113,14 @@ const Contact = () => {
             </div>
 
             <div className="flex-1">
-              <h2 className="flex flex-row items-center justify-center text-2xl font-bold mb-10">
+              <a
+                href={slackLink}
+                className="flex flex-row items-center justify-center text-2xl font-bold mb-10"
+              >
                 <span className="mr-5"> {websiteCopyStrings.contactFormSlackHeaderPart1}</span>
                 <img className="mr-1 w-7 " src="/assets/images/slack-icon.svg" />
                 {websiteCopyStrings.contactFormSlackHeaderPart2}
-              </h2>
+              </a>
               {contactInfoSent ? <ThankYouMessage /> : <ContactForm onInfoSent={onInfoSent} />}
             </div>
           </div>
