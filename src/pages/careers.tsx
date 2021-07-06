@@ -5,6 +5,7 @@ import PageWithHeaderAndFooter from '../layout/PageWithHeaderAndFooter'
 import Offices from '../template/Offices'
 import WorkingWithUs from '../template/WorkingWithUs'
 import WhatWeStandFor from '../template/WhatWeStandFor'
+import Accordion from '../template/Accordion'
 
 const Careers = () => (
   <>
@@ -17,6 +18,7 @@ const Careers = () => (
       <WhatWeStandFor />
       <WorkingWithUs />
       <Offices />
+      <Accordion />
     </PageWithHeaderAndFooter>
   </>
 )
