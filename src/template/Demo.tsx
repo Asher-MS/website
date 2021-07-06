@@ -12,13 +12,15 @@ type ImageCardProps = {
 
 const ImageCard = ({ name, copy, selected }: ImageCardProps) => {
   return (
-    <div className={'flex flex-col items-center ' + (copy && 'cursor-pointer')}>
+    <div className={'flex flex-col items-center mr-3' + (copy && 'cursor-pointer')}>
       <img
         className={'border-2 ' + (selected && 'border-primary-500 rounded-xl')}
         alt={name}
         src={`/assets/images/demo-${name}.png`}
       />
-      {copy && <p className={'' + (selected && 'text-primary-500')}>{copy}</p>}
+      {copy && (
+        <p className={'font-bold text-gray-500 ' + (selected && 'text-primary-500')}>{copy}</p>
+      )}
     </div>
   )
 }
@@ -27,8 +29,8 @@ function SearchImages () {
   type SelectionItem = 'shoe' | 'dress' | 'hat';
   const [selectedItem, setSelectedItem] = useState<SelectionItem>('shoe')
   return (
-    <div className="bg-gray-100 rounded-xl px-6 py-3">
-      <p>{websiteCopyStrings.demoSearchImagesHeader}</p>
+    <div className="bg-gray-100 rounded-xl px-12 py-6">
+      <p className="mb-3 text-gray-600 text-lg">{websiteCopyStrings.demoSearchImagesHeader}</p>
       <div className="flex">
         <div onClick={() => setSelectedItem('shoe')}>
           <ImageCard
@@ -66,8 +68,8 @@ function SearchImages () {
 function Demo () {
   return (
     <Section>
-      <div className="flex bg-red">
-        <SyntaxHighlighter className="rounded-xl" language="python" style={shadesOfPurple}>
+      <div className="flex bg-red justify-center">
+        <SyntaxHighlighter className="rounded-xl mr-6" language="python" style={shadesOfPurple}>
           {websiteCopyStrings.demoCodeExample}
         </SyntaxHighlighter>
 

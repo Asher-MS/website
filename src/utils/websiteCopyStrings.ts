@@ -228,6 +228,10 @@ export const websiteCopyStrings = {
     '' +
     'class MyFashionEncoder(Executor) \n' +
     ' ...\n' +
+    '\n' +
+    'f + Flow().add(uses=MyFashionEncorder)' +
+    '\n' +
+    '\n' +
     '.add(uses="jinahub://indexer")\n' +
     '\n' +
     'with f:\n' +
