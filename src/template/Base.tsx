@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Hero from './Hero'
-import CTAGitHub from './CTAGitHub'
+import Hero from '../hero/Hero'
+import CTAGitHub from '../cta/CTAGitHub'
 import Features from './Features'
 import { Footer } from './Footer'
 import NavBar from './NavBar'
