@@ -3,7 +3,7 @@ import React from 'react'
 import { Button } from '../button/Button'
 import { websiteCopyStrings } from '../utils/websiteCopyStrings'
 import CTAGitHubBackground from './CTAGitHubBackground'
-import Icon from './Icon'
+import Icon from '../template/Icon'
 
 const CTAGitHub = () => {
   return (
@@ -18,7 +18,7 @@ const CTAGitHub = () => {
           <Button
             fullRounded
             tertiary
-            className="rounded-full flex items-center justify-center w-48"
+            className="rounded-full flex items-center justify-center w-48 p-2"
           >
             <span className="mr-6 font-bold">{websiteCopyStrings.HomeCallToActionButtonLabel}</span>
             <Icon name="GitHub-black" className="w-8 h-8" />

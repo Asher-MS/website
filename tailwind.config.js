@@ -58,10 +58,16 @@ module.exports = {
           900: '#22543d'
         },
         amber: {
-          500: '#FBCB67'
+          500: '#FBCB67',
+          600: '#EEAA3D'
         },
         red: {
+          300: '#F29C9F',
+          400: '#EC6161',
           500: '#EB6161'
+        },
+        blue: {
+          500: '#4DADF7'
         }
       },
       lineHeight: {
@@ -69,6 +75,9 @@ module.exports = {
       },
       opacity: {
         10: '.1'
+      },
+      zIndex: {
+        '-10': '-10'
       }
     }
   },
