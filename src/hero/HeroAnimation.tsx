@@ -16,7 +16,7 @@ const earthRevolutionTimePeriod = 60
 const marsRevolutionTimePeriod = 100
 const jupiterRevolutionTimePeriod = 144
 
-export const solarSystemSize = 110
+export const solarSystemSize = '110rem'
 
 const HeroAnimation = () => {
   return (
@@ -66,8 +66,8 @@ const HeroAnimation = () => {
         {`
           /* Solar System Styles */
           .solar-system-container {
-            width: ${solarSystemSize}rem;
-            height: ${solarSystemSize}rem;
+            width: ${solarSystemSize};
+            height: ${solarSystemSize};
             top: -117%;
             right: -44%;
           }
@@ -103,8 +103,8 @@ const HeroAnimation = () => {
           }
           .solarsystem {
             position: relative;
-            width: ${solarSystemSize}rem;
-            height: ${solarSystemSize}rem;
+            width: ${solarSystemSize};
+            height: ${solarSystemSize};
             list-style: none;
             transition: all 0.09s ease-in;
             overflow: hidden;
@@ -113,8 +113,8 @@ const HeroAnimation = () => {
             position: absolute;
           }
           .planets-container {
-            width: ${solarSystemSize}rem;
-            height: ${solarSystemSize}rem;
+            width: ${solarSystemSize};
+            height: ${solarSystemSize};
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
