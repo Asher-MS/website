@@ -128,6 +128,11 @@ export const websiteCopyStrings = {
   footerSocialsSlack: 'Slack',
   navBarCompanyEvents: 'Events',
   navBarCompanyNews: 'News',
+  subscribeTitle: 'Never Miss an Update',
+  subscribeSubtitle: 'Stay up to date with our latest news',
+  subscribeButtonLabel: 'Subscribe',
+  subscribeInputPlaceholder: 'Your email',
+  subscribeInputErrorMessage: 'Email is not valid',
   careersWhatWeStandForSectionTitlePart1: 'What We',
   careersWhatWeStandForSectionTitlePart2: 'Stand for',
   careersWhatWeStandForTitle1: 'We believe in open source',
@@ -306,5 +311,5 @@ export const websiteCopyStrings = {
   joinLearnCard7Link: MEDIUM_LINK,
   joinLearnCard8Header: 'Events',
   joinLearnCard8Copy: 'View Jina organized events',
-  joinLearnCard8Link: MEETUP_LINK,
+  joinLearnCard8Link: MEETUP_LINK
 }
