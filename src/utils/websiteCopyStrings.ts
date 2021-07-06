@@ -1,11 +1,14 @@
-export const slackLink =
+export const SLACK_LINK =
   'https://join.slack.com/t/jina-ai/shared_invite/zt-rgm1cxdu-v_uuLntO7VB18o8eH_ZHuA'
-export const mapsLink = 'https://goo.gl/maps/kqrnQFsUAjFEqcZo7'
-export const twitterLink = 'https://twitter.com/jinaai_?lang=en'
-export const githubLink = 'https://github.com/jina-ai/jina'
-export const emailAddress = 'hello@jina.ai'
-export const telephoneNumber = '+49 30 814577462'
-export const linkeDinLink = 'https://www.linkedin.com/company/jinaai'
+export const MAPS_LINK = 'https://goo.gl/maps/kqrnQFsUAjFEqcZo7'
+export const TWITTER_LINK = 'https://twitter.com/jinaai_?lang=en'
+export const GITHUB_LINK = 'https://github.com/jina-ai/jina'
+export const EMAIL_ADDRESS = 'hello@jina.ai'
+export const TELEPHONE_NUMBER = '+49 30 814577462'
+export const LINKED_IN_LINK = 'https://www.linkedin.com/company/jinaai'
+export const YOUTUBE_LINK = 'https://www.youtube.com/c/jina-ai'
+export const MEDIUM_LINK = 'https://medium.com/@jina_ai'
+export const MEETUP_LINK = 'https://www.meetup.com/berlin-jina-community-meetup/events/past/'
 
 export const websiteCopyStrings = {
   heroHeadline: 'Reimagine search with AI',
@@ -150,32 +153,32 @@ export const websiteCopyStrings = {
   contributeResourcesGitHubTitle: 'GitHub',
   contributeResourcesGitHubCopy:
     'Our Flow architecture follows a modular design. Easily plug and play with existing solutions!',
-  contributeResourcesGitHubLearnMoreLink: githubLink,
+  contributeResourcesGitHubLearnMoreLink: GITHUB_LINK,
   contributeResourcesArticlesTitle: 'Articles',
   contributeResourcesArticlesCopy:
     'Our Flow architecture follows a modular design. Easily plug and play with existing solutions!',
-  contributeResourcesArticlesLearnMoreLink: githubLink,
+  contributeResourcesArticlesLearnMoreLink: GITHUB_LINK,
   contributeResourcesSlackTitle: 'Slack',
   contributeResourcesSlackCopy:
     'Our Flow architecture follows a modular design. Easily plug and play with existing solutions!',
-  contributeResourcesSlackLearnMoreLink: slackLink,
+  contributeResourcesSlackLearnMoreLink: SLACK_LINK,
   contributeResourcesNewsletterTitle: 'NewsLetter',
   contributeResourcesNewsletterCopy:
     'Our Flow architecture follows a modular design. Easily plug and play with existing solutions!',
-  contributeResourcesNewsletterLearnMoreLink: githubLink,
+  contributeResourcesNewsletterLearnMoreLink: GITHUB_LINK,
   contributeResourcesLearnMore: 'Learn more',
   contactInfoHeaderPart1: 'Contact',
   contactInfoHeaderPart2: 'info',
   contactInfoCard1Header: 'STAY IN TOUCH',
   contactInfoCard1InfoList: [
-    ['Karl-Liebknecht-Str. 5', mapsLink],
-    ['10178 Berlin', mapsLink],
-    ['Germany', mapsLink]
+    ['Karl-Liebknecht-Str. 5', MAPS_LINK],
+    ['10178 Berlin', MAPS_LINK],
+    ['Germany', MAPS_LINK]
   ],
   contactInfoCard2Header: 'CONTACT',
   contactInfoCard2InfoList: [
-    [`E: ${emailAddress}`, 'mailto: hello@jina.ai'],
-    [`P: ${telephoneNumber}`, 'tel:004930814577462']
+    [`E: ${EMAIL_ADDRESS}`, 'mailto: hello@jina.ai'],
+    [`P: ${TELEPHONE_NUMBER}`, 'tel:004930814577462']
   ],
   contactInfoCard3Header: 'WORKING HOURS',
   contactInfoCard3InfoList: [
@@ -184,10 +187,10 @@ export const websiteCopyStrings = {
   ],
   contactInfoCard4Header: 'SOCIALS',
   contactInfoCard4InfoList: [
-    ['GitHub', githubLink],
-    ['Twitter', twitterLink],
-    ['Linkedin', linkeDinLink],
-    ['Slack', slackLink]
+    ['GitHub', GITHUB_LINK],
+    ['Twitter', TWITTER_LINK],
+    ['Linkedin', LINKED_IN_LINK],
+    ['Slack', SLACK_LINK]
   ],
   contactFormSlackHeaderPart1: 'Reach out using ',
   contactFormSlackHeaderPart2: ' slack',
@@ -255,5 +258,32 @@ export const websiteCopyStrings = {
   learnCardProductivityTitleUncolored: 'Tips',
   learnCardProductivityCopy:
     'Data is transforming nowadays while the design pattern to process such information needs to be up to date.',
-  learnCardProductivityLinkList: [['Set up YAML Intellisense in IDE', 'www.google.com']]
+  learnCardProductivityLinkList: [['Set up YAML Intellisense in IDE', 'www.google.com']],
+  joinLearnHeaderPart1: 'Learn ',
+  joinLearnHeaderPart2: 'more about ',
+  joinLearnHeaderPart3: 'Jina',
+  joinLearnCard1Header: 'Twitter',
+  joinLearnCard1Copy: 'Follow @JinaAI_ on Twitter',
+  joinLearnCard1Link: TWITTER_LINK,
+  joinLearnCard2Header: 'GitHub',
+  joinLearnCard2Copy: 'Star our repository',
+  joinLearnCard2Link: GITHUB_LINK,
+  joinLearnCard3Header: 'Linkedin',
+  joinLearnCard3Copy: 'Follow @jinaai on Linkedin',
+  joinLearnCard3Link: LINKED_IN_LINK,
+  joinLearnCard4Header: 'Newsletter',
+  joinLearnCard4Copy: 'Subscribe to the Jina newsletter',
+  joinLearnCard4Link: 'www.google.com',
+  joinLearnCard5Header: 'Slack',
+  joinLearnCard5Copy: 'Join @jinaai on Slack',
+  joinLearnCard5Link: SLACK_LINK,
+  joinLearnCard6Header: 'YouTube',
+  joinLearnCard6Copy: 'Follow @jinaai on YouTube',
+  joinLearnCard6Link: YOUTUBE_LINK,
+  joinLearnCard7Header: 'Articles',
+  joinLearnCard7Copy: 'Read articles published by Jina',
+  joinLearnCard7Link: MEDIUM_LINK,
+  joinLearnCard8Header: 'Events',
+  joinLearnCard8Copy: 'View Jina organized events',
+  joinLearnCard8Link: MEETUP_LINK
 }

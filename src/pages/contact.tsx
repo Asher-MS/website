@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Meta from '../layout/Meta'
 import PageWithHeaderAndFooter from '../layout/PageWithHeaderAndFooter'
 import { Section } from '../layout/Section'
-import { slackLink, websiteCopyStrings } from '../utils/websiteCopyStrings'
+import { SLACK_LINK, websiteCopyStrings } from '../utils/websiteCopyStrings'
 import { Button } from '../button/Button'
 
 type IContactCardProps = {
@@ -114,7 +114,7 @@ const Contact = () => {
 
             <div className="flex-1">
               <a
-                href={slackLink}
+                href={SLACK_LINK}
                 className="flex flex-row items-center justify-center text-2xl font-bold mb-10"
               >
                 <span className="mr-5"> {websiteCopyStrings.contactFormSlackHeaderPart1}</span>
