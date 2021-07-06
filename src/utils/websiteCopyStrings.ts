@@ -259,6 +259,27 @@ export const websiteCopyStrings = {
   learnCardProductivityCopy:
     'Data is transforming nowadays while the design pattern to process such information needs to be up to date.',
   learnCardProductivityLinkList: [['Set up YAML Intellisense in IDE', 'www.google.com']],
+  demoHeaderPart1: 'Build your ',
+  demoHeaderPart2: 'AI search ',
+  demoHeaderPart3: 'in a few steps...',
+  demoCodeExample:
+    '' +
+    'class MyFashionEncoder(Executor) \n' +
+    ' ...\n' +
+    '\n' +
+    'f + Flow().add(uses=MyFashionEncorder)' +
+    '\n' +
+    '\n' +
+    '.add(uses="jinahub://indexer")\n' +
+    '\n' +
+    'with f:\n' +
+    ' f.index(inputs=[...])\n' +
+    ' f.search(inputs=[...])\n' +
+    ' ...',
+  demoSearchImagesHeader: 'Search images:',
+  demoSearchImagesShoesCopy: 'Shoes',
+  demoSearchImagesDressCopy: 'Dress',
+  demoSearchImagesHatCopy: 'Hat',
   joinLearnHeaderPart1: 'Learn ',
   joinLearnHeaderPart2: 'more about ',
   joinLearnHeaderPart3: 'Jina',
@@ -285,5 +306,5 @@ export const websiteCopyStrings = {
   joinLearnCard7Link: MEDIUM_LINK,
   joinLearnCard8Header: 'Events',
   joinLearnCard8Copy: 'View Jina organized events',
-  joinLearnCard8Link: MEETUP_LINK
+  joinLearnCard8Link: MEETUP_LINK,
 }
