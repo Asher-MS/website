@@ -68,6 +68,13 @@ function SearchImages () {
 function Demo () {
   return (
     <Section>
+      <div className="text-center font-bold text-4xl mb-20">
+        <h2 className="text-black">
+          {websiteCopyStrings.demoHeaderPart1}
+          <span className="text-primary-500"> {websiteCopyStrings.demoHeaderPart2}</span>
+          {websiteCopyStrings.demoHeaderPart3}
+        </h2>
+      </div>
       <div className="flex bg-red justify-center">
         <SyntaxHighlighter className="rounded-xl mr-6" language="python" style={shadesOfPurple}>
           {websiteCopyStrings.demoCodeExample}

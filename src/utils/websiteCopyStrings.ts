@@ -224,6 +224,9 @@ export const websiteCopyStrings = {
   learnCardProductivityCopy:
     'Data is transforming nowadays while the design pattern to process such information needs to be up to date.',
   learnCardProductivityLinkList: [['Set up YAML Intellisense in IDE', 'www.google.com']],
+  demoHeaderPart1: 'Build your ',
+  demoHeaderPart2: 'AI search ',
+  demoHeaderPart3: 'in a few steps...',
   demoCodeExample:
     '' +
     'class MyFashionEncoder(Executor) \n' +
