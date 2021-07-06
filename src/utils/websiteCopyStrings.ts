@@ -60,5 +60,6 @@ export const websiteCopyStrings = {
   subscribeTitle: 'Never Miss an Update',
   subscribeSubtitle: 'Stay up to date with our latest news',
   subscribeButtonLabel: 'Subscribe',
-  subscribeInputPlaceholder: 'Your email'
+  subscribeInputPlaceholder: 'Your email',
+  subscribeInputErrorMessage: 'Email is not valid'
 }
