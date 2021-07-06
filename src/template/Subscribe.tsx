@@ -97,6 +97,8 @@ const Subscribe = () => {
           }
           .error-container {
             background: rgba(255, 255, 255, 0.8);
+            font-size: 12px;
+            color: #eb6161;
             border: 0.5px solid #eb6161;
             box-sizing: border-box;
             border-radius: 8px;
