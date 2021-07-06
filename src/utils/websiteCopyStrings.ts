@@ -223,5 +223,19 @@ export const websiteCopyStrings = {
   learnCardProductivityTitleUncolored: 'Tips',
   learnCardProductivityCopy:
     'Data is transforming nowadays while the design pattern to process such information needs to be up to date.',
-  learnCardProductivityLinkList: [['Set up YAML Intellisense in IDE', 'www.google.com']]
+  learnCardProductivityLinkList: [['Set up YAML Intellisense in IDE', 'www.google.com']],
+  demoCodeExample:
+    '' +
+    'class MyFashionEncoder(Executor) \n' +
+    ' ...\n' +
+    '.add(uses="jinahub://indexer")\n' +
+    '\n' +
+    'with f:\n' +
+    ' f.index(inputs=[...])\n' +
+    ' f.search(inputs=[...])\n' +
+    ' ...',
+  demoSearchImagesHeader: 'Search images:',
+  demoSearchImagesShoesCopy: 'Shoes',
+  demoSearchImagesDressCopy: 'Dress',
+  demoSearchImagesHatCopy: 'Hat'
 }
