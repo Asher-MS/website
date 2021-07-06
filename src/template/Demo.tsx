@@ -76,7 +76,12 @@ function Demo () {
         </h2>
       </div>
       <div className="flex bg-red justify-center">
-        <SyntaxHighlighter className="rounded-xl mr-6" language="python" style={shadesOfPurple}>
+        <SyntaxHighlighter
+          showLineNumbers
+          className="rounded-xl mr-6"
+          language="python"
+          style={shadesOfPurple}
+        >
           {websiteCopyStrings.demoCodeExample}
         </SyntaxHighlighter>
 
