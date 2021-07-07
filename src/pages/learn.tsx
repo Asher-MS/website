@@ -45,7 +45,7 @@ const Learn = () => (
             linkList={websiteCopyStrings.learnCardNewLinkList}
           >
             <div className="flex flex-row items-center font-bold text-4xl">
-              <img src="/assets/images/star-icon.svg" className="mr-4" />
+              <img src="/assets/images/star-icon.svg" className="mr-4" alt="star icon" />
               <p>
                 {websiteCopyStrings.learnCardNewTitleUncolored}{' '}
                 <span className="text-amber-500">
@@ -59,7 +59,7 @@ const Learn = () => (
             linkList={websiteCopyStrings.learnCardGetStartedLinkList}
           >
             <div className="flex flex-row items-center font-bold text-4xl">
-              <img src="/assets/images/rocket-icon.svg" className="mr-4" />
+              <img src="/assets/images/rocket-icon.svg" className="mr-4" alt="rocket icon" />
               <p>
                 {websiteCopyStrings.learnCardGetStartedTitleUncolored}{' '}
                 <span className="text-red-400">
@@ -73,7 +73,7 @@ const Learn = () => (
             linkList={websiteCopyStrings.learnCardExploreLinkList}
           >
             <div className="flex flex-row items-center font-bold text-4xl">
-              <img src="/assets/images/explore-icon.svg" className="mr-4" />
+              <img src="/assets/images/explore-icon.svg" className="mr-4" alt="explore icon" />
               <p>
                 {websiteCopyStrings.learnCardExploreTitleUncolored}
                 <span className="text-primary-500">
@@ -87,7 +87,7 @@ const Learn = () => (
             linkList={websiteCopyStrings.learnCardVideoLinkList}
           >
             <div className="flex flex-row items-center font-bold text-4xl">
-              <img src="/assets/images/video-icon.svg" className="mr-4" />
+              <img src="/assets/images/video-icon.svg" className="mr-4" alt="video icon" />
               <p>
                 {websiteCopyStrings.learnCardVideoTitleUncolored}{' '}
                 <span className="text-primary-700">
@@ -101,7 +101,11 @@ const Learn = () => (
             linkList={websiteCopyStrings.learnCardInspiredLinkList}
           >
             <div className="flex flex-row items-center font-bold text-4xl w-screen">
-              <img src="/assets/images/light-bulb-icon.svg" className="mr-4 " />
+              <img
+                src="/assets/images/light-bulb-icon.svg"
+                className="mr-4 "
+                alt="light bulb icon"
+              />
               <p>
                 <span className="text-amber-600">
                   {websiteCopyStrings.learnCardInspiredTitleColored}
@@ -115,7 +119,7 @@ const Learn = () => (
             linkList={websiteCopyStrings.learnCardProductivityLinkList}
           >
             <div className="flex flex-row items-center font-bold text-4xl ">
-              <img src="/assets/images/tips-icon.svg" className="mr-4" />
+              <img src="/assets/images/tips-icon.svg" className="mr-4" alt="tips icon" />
               <p>
                 <span className="text-red-300">
                   {websiteCopyStrings.learnCardProductivityTitleColored}

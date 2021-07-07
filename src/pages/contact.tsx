@@ -118,7 +118,7 @@ const Contact = () => {
                 className="flex flex-row items-center justify-center text-2xl font-bold mb-10"
               >
                 <span className="mr-5"> {websiteCopyStrings.contactFormSlackHeaderPart1}</span>
-                <img className="mr-1 w-7 " src="/assets/images/slack-icon.svg" />
+                <img className="mr-1 w-7 " src="/assets/images/Slack-icon.svg" alt="slack icon" />
                 {websiteCopyStrings.contactFormSlackHeaderPart2}
               </a>
               {contactInfoSent ? <ThankYouMessage /> : <ContactForm onInfoSent={onInfoSent} />}
