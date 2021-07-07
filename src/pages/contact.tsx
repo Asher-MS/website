@@ -33,7 +33,7 @@ const ContactForm = ({ onInfoSent }: { onInfoSent: () => void }) => (
       <span className="text-5xl">{websiteCopyStrings.contactFormHeaderPart2}</span>
     </h1>
     <p className="text-gray-600 mb-10">{websiteCopyStrings.contactFormCopy}</p>
-    <form className="w-8/12">
+    <div className="w-8/12">
       <input
         className="bg-white w-full rounded-lg mb-8 px-4 py-3"
         id="name"
@@ -55,7 +55,7 @@ const ContactForm = ({ onInfoSent }: { onInfoSent: () => void }) => (
       <Button onClick={onInfoSent} primary fullRounded className="py-3">
         {websiteCopyStrings.contactFormButton}
       </Button>
-    </form>
+    </div>
   </div>
 )
 
