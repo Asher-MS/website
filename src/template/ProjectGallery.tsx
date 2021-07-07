@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 import { Section } from '../layout/Section'
 import { websiteCopyStrings } from '../utils/websiteCopyStrings'
+import Card from './Card'
 
 const appStoreSearchHeader = 'App store search'
 const appStoreSearchCopy =
@@ -16,24 +17,6 @@ const financialSearchHeader = 'Financial QA'
 const financialSearchCopy =
   'A Financial QA system using a fine-tuned BERT model FinBERT-QA. Check out how you can build your own engine to answer domain specific questions.'
 const financialSearchAuthor = 'Albert Hofmann'
-
-type CardProps = {
-  img: ReactNode;
-  headerString: string;
-  copy: string;
-  footer: ReactNode;
-};
-
-const Card = ({ img, headerString, copy, footer }: CardProps) => (
-  <div className="rounded-xl w-96 m-2 shadow cursor-pointer">
-    {img}
-    <div className="px-6 pt-8 pb-4 flex flex-col h-72">
-      <h3 className="text-xl font-bold mb-6">{headerString}</h3>
-      <p className="flex-1">{copy}</p>
-      {footer}
-    </div>
-  </div>
-)
 
 type ProjectGalleryCardProps = {
   img: ReactNode;
