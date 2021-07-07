@@ -37,6 +37,7 @@ const ContactForm = ({ onInfoSent }: { onInfoSent: () => void }) => (
       <input
         className="bg-white w-full rounded-lg mb-8 px-4 py-3"
         id="name"
+        aria-label="name"
         type="text"
         placeholder={websiteCopyStrings.contactFormName}
       />
@@ -44,11 +45,13 @@ const ContactForm = ({ onInfoSent }: { onInfoSent: () => void }) => (
         className="bg-white w-full rounded-lg mb-8  px-4 py-3"
         id="email"
         type="text"
+        aria-label="email"
         placeholder={websiteCopyStrings.contactFormEmail}
       />
       <textarea
         className="bg-white w-full rounded-lg mb-8  px-4 py-3"
         id="message"
+        aria-label="message"
         placeholder={websiteCopyStrings.contactFormMessage}
         rows={9}
       />
