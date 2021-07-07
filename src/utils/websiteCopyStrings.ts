@@ -153,6 +153,8 @@ export const websiteCopyStrings = {
   careersWhatWeStandForTitle6: 'We work together as one',
   careersWhatWeStandForDescription6:
     'Collaboration is essential, whether that’s inside or between teams. It means less wasted effort and makes for better work. We aim to work closely and transparently and bring the right people in as early as possible.',
+  contributeProjectGalleryHeaderPart1: 'Project',
+  contributeProjectGalleryHeaderPart2: 'Gallery',
   contributeResourcesHeaderPart1: 'Resources',
   contributeResourcesHeaderPart2: 'for contributors',
   contributeResourcesGitHubTitle: 'GitHub',
