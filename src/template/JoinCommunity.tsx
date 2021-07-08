@@ -19,12 +19,33 @@ function CommunityImages ({ imageList }: CommunityImagesProps) {
   return <div className="flex flex-wrap">{communityImages}</div>
 }
 
+type HeaderProps = {
+  headerStrings: [string, boolean][];
+};
+
+const Header = ({ headerStrings }: HeaderProps) => (
+  <h2 className="text-center font-bold text-4xl mb-10">
+    {headerStrings.map((tuple, index) => (
+      <span key={`header-part-${index}`} className={'' + (tuple[1] && 'text-primary-500')}>
+        {tuple[0]}
+      </span>
+    ))}
+  </h2>
+)
+
 function JoinCommunity () {
   return (
     <Section>
       <div className="flex justify-center">
         <CommunityImages />
-        <div>Join our Growing community</div>
+        <div>
+          <Header
+            headerStrings={[
+              ['Join Our Growing', false],
+              ['Community', true]
+            ]}
+          />
+        </div>
         <CommunityImages />
       </div>
     </Section>
