@@ -1,9 +1,8 @@
 import React from 'react'
 import { Section } from '../layout/Section'
 
-function CommunityImages () {
-  const list = Array.from({ length: 15 }, (_, i) => i + 1)
-  const communityImages = list.map((number) => {
+function CommunityImages ({ urlList }: { urlList: string[] }) {
+  const communityImages = urlList.map((url, idx) => {
     const rndY = Math.random() + 1
     const rndX = Math.random() + 1
     const topOrBottom: boolean = Math.floor(Math.random() + 0.5) === 0
@@ -16,9 +15,9 @@ function CommunityImages () {
       <>
         <img
           className={'relative CommunityImg'}
-          key={`community-img-${number}`}
-          alt={`community-img-${number}`}
-          src={`/assets/images/community/${number}.png`}
+          key={`community-img-${idx}`}
+          alt={`community-img-${idx}`}
+          src={url}
         />
         <style jsx>
           {`
@@ -31,6 +30,7 @@ function CommunityImages () {
       </>
     )
   })
+
   return <div className="flex flex-wrap">{communityImages}</div>
 }
 
@@ -49,10 +49,18 @@ const Header = ({ headerStrings }: HeaderProps) => (
 )
 
 function JoinCommunity () {
+  const numberArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+  const urlList1 = numberArray.map(
+    (_something: any, idx: number) => `/assets/images/community/${idx}.png`
+  )
+  const urlList2 = numberArray.map(
+    (_somthing: any, idx: number) => `/assets/images/community/${idx + 15}.png`
+  )
+
   return (
     <Section>
       <div className="flex justify-center">
-        <CommunityImages />
+        <CommunityImages urlList={urlList1} />
         <div>
           <Header
             headerStrings={[
@@ -61,7 +69,7 @@ function JoinCommunity () {
             ]}
           />
         </div>
-        <CommunityImages />
+        <CommunityImages urlList={urlList2} />
       </div>
     </Section>
   )
