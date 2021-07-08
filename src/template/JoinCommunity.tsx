@@ -1,19 +1,34 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import { Section } from '../layout/Section'
 
-type CommunityImagesProps = {
-  imageList: ReactNode[];
-};
-
-function CommunityImages ({ imageList }: CommunityImagesProps) {
-  const list = Array.from({ length: 10 }, (_, i) => i + 1)
+function CommunityImages () {
+  const list = Array.from({ length: 15 }, (_, i) => i + 1)
   const communityImages = list.map((number) => {
+    const rndY = Math.random() + 1
+    const rndX = Math.random() + 1
+    const topOrBottom: boolean = Math.floor(Math.random() + 0.5) === 0
+    const rightOrLeft: boolean = Math.floor(Math.random() + 0.5) === 0
+
+    const Y = topOrBottom ? `${rndY}` : `-${rndY}`
+    const X = rightOrLeft ? `${rndY}` : `-${rndX}`
+
     return (
-      <img
-        key={`community-img-${number}`}
-        alt={`community-img-${number}`}
-        src={`/assets/images/community/${number}.png`}
-      />
+      <>
+        <img
+          className={'relative CommunityImg'}
+          key={`community-img-${number}`}
+          alt={`community-img-${number}`}
+          src={`/assets/images/community/${number}.png`}
+        />
+        <style jsx>
+          {`
+            .CommunityImg {
+              top: ${Y}rem;
+              right: ${X}rem;
+            }
+          `}
+        </style>
+      </>
     )
   })
   return <div className="flex flex-wrap">{communityImages}</div>
