@@ -51,7 +51,7 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-primary:hover {
-            @apply bg-primary-600;
+            background-color: #009191;
           }
 
           .btn-secondary {
@@ -59,7 +59,7 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-secondary:hover {
-            @apply bg-secondary-600;
+            background-color: #fbd076;
           }
 
           .btn-tertiary {
@@ -68,7 +68,7 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-tertiary:hover {
-            @apply bg-gray-200;
+            background-color: #f6f6f6;
           }
         `}
       </style>
