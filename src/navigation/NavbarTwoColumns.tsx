@@ -92,7 +92,7 @@ const NavbarTwoColumns = (props: INavbarProps) => {
               @apply mt-0;
             }
 
-            .navbar :global(li:not(:last-child)) {
+            .navbar>(li:not(:last-child)) {
               @apply mr-5;
             }
           }
