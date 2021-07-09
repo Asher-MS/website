@@ -74,7 +74,7 @@ export const Review = ({
   <div className="flex flex-col items-center">
     <p className="w-5/12 text-gray-900 italic mb-8 font-semibold">&quot;{review}&quot;</p>
     <div className="w-20 mb-6">
-      <img src={profilePicUrl} />
+      <img alt={'reviewProfilPic'} src={profilePicUrl} />
     </div>
     <p className="font-bold mb-3">{reviewer}</p>
     <p>{position}</p>
