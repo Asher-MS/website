@@ -51,6 +51,29 @@ const Header = ({ headerStrings }: HeaderProps) => (
   </h2>
 )
 
+type GitHubStatsProps = {
+  stars: number;
+  forks: number;
+  contributors: number;
+};
+
+const GitHubStats = ({ stars, forks, contributors }: GitHubStatsProps) => (
+  <div className="flex justify-between mx-6">
+    <div className="flex flex-col items-center">
+      <p className="font-bold text-gray-600">Stars</p>
+      <p className="font-bold text-primary-500 text-3xl">{stars}+</p>
+    </div>
+    <div className="flex flex-col items-center">
+      <p className="font-bold text-gray-600">Forks</p>
+      <p className="font-bold text-primary-500 text-3xl">{forks}+</p>
+    </div>
+    <div className="flex flex-col items-center">
+      <p className="font-bold text-gray-600">Contributors</p>
+      <p className="font-bold text-primary-500 text-3xl">{contributors}+</p>
+    </div>
+  </div>
+)
+
 function JoinCommunity () {
   const numberArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
   const urlList1 = numberArray.map(
@@ -63,13 +86,14 @@ function JoinCommunity () {
   return (
     <div className="flex">
       <CommunityImages urlList={urlList1} />
-      <div className="flex-none">
+      <div className="flex flex-col justify-center m-20">
         <Header
           headerStrings={[
             ['Join Our Growing ', false],
             ['Community', true]
           ]}
         />
+        <GitHubStats stars={2230} forks={303} contributors={98} />
       </div>
       <CommunityImages urlList={urlList2} />
     </div>
