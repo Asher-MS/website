@@ -14,7 +14,7 @@ const LearnFeatureCard = ({ children, copy, linkList }: ILearnFeatureCardProps) 
       {linkList.map(([description, link], idx) => (
         <li key={idx} className="mb-3">
           <a href={link} target="_blank" rel="noreferrer" className="flex flex-row">
-            <img className="mr-2" src="/assets/images/arrow-right-red.svg" />
+            <img className="mr-2" src="/assets/images/arrow-right-red.svg" alt="arrow right" />
             <span> {description}</span>
           </a>
         </li>

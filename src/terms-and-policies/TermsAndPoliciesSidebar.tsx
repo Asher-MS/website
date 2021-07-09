@@ -61,7 +61,7 @@ const TermsAndPoliciesSidebar = () => (
         </a>
       </li>
       <li className="mr-6 py-2.5">
-        <a className="" href="#subtitle-9">
+        <a className="" href="#subtitle-8">
           <span className="text-gray-600 font-normal text-base">
             {websiteCopyStrings.termsAndPoliciesSubTitle9}
           </span>
