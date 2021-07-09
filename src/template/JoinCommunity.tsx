@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '../button/Button'
 import { websiteCopyStrings } from '../utils/websiteCopyStrings'
+import Header, { HeaderStrings } from './Header'
 
 function CommunityImages ({ urlList }: { urlList: string[] }) {
   const communityImages = urlList.map((url, idx) => {
@@ -34,22 +35,6 @@ function CommunityImages ({ urlList }: { urlList: string[] }) {
 
   return <div className="flex-1 flex flex-wrap">{communityImages}</div>
 }
-
-export type HeaderStrings = [string, boolean][];
-
-type HeaderProps = {
-  headerStrings: HeaderStrings;
-};
-
-const Header = ({ headerStrings }: HeaderProps) => (
-  <h2 className="text-center font-bold text-4xl mb-10">
-    {headerStrings.map((tuple, index) => (
-      <span key={`header-part-${index}`} className={'' + (tuple[1] && 'text-primary-500')}>
-        {tuple[0]}
-      </span>
-    ))}
-  </h2>
-)
 
 type GitHubStatsProps = {
   stars: number;
