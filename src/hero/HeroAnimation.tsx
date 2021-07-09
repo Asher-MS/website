@@ -68,37 +68,53 @@ const HeroAnimation = () => {
           .solar-system-container {
             width: ${solarSystemSize};
             height: ${solarSystemSize};
-            top: -117%;
-            right: -44%;
           }
           @media (min-width: 1024px) {
             .solar-system-container {
-              top: -73%;
-              right: -108%;
+              top: -60%;
+              right: -110%;
+            }
+          }
+          @media (min-width: 1144px) {
+            .solar-system-container {
+              top: -70%;
+              right: -90%;
             }
           }
           @media (min-width: 1280px) {
             .solar-system-container {
-              top: -112%;
+              top: -80%;
               right: -77%;
             }
           }
           @media (min-width: 1440px) {
             .solar-system-container {
-              top: -117%;
+              top: -80%;
               right: -59%;
             }
           }
           @media (min-width: 1536px) {
             .solar-system-container {
-              top: -117%;
-              right: -44%;
+              top: -80%;
+              right: -55%;
+            }
+          }
+          @media (min-width: 1720px) {
+            .solar-system-container {
+              top: -85%;
+              right: -40%;
             }
           }
           @media (min-width: 1920px) {
             .solar-system-container {
-              top: -117%;
-              right: -44%;
+              top: -85%;
+              right: -40%;
+            }
+          }
+          @media (min-width: 2280px) {
+            .solar-system-container {
+              top: -85%;
+              right: -30%;
             }
           }
           .solarsystem {
