@@ -11,6 +11,59 @@ type ReviewProps = {
   organisation: string;
 };
 
+function Arrow (direction: 'left' | 'right') {
+  const ArrowButton = ({
+    onClickHandler,
+    label
+  }: {
+    onClickHandler: () => void;
+    label: string;
+  }) => (
+    <button
+      type="button"
+      onClick={onClickHandler}
+      title={label}
+      className={
+        '' + 'arrowButton absolute z-10 w-16 h-16 cursor-pointer rounded-full bg-white' + ''
+      }
+    >
+      <style jsx>
+        {`
+            .arrowButton {
+              top: calc(50% - 15px);
+              margin-${direction}: 20px;
+              ${direction === 'right' && 'right: 0px;'}
+            }
+
+            .arrowButton:focus {
+              outline: 0;
+            }
+
+            .arrow {
+              height: 20px;
+              width: auto;
+            }
+          `}
+      </style>
+      <img
+        alt={`arrow-${direction}`}
+        className="arrow"
+        src={`/assets/images/review-arrow-${direction}.svg`}
+      />
+    </button>
+  )
+  switch (direction) {
+    case 'left':
+      return function ArrowLeft (onClickHandler: () => void, hasPrev: boolean, label: string) {
+        return hasPrev && <ArrowButton label={label} onClickHandler={onClickHandler} />
+      }
+    case 'right':
+      return function ArrowRight (onClickHandler: () => void, hasNext: boolean, label: string) {
+        return hasNext && <ArrowButton label={label} onClickHandler={onClickHandler} />
+      }
+  }
+}
+
 export const Review = ({
   review,
   profilePicUrl,
@@ -36,7 +89,12 @@ function Reviews () {
         {websiteCopyStrings.reviewsHeaderPart1}{' '}
         <span className="text-primary-500">{websiteCopyStrings.reviewsHeaderPart2}</span>
       </h2>
-      <Carousel showIndicators={false} showStatus={false}>
+      <Carousel
+        showIndicators={false}
+        showStatus={false}
+        renderArrowPrev={Arrow('left')}
+        renderArrowNext={Arrow('right')}
+      >
         <Review
           review={websiteCopyStrings.reviewsReview1}
           profilePicUrl="/assets/images/reviewer1.png"
