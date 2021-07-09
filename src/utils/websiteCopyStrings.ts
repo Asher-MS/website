@@ -311,5 +311,12 @@ export const websiteCopyStrings = {
   joinLearnCard7Link: MEDIUM_LINK,
   joinLearnCard8Header: 'Events',
   joinLearnCard8Copy: 'View Jina organized events',
-  joinLearnCard8Link: MEETUP_LINK
+  joinLearnCard8Link: MEETUP_LINK,
+  reviewsHeaderPart1: 'Reviews from our ',
+  reviewsHeaderPart2: 'Users',
+  reviewsReview1:
+    'The team at Jina AI is passionate about open source. The founders quit their high tech prestigious jobs to pursue their passion and innovate the open source way. Just a great example of how you can be open source friendly, create a promising technology, and build a commercial product.',
+  reviewsReview1Reviewer: 'Dr. Ibrahim Haddad',
+  reviewsReview1Position: 'Executive Director',
+  reviewsReview1Organisation: 'LF AI Foundation'
 }
