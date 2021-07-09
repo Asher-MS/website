@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from '../button/Button'
+import { websiteCopyStrings } from '../utils/websiteCopyStrings'
 
 function CommunityImages ({ urlList }: { urlList: string[] }) {
   const communityImages = urlList.map((url, idx) => {
@@ -31,15 +32,13 @@ function CommunityImages ({ urlList }: { urlList: string[] }) {
     )
   })
 
-  return (
-    <div className="flex-1">
-      <div className="flex flex-wrap">{communityImages}</div>
-    </div>
-  )
+  return <div className="flex-1 flex flex-wrap">{communityImages}</div>
 }
 
+export type HeaderStrings = [string, boolean][];
+
 type HeaderProps = {
-  headerStrings: [string, boolean][];
+  headerStrings: HeaderStrings;
 };
 
 const Header = ({ headerStrings }: HeaderProps) => (
@@ -92,15 +91,10 @@ function JoinCommunity () {
     <div className="flex">
       <CommunityImages urlList={urlList1} />
       <div className="flex flex-col justify-center items-center m-20">
-        <Header
-          headerStrings={[
-            ['Join Our Growing ', false],
-            ['Community', true]
-          ]}
-        />
+        <Header headerStrings={websiteCopyStrings.joinCommunityHeaderStrings as HeaderStrings} />
         <GitHubStats stars={2230} forks={303} contributors={98} />
         <Button primary className="w-56 py-2">
-          Join the community
+          {websiteCopyStrings.joinCommunityButton}
         </Button>
       </div>
       <CommunityImages urlList={urlList2} />

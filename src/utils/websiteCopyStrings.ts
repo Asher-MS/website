@@ -311,5 +311,10 @@ export const websiteCopyStrings = {
   joinLearnCard7Link: MEDIUM_LINK,
   joinLearnCard8Header: 'Events',
   joinLearnCard8Copy: 'View Jina organized events',
-  joinLearnCard8Link: MEETUP_LINK
+  joinLearnCard8Link: MEETUP_LINK,
+  joinCommunityHeaderStrings: [
+    ['Join Our Growing ', false],
+    ['Community', true]
+  ],
+  joinCommunityButton: 'Join the community'
 }
