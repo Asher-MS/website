@@ -33,10 +33,11 @@ const ContactForm = ({ onInfoSent }: { onInfoSent: () => void }) => (
       <span className="text-5xl">{websiteCopyStrings.contactFormHeaderPart2}</span>
     </h1>
     <p className="text-gray-600 mb-10">{websiteCopyStrings.contactFormCopy}</p>
-    <form className="w-8/12">
+    <div className="w-8/12">
       <input
         className="bg-white w-full rounded-lg mb-8 px-4 py-3"
         id="name"
+        aria-label="name"
         type="text"
         placeholder={websiteCopyStrings.contactFormName}
       />
@@ -44,18 +45,20 @@ const ContactForm = ({ onInfoSent }: { onInfoSent: () => void }) => (
         className="bg-white w-full rounded-lg mb-8  px-4 py-3"
         id="email"
         type="text"
+        aria-label="email"
         placeholder={websiteCopyStrings.contactFormEmail}
       />
       <textarea
         className="bg-white w-full rounded-lg mb-8  px-4 py-3"
         id="message"
+        aria-label="message"
         placeholder={websiteCopyStrings.contactFormMessage}
         rows={9}
       />
       <Button onClick={onInfoSent} primary fullRounded className="py-3">
         {websiteCopyStrings.contactFormButton}
       </Button>
-    </form>
+    </div>
   </div>
 )
 
@@ -118,7 +121,7 @@ const Contact = () => {
                 className="flex flex-row items-center justify-center text-2xl font-bold mb-10"
               >
                 <span className="mr-5"> {websiteCopyStrings.contactFormSlackHeaderPart1}</span>
-                <img className="mr-1 w-7 " src="/assets/images/slack-icon.svg" />
+                <img className="mr-1 w-7 " src="/assets/images/Slack-icon.svg" alt="slack icon" />
                 {websiteCopyStrings.contactFormSlackHeaderPart2}
               </a>
               {contactInfoSent ? <ThankYouMessage /> : <ContactForm onInfoSent={onInfoSent} />}

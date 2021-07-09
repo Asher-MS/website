@@ -10,11 +10,11 @@ import {
   PlanetVideo
 } from './Planets'
 
-const mercuryRevolutionTimePeriod = 20
-const venusRevolutionTimePeriod = 40
-const earthRevolutionTimePeriod = 60
-const marsRevolutionTimePeriod = 100
-const jupiterRevolutionTimePeriod = 144
+const mercuryRevolutionTimePeriod = 10
+const venusRevolutionTimePeriod = 20
+const earthRevolutionTimePeriod = 30
+const marsRevolutionTimePeriod = 50
+const jupiterRevolutionTimePeriod = 70
 
 export const solarSystemSize = '110rem'
 
