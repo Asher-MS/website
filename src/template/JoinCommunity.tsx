@@ -1,5 +1,4 @@
 import React from 'react'
-import { Section } from '../layout/Section'
 
 function CommunityImages ({ urlList }: { urlList: string[] }) {
   const communityImages = urlList.map((url, idx) => {
@@ -31,7 +30,11 @@ function CommunityImages ({ urlList }: { urlList: string[] }) {
     )
   })
 
-  return <div className="flex flex-wrap">{communityImages}</div>
+  return (
+    <div className="flex-1">
+      <div className="flex flex-wrap">{communityImages}</div>
+    </div>
+  )
 }
 
 type HeaderProps = {
@@ -58,20 +61,18 @@ function JoinCommunity () {
   )
 
   return (
-    <Section>
-      <div className="flex justify-center">
-        <CommunityImages urlList={urlList1} />
-        <div>
-          <Header
-            headerStrings={[
-              ['Join Our Growing', false],
-              ['Community', true]
-            ]}
-          />
-        </div>
-        <CommunityImages urlList={urlList2} />
+    <div className="flex">
+      <CommunityImages urlList={urlList1} />
+      <div className="flex-none">
+        <Header
+          headerStrings={[
+            ['Join Our Growing ', false],
+            ['Community', true]
+          ]}
+        />
       </div>
-    </Section>
+      <CommunityImages urlList={urlList2} />
+    </div>
   )
 }
 
