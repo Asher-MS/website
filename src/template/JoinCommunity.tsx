@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '../button/Button'
 
 function CommunityImages ({ urlList }: { urlList: string[] }) {
   const communityImages = urlList.map((url, idx) => {
@@ -57,11 +58,15 @@ type GitHubStatsProps = {
   contributors: number;
 };
 
+function numberWithCommas (x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+}
+
 const GitHubStats = ({ stars, forks, contributors }: GitHubStatsProps) => (
-  <div className="flex justify-between mx-6">
+  <div className="flex justify-between w-96 mb-16">
     <div className="flex flex-col items-center">
       <p className="font-bold text-gray-600">Stars</p>
-      <p className="font-bold text-primary-500 text-3xl">{stars}+</p>
+      <p className="font-bold text-primary-500 text-3xl">{numberWithCommas(stars)}+</p>
     </div>
     <div className="flex flex-col items-center">
       <p className="font-bold text-gray-600">Forks</p>
@@ -86,7 +91,7 @@ function JoinCommunity () {
   return (
     <div className="flex">
       <CommunityImages urlList={urlList1} />
-      <div className="flex flex-col justify-center m-20">
+      <div className="flex flex-col justify-center items-center m-20">
         <Header
           headerStrings={[
             ['Join Our Growing ', false],
@@ -94,6 +99,9 @@ function JoinCommunity () {
           ]}
         />
         <GitHubStats stars={2230} forks={303} contributors={98} />
+        <Button primary className="w-56 py-2">
+          Join the community
+        </Button>
       </div>
       <CommunityImages urlList={urlList2} />
     </div>
