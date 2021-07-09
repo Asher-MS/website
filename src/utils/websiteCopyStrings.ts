@@ -285,6 +285,8 @@ export const websiteCopyStrings = {
   demoSearchImagesShoesCopy: 'Shoes',
   demoSearchImagesDressCopy: 'Dress',
   demoSearchImagesHatCopy: 'Hat',
+  heroReleaseBannerText: 'Jina 2.0 is out now! Check our GitHub repo to learn more!',
+  heroReleaseBannerButtonLabel: 'GO',
   joinLearnHeaderPart1: 'Learn ',
   joinLearnHeaderPart2: 'more about ',
   joinLearnHeaderPart3: 'Jina',
