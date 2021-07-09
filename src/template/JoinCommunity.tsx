@@ -42,8 +42,8 @@ type GitHubStatsProps = {
   contributors: number;
 };
 
-function numberWithCommas (x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+function numberWithCommas (num: number) {
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
 }
 
 const GitHubStats = ({ stars, forks, contributors }: GitHubStatsProps) => (
@@ -64,7 +64,7 @@ const GitHubStats = ({ stars, forks, contributors }: GitHubStatsProps) => (
 )
 
 function JoinCommunity () {
-  const numberArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+  const numberArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] // todo: delete this with API call implementation
   const urlList1 = numberArray.map(
     (_something: any, idx: number) => `/assets/images/community/${idx}.png`
   )
