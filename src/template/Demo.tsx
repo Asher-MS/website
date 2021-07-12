@@ -71,7 +71,7 @@ function Demo () {
   }
   const customStyles = {
     ...customBackground,
-    padding: '2rem'
+    padding: '0 2rem'
   }
   const lineNumberStyle = {
     color: '#FFFFFF66'
@@ -86,9 +86,24 @@ function Demo () {
         </h2>
       </div>
       <div className="flex justify-center">
-        <div>
-          <div className="rounded-t-xl mr-6" style={customBackground}>
-            title
+        <div className="flex flex-col">
+          <div className="flex rounded-t-xl mr-6 p-5" style={customBackground}>
+            <div className="w-3 h-3 title-button-red rounded-full"></div>
+            <div className="w-3 h-3 title-button-yellow rounded-full mx-2"></div>
+            <div className="w-3 h-3 title-button-green rounded-full"></div>
+            <style jsx>
+              {`
+                .title-button-red {
+                  background: #ff6666;
+                }
+                .title-button-yellow {
+                  background: #ffcc66;
+                }
+                .title-button-green {
+                  background: #7fb856;
+                }
+              `}
+            </style>
           </div>
           <SyntaxHighlighter
             showLineNumbers
