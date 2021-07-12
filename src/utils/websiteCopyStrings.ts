@@ -269,20 +269,17 @@ export const websiteCopyStrings = {
   demoHeaderPart1: 'Build your ',
   demoHeaderPart2: 'AI search ',
   demoHeaderPart3: 'in a few steps...',
-  demoCodeExample:
-    '' +
-    'class MyFashionEncoder(Executor) \n' +
-    ' ...\n' +
-    '\n' +
-    'f + Flow().add(uses=MyFashionEncorder)' +
-    '\n' +
-    '\n' +
-    '.add(uses="jinahub://indexer")\n' +
-    '\n' +
-    'with f:\n' +
-    ' f.index(inputs=[...])\n' +
-    ' f.search(inputs=[...])\n' +
-    ' ...',
+  demoCodeExample: `class MyFashionEncoder(Executor)
+    ...
+f = Flow().add(uses=MyFashionEncorder)\\
+
+.add(uses="jinahub://indexer")
+
+with f:
+    f.index(inputs=[...])
+    f.search(inputs=[...])
+    ...
+`,
   demoSearchImagesHeader: 'Search images:',
   demoSearchImagesShoesCopy: 'Shoes',
   demoSearchImagesDressCopy: 'Dress',
