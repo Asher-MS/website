@@ -67,7 +67,7 @@ function SearchImages () {
 
 function Demo () {
   const customBackground = {
-    backgroundColor: '#3F3D56'
+    backgroundColor: '#74728b'
   }
   const customStyles = {
     ...customBackground,
