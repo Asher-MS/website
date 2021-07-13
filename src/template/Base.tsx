@@ -8,6 +8,7 @@ import NavBar from './NavBar'
 import Subscribe from './Subscribe'
 import UseCases from './UseCases'
 import Demo from './Demo'
+import Reviews from './Reviews'
 
 const Base = () => (
   <div className="antialiased text-gray-600">
@@ -16,6 +17,7 @@ const Base = () => (
     <Features />
     <Demo />
     <UseCases />
+    <Reviews />
     <CTAGitHub />
     <Subscribe />
     <Footer />
