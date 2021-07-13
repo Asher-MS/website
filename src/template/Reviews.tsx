@@ -103,18 +103,18 @@ function Reviews () {
           organisation={websiteCopyStrings.reviewsReview1Organisation}
         />
         <Review
-          review={websiteCopyStrings.reviewsReview1}
+          review={websiteCopyStrings.reviewsReview2}
           profilePicUrl="/assets/images/reviewer1.png"
-          reviewer={websiteCopyStrings.reviewsReview1Reviewer}
-          position={websiteCopyStrings.reviewsReview1Position}
-          organisation={websiteCopyStrings.reviewsReview1Organisation}
+          reviewer={websiteCopyStrings.reviewsReview2Reviewer}
+          position={websiteCopyStrings.reviewsReview2Position}
+          organisation={websiteCopyStrings.reviewsReview2Organisation}
         />
         <Review
-          review={websiteCopyStrings.reviewsReview1}
+          review={websiteCopyStrings.reviewsReview3}
           profilePicUrl="/assets/images/reviewer1.png"
-          reviewer={websiteCopyStrings.reviewsReview1Reviewer}
-          position={websiteCopyStrings.reviewsReview1Position}
-          organisation={websiteCopyStrings.reviewsReview1Organisation}
+          reviewer={websiteCopyStrings.reviewsReview3Reviewer}
+          position={websiteCopyStrings.reviewsReview3Position}
+          organisation={websiteCopyStrings.reviewsReview3Organisation}
         />
       </Carousel>
     </Section>
