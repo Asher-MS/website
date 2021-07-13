@@ -54,7 +54,10 @@ const Meta = (props: IMetaProps) => (
       />
       <link rel="icon" href={`${process.env.baseUrl}/favicon.ico`} key="favicon" />
       <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
-      <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet"></link>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700"
+        rel="stylesheet"
+      ></link>
     </Head>
     <NextSeo
       title={props.title}
