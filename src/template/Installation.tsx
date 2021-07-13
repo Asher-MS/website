@@ -49,7 +49,7 @@ export const Installation = () => {
               <span className="code-highlight">
                 {websiteCopyStrings.coreInstallationCommandPythonPart1}
               </span>
-              <span className="text-white">
+              <span className="code-highlight">
                 {websiteCopyStrings.coreInstallationCommandPythonPart2}
               </span>
             </>
@@ -59,7 +59,7 @@ export const Installation = () => {
               <span className="code-highlight">
                 {websiteCopyStrings.coreInstallationCommandDockerPart1}
               </span>
-              <span className="text-white">
+              <span className="code-highlight">
                 {websiteCopyStrings.coreInstallationCommandDockerPart2}
               </span>
             </>
