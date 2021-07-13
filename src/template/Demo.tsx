@@ -66,12 +66,9 @@ function SearchImages () {
 }
 
 function Demo () {
-  const customBackground = {
-    backgroundColor: '#3F3D56'
-  }
   const customStyles = {
-    ...customBackground,
-    padding: '0 2rem'
+    backgroundColor: '#3F3D56',
+    padding: '2rem'
   }
   const lineNumberStyle = {
     color: '#FFFFFF66'
@@ -86,36 +83,16 @@ function Demo () {
         </h2>
       </div>
       <div className="flex justify-center">
-        <div className="flex flex-col">
-          <div className="flex rounded-t-xl mr-6 p-5" style={customBackground}>
-            <div className="w-3 h-3 title-button-red rounded-full"></div>
-            <div className="w-3 h-3 title-button-yellow rounded-full mx-2"></div>
-            <div className="w-3 h-3 title-button-green rounded-full"></div>
-            <style jsx>
-              {`
-                .title-button-red {
-                  background: #ff6666;
-                }
-                .title-button-yellow {
-                  background: #ffcc66;
-                }
-                .title-button-green {
-                  background: #7fb856;
-                }
-              `}
-            </style>
-          </div>
-          <SyntaxHighlighter
-            showLineNumbers
-            className="rounded-b-xl mr-6 flex-grow"
-            language="python"
-            style={shadesOfPurple}
-            customStyle={customStyles}
-            lineNumberStyle={lineNumberStyle}
-          >
-            {websiteCopyStrings.demoCodeExample}
-          </SyntaxHighlighter>
-        </div>
+        <SyntaxHighlighter
+          showLineNumbers
+          className="rounded-xl mr-6"
+          language="python"
+          style={shadesOfPurple}
+          customStyle={customStyles}
+          lineNumberStyle={lineNumberStyle}
+        >
+          {websiteCopyStrings.demoCodeExample}
+        </SyntaxHighlighter>
 
         <SearchImages />
       </div>
