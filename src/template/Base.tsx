@@ -9,6 +9,7 @@ import Subscribe from './Subscribe'
 import UseCases from './UseCases'
 import Demo from './Demo'
 import Reviews from './Reviews'
+import { CookieConsent } from './CookieConsent'
 
 const Base = () => (
   <div className="antialiased text-gray-600">
@@ -20,6 +21,7 @@ const Base = () => (
     <Reviews />
     <CTAGitHub />
     <Subscribe />
+    <CookieConsent />
     <Footer />
   </div>
 )
