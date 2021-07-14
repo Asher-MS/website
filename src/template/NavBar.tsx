@@ -100,6 +100,7 @@ const NavBar = () => (
           position: fixed;
           width: 100vw;
           background: white;
+          top: 0;
         }
       `}
     </style>
