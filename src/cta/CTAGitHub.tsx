@@ -21,7 +21,7 @@ const CTAGitHub = () => {
             className="rounded-full flex items-center justify-center w-48 p-2"
           >
             <span className="mr-6 font-bold">{websiteCopyStrings.HomeCallToActionButtonLabel}</span>
-            <Icon name="GitHub-black" className="w-8 h-8" />
+            <Icon name="GitHub" className="w-8 h-8" />
           </Button>
         </div>
       </div>

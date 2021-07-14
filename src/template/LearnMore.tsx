@@ -39,7 +39,7 @@ function LearnMore () {
         <LearnCard
           header={websiteCopyStrings.joinLearnCard0Header}
           copy={websiteCopyStrings.joinLearnCard0Copy}
-          icon={<img alt="Twitter" src="/assets/images/twitter-icon.svg" />}
+          icon={<img alt="Twitter" src="/assets/images/Twitter-icon.svg" />}
           link={websiteCopyStrings.joinLearnCard0Link}
         />
 

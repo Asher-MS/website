@@ -17,7 +17,7 @@ const Resources = () => (
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-16 gap-y-16 px-4 md:px-0">
         <ResourcesCard
           title={websiteCopyStrings.contributeResourcesGitHubTitle}
-          icon={<Icon name="GitHub-black" />}
+          icon={<Icon name="GitHub" />}
           copy={websiteCopyStrings.contributeResourcesGitHubCopy}
           learnMoreLink={websiteCopyStrings.contributeResourcesGitHubLearnMoreLink}
           buttonColor="rgba(0, 189, 189, 0.1)"
@@ -33,7 +33,7 @@ const Resources = () => (
         />
         <ResourcesCard
           title={websiteCopyStrings.contributeResourcesSlackTitle}
-          icon={<Icon name="slack" />}
+          icon={<Icon name="Slack" />}
           copy={websiteCopyStrings.contributeResourcesSlackCopy}
           learnMoreLink={websiteCopyStrings.contributeResourcesSlackLearnMoreLink}
           buttonColor="rgba(50, 110, 152, 0.1)"
