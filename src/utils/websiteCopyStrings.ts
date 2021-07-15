@@ -32,6 +32,8 @@ export const websiteCopyStrings = {
   valuePropositionPlugAndPlayTitle: 'Plug and play',
   valuePropositionPlugAndPlayDescription:
     'Easily extend and customize leveraging community-driven components. Build search pipelines within seconds.',
+  careersMeetOurTeamSectionHeadingPart1: 'Meet Our',
+  careersMeetOurTeamSectionHeadingPart2: 'Team',
   careersWorkingWithUsSectionHeadingPart1: 'Working with',
   careersWorkingWithUsSectionHeadingPart2: 'Us',
   careersWorkingWithUsNationalitiesTitle: 'Nationalities',
