@@ -109,7 +109,7 @@ export const websiteCopyStrings = {
   careersPageHeroSectionTitlePart1: 'Careers at',
   careersPageHeroSectionTitlePart2: 'Jina',
   careersPageHeroSectionDescription:
-    'Join our diverse team from 11+ different countries and build the biggest neural search ecosystem together.',
+    'Join our diverse team from all around the world and help us shape the future of neural search!',
   careersPageHeroSectionButtonLabel: 'Current Openings',
   contributePageHeroSectionTitlePart1: 'Contribute to',
   contributePageHeroSectionTitlePart2: 'Jina',
@@ -119,9 +119,10 @@ export const websiteCopyStrings = {
   aboutPageHeroSectionDescription:
     'We are building an open-source neural search ecosystem. Jina enables developers and enterprises to build search systems that are fast, scalable, and work with any kind of data.',
   aboutPageHeroSectionButtonLabel: 'Join us!',
-  joinPageHeroSectionTitle: 'Contribute to',
-  joinPageHeroSectionDescription: 'Build the biggest neural search ecosystem with us!',
-  joinPageHeroSectionButtonLabel: 'Join the community',
+  joinPageHeroSectionTitle: 'Join the Jina Community',
+  joinPageHeroSectionDescription:
+    'Jina is open source at the core. We welcome developers, contributors, and open source evangelists to join us!',
+  joinPageHeroSectionButtonLabel: 'Join our Slack',
   learnPageHeroSectionTitle: 'Learn, build, and deploy your neural search app',
   learnPageHeroSectionDescription:
     'We are building an open-source neural search ecosystem, enabling developers and enterprises to build search systems that are fast, scalable, and work with any kind of data.',

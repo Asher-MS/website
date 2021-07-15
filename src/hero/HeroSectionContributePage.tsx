@@ -10,7 +10,7 @@ const HeroSectionContributePage = () => {
       <IllustrationWithComponentSideBySide
         illustrationSrc="/assets/images/contribute-illustration.svg"
         illustrationAlt="Careers at Jina image"
-        illustrationClasses="w-1/2"
+        illustrationClasses="w-9/12"
         illustrationPosition="right"
       >
         <HeroSectionContent
@@ -18,7 +18,8 @@ const HeroSectionContributePage = () => {
           titlePart2={websiteCopyStrings.contributePageHeroSectionTitlePart2}
           description={websiteCopyStrings.contributePageHeroSectionDescription}
           buttonLabel={websiteCopyStrings.contributePageHeroSectionButtonLabel}
-          className="w-4/6 mr-8"
+          className="w-4/6 flex flex-col justify-center"
+          buttonClasses="w-64"
         />
       </IllustrationWithComponentSideBySide>
     </Section>

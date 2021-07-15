@@ -6,6 +6,8 @@ interface HeroSectionContentProps extends DivProps {
   titlePart2?: string;
   description: string;
   buttonLabel?: string;
+  descriptionClasses?: string;
+  buttonClasses?: string;
 }
 
 const HeroSectionContent = ({
@@ -13,21 +15,30 @@ const HeroSectionContent = ({
   titlePart2,
   description,
   buttonLabel,
-  className
+  className,
+  descriptionClasses,
+  buttonClasses
 }: HeroSectionContentProps) => {
   return (
     <div className={className}>
-      <h2 className="font-bold text-4xl mb-8">
+      <h2 className="font-bold mb-8">
         <span className="text-black">{titlePart1}</span>
         &nbsp;
         <span className="text-primary-500">{titlePart2 || ''}</span>
       </h2>
-      <p className="mb-8">{description}</p>
+      <p className={`mb-16 text-gray-600 text-lg ${descriptionClasses}`}>{description}</p>
       {buttonLabel && (
-        <Button primary className="w-56 py-5 mr-10">
+        <Button primary className={`py-4 ${buttonClasses}`}>
           {buttonLabel}
         </Button>
       )}
+      <style>
+        {`
+          h2 {
+            font-size: 3.5rem;
+          }
+        `}
+      </style>
     </div>
   )
 }
