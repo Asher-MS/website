@@ -40,6 +40,8 @@ export const websiteCopyStrings = {
   careersWorkingWithUsLanguagesAmount: '12+',
   careersWorkingWithUsTechnologiesTitle: 'Technoloies',
   careersWorkingWithUsTechnologiesAmount: '20+',
+  cookieConsentText:
+    'On our website, we only collect and store information that is essential for offering our service and for improving user experience, and we do this with the consent of our website visitors.',
   navBarHome: 'Home',
   navBarProducts: 'Products',
   navBarDeveloper: 'Developer',
