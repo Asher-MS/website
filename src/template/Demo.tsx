@@ -66,6 +66,13 @@ function SearchImages () {
 }
 
 function Demo () {
+  const customStyles = {
+    backgroundColor: '#3F3D56',
+    padding: '2rem'
+  }
+  const lineNumberStyle = {
+    color: '#FFFFFF66'
+  }
   return (
     <Section>
       <div className="text-center font-bold text-4xl mb-20">
@@ -75,12 +82,14 @@ function Demo () {
           {websiteCopyStrings.demoHeaderPart3}
         </h2>
       </div>
-      <div className="flex bg-red justify-center">
+      <div className="flex justify-center">
         <SyntaxHighlighter
           showLineNumbers
           className="rounded-xl mr-6"
           language="python"
           style={shadesOfPurple}
+          customStyle={customStyles}
+          lineNumberStyle={lineNumberStyle}
         >
           {websiteCopyStrings.demoCodeExample}
         </SyntaxHighlighter>

@@ -42,6 +42,8 @@ export const websiteCopyStrings = {
   careersWorkingWithUsLanguagesAmount: '12+',
   careersWorkingWithUsTechnologiesTitle: 'Technoloies',
   careersWorkingWithUsTechnologiesAmount: '20+',
+  cookieConsentText:
+    'On our website, we only collect and store information that is essential for offering our service and for improving user experience, and we do this with the consent of our website visitors.',
   navBarHome: 'Home',
   navBarProducts: 'Products',
   navBarDeveloper: 'Developer',
@@ -108,6 +110,27 @@ export const websiteCopyStrings = {
   Offices3Description: 'Some description',
   aboutInvestorsSectionTitlePart1: 'Our',
   aboutInvestorsSectionTitlePart2: 'Investors',
+  careersPageHeroSectionTitlePart1: 'Careers at',
+  careersPageHeroSectionTitlePart2: 'Jina',
+  careersPageHeroSectionDescription:
+    'Join our diverse team from all around the world and help us shape the future of neural search!',
+  careersPageHeroSectionButtonLabel: 'Current Openings',
+  contributePageHeroSectionTitlePart1: 'Contribute to',
+  contributePageHeroSectionTitlePart2: 'Jina',
+  contributePageHeroSectionDescription: 'Build the biggest neural search ecosystem with us!',
+  contributePageHeroSectionButtonLabel: 'Join the community',
+  aboutPageHeroSectionTitle: 'Jina AI is a Neural Search Company',
+  aboutPageHeroSectionDescription:
+    'We are building an open-source neural search ecosystem. Jina enables developers and enterprises to build search systems that are fast, scalable, and work with any kind of data.',
+  aboutPageHeroSectionButtonLabel: 'Join us!',
+  joinPageHeroSectionTitle: 'Join the Jina Community',
+  joinPageHeroSectionDescription:
+    'Jina is open source at the core. We welcome developers, contributors, and open source evangelists to join us!',
+  joinPageHeroSectionButtonLabel: 'Join our Slack',
+  learnPageHeroSectionTitle: 'Learn, build, and deploy your neural search app',
+  learnPageHeroSectionDescription:
+    'We are building an open-source neural search ecosystem, enabling developers and enterprises to build search systems that are fast, scalable, and work with any kind of data.',
+  learnPageHeroSectionButtonLabel: 'Read our Documentation',
   footerPhoneNumber: '+880 112 345 678',
   footerAddress: '711-2880 Nulla St. Mankato Mississippi 96522',
   footerCompany: 'Company',
@@ -130,6 +153,15 @@ export const websiteCopyStrings = {
   footerSocialsSlack: 'Slack',
   navBarCompanyEvents: 'Events',
   navBarCompanyNews: 'News',
+  coreInstallationTitle: 'Instalation',
+  coreInstallationToggleButtonPython: 'PyPi',
+  coreInstallationToggleButtonDocker: 'Docker',
+  coreInstallationCommandPythonPart1: 'pip ',
+  coreInstallationCommandPythonPart2: 'install jina',
+  coreInstallationCommandPython: 'pip install jina',
+  coreInstallationCommandDockerPart1: 'docker ',
+  coreInstallationCommandDockerPart2: 'run jinaai/jina:latest',
+  coreInstallationCommandDocker: 'docker run jinaai/jina:latest',
   subscribeTitle: 'Never Miss an Update',
   subscribeSubtitle: 'Stay up to date with our latest news',
   subscribeButtonLabel: 'Subscribe',
@@ -271,49 +303,70 @@ export const websiteCopyStrings = {
   demoHeaderPart1: 'Build your ',
   demoHeaderPart2: 'AI search ',
   demoHeaderPart3: 'in a few steps...',
-  demoCodeExample:
-    '' +
-    'class MyFashionEncoder(Executor) \n' +
-    ' ...\n' +
-    '\n' +
-    'f + Flow().add(uses=MyFashionEncorder)' +
-    '\n' +
-    '\n' +
-    '.add(uses="jinahub://indexer")\n' +
-    '\n' +
-    'with f:\n' +
-    ' f.index(inputs=[...])\n' +
-    ' f.search(inputs=[...])\n' +
-    ' ...',
+  demoCodeExample: `class MyFashionEncoder(Executor)
+    ...
+f = Flow().add(uses=MyFashionEncorder)\\
+
+.add(uses="jinahub://indexer")
+
+with f:
+    f.index(inputs=[...])
+    f.search(inputs=[...])
+    ...
+`,
   demoSearchImagesHeader: 'Search images:',
   demoSearchImagesShoesCopy: 'Shoes',
   demoSearchImagesDressCopy: 'Dress',
   demoSearchImagesHatCopy: 'Hat',
+  heroReleaseBannerText: 'Jina 2.0 is out now! Check our GitHub repo to learn more!',
+  heroReleaseBannerButtonLabel: 'GO',
   joinLearnHeaderPart1: 'Learn ',
   joinLearnHeaderPart2: 'more about ',
   joinLearnHeaderPart3: 'Jina',
-  joinLearnCard1Header: 'Twitter',
-  joinLearnCard1Copy: 'Follow @JinaAI_ on Twitter',
-  joinLearnCard1Link: TWITTER_LINK,
-  joinLearnCard2Header: 'GitHub',
-  joinLearnCard2Copy: 'Star our repository',
-  joinLearnCard2Link: GITHUB_LINK,
-  joinLearnCard3Header: 'Linkedin',
-  joinLearnCard3Copy: 'Follow @jinaai on Linkedin',
-  joinLearnCard3Link: LINKED_IN_LINK,
-  joinLearnCard4Header: 'Newsletter',
-  joinLearnCard4Copy: 'Subscribe to the Jina newsletter',
-  joinLearnCard4Link: 'www.google.com',
-  joinLearnCard5Header: 'Slack',
-  joinLearnCard5Copy: 'Join @jinaai on Slack',
-  joinLearnCard5Link: SLACK_LINK,
-  joinLearnCard6Header: 'YouTube',
-  joinLearnCard6Copy: 'Follow @jinaai on YouTube',
-  joinLearnCard6Link: YOUTUBE_LINK,
-  joinLearnCard7Header: 'Articles',
-  joinLearnCard7Copy: 'Read articles published by Jina',
-  joinLearnCard7Link: MEDIUM_LINK,
-  joinLearnCard8Header: 'Events',
-  joinLearnCard8Copy: 'View Jina organized events',
-  joinLearnCard8Link: MEETUP_LINK
+  reviewsHeaderPart1: 'Reviews from our ',
+  reviewsHeaderPart2: 'Users',
+  reviewsReview1:
+    'The team at Jina AI is passionate about open source. The founders quit their high tech prestigious jobs to pursue their passion and innovate the open source way. Just a great example of how you can be open source friendly, create a promising technology, and build a commercial product.',
+  reviewsReview1Reviewer: 'Dr. Ibrahim Haddad',
+  reviewsReview1Position: 'Executive Director',
+  reviewsReview1Organisation: 'LF AI Foundation',
+  reviewsReview2:
+    'The team at Jina AI is passionate about open source. The founders quit their high tech prestigious jobs to pursue their passion and innovate the open source way. Just a great example of how you can be open source friendly, create a promising technology, and build a commercial product.',
+  reviewsReview2Reviewer: 'Dr. Ibrahim Haddad',
+  reviewsReview2Position: 'Executive Director',
+  reviewsReview2Organisation: 'LF AI Foundation',
+  reviewsReview3:
+    'The team at Jina AI is passionate about open source. The founders quit their high tech prestigious jobs to pursue their passion and innovate the open source way. Just a great example of how you can be open source friendly, create a promising technology, and build a commercial product.',
+  reviewsReview3Reviewer: 'Dr. Ibrahim Haddad',
+  reviewsReview3Position: 'Executive Director',
+  reviewsReview3Organisation: 'LF AI Foundation',
+  joinLearnCard0Header: 'Twitter',
+  joinLearnCard0Copy: 'Follow @JinaAI_ on Twitter',
+  joinLearnCard0Link: TWITTER_LINK,
+  joinLearnCard1Header: 'GitHub',
+  joinLearnCard1Copy: 'Star our repository',
+  joinLearnCard1Link: GITHUB_LINK,
+  joinLearnCard2Header: 'Linkedin',
+  joinLearnCard2Copy: 'Follow @jinaai on Linkedin',
+  joinLearnCard2Link: LINKED_IN_LINK,
+  joinLearnCard3Header: 'Newsletter',
+  joinLearnCard3Copy: 'Subscribe to the Jina newsletter',
+  joinLearnCard3Link: 'www.google.com',
+  joinLearnCard4Header: 'Slack',
+  joinLearnCard4Copy: 'Join @jinaai on Slack',
+  joinLearnCard4Link: SLACK_LINK,
+  joinLearnCard5Header: 'YouTube',
+  joinLearnCard5Copy: 'Follow @jinaai on YouTube',
+  joinLearnCard5Link: YOUTUBE_LINK,
+  joinLearnCard6Header: 'Articles',
+  joinLearnCard6Copy: 'Read articles published by Jina',
+  joinLearnCard6Link: MEDIUM_LINK,
+  joinLearnCard7Header: 'Events',
+  joinLearnCard7Copy: 'View Jina organized events',
+  joinLearnCard7Link: MEETUP_LINK,
+  joinCommunityHeaderStrings: [
+    ['Join Our Growing ', false],
+    ['Community', true]
+  ],
+  joinCommunityButton: 'Join the community'
 }

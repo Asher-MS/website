@@ -69,6 +69,9 @@ module.exports = {
         },
         blue: {
           500: '#4DADF7'
+        },
+        whitesmoke: {
+          500: '#F9F5F1'
         }
       },
       lineHeight: {

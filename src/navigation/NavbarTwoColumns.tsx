@@ -59,7 +59,7 @@ const NavbarTwoColumns = (props: INavbarProps) => {
       </nav>
 
       <Button primary fullRounded className="flex items-center justify-center px-6 py-2">
-        <Icon name="GitHub" className="mr-4 w-7" />
+        <Icon name="GitHub-white" className="mr-4 w-7" />
         <span className="mr-4">{websiteCopyStrings.navBarButtonCallToAction}</span>
       </Button>
 
@@ -92,7 +92,7 @@ const NavbarTwoColumns = (props: INavbarProps) => {
               @apply mt-0;
             }
 
-            .navbar :global(li:not(:last-child)) {
+            .navbar>(li:not(:last-child)) {
               @apply mr-5;
             }
           }

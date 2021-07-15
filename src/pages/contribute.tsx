@@ -2,6 +2,7 @@ import React from 'react'
 
 import Meta from '../layout/Meta'
 import PageWithHeaderAndFooter from '../layout/PageWithHeaderAndFooter'
+import HeroSectionContributePage from '../hero/HeroSectionContributePage'
 import Resources from '../resources/Resources'
 import ProjectGallery from '../template/ProjectGallery'
 
@@ -13,6 +14,7 @@ const Contribute = () => (
       canonical="https://jina.ai/"
     />
     <PageWithHeaderAndFooter>
+      <HeroSectionContributePage />
       <Resources />
       <ProjectGallery />
     </PageWithHeaderAndFooter>

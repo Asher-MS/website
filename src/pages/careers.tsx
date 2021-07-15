@@ -6,6 +6,7 @@ import Offices from '../template/Offices'
 import WorkingWithUs from '../template/WorkingWithUs'
 import WhatWeStandFor from '../template/WhatWeStandFor'
 import MeetOurTeam from '../template/MeetOurTeam'
+import HeroSectionCareersPage from '../hero/HeroSectionCareersPage'
 
 const Careers = () => (
   <>
@@ -15,6 +16,7 @@ const Careers = () => (
       canonical="https://jina.ai/"
     />
     <PageWithHeaderAndFooter>
+      <HeroSectionCareersPage />
       <WhatWeStandFor />
       <MeetOurTeam />
       <WorkingWithUs />
