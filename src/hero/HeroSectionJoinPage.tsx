@@ -12,7 +12,7 @@ const HeroSectionJoinPage = () => {
           description={websiteCopyStrings.joinPageHeroSectionDescription}
           buttonLabel={websiteCopyStrings.joinPageHeroSectionButtonLabel}
           className="flex flex-col items-center justify-center text-center"
-          descriptionClasses="w-9/12"
+          descriptionClasses="mb-16 text-gray-600 text-lg w-9/12"
           buttonClasses="w-56"
         />
       </Section>

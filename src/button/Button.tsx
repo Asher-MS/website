@@ -9,6 +9,7 @@ interface IButtonProps extends DivProps {
   primary?: boolean;
   secondary?: boolean;
   tertiary?: boolean;
+  outlined?: boolean;
   full?: boolean;
   fullRounded?: boolean;
 }
@@ -20,6 +21,7 @@ const Button = (props: IButtonProps) => {
     'btn-primary': props.primary,
     'btn-secondary': props.secondary,
     'btn-tertiary': props.tertiary,
+    'btn-outlined': props.outlined,
     'btn-full-rounded': !props.fullRounded,
     'w-full': props.full
   })
@@ -69,6 +71,14 @@ const Button = (props: IButtonProps) => {
 
           .btn-tertiary:hover {
             background-color: #f6f6f6;
+          }
+
+          .btn-outlined {
+            @apply bg-transparent border-white border-2 border-solid;
+          }
+
+          .btn-outlined:hover {
+            background-color: #f6f6f622;
           }
         `}
       </style>
