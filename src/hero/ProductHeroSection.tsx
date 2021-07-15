@@ -36,6 +36,8 @@ const ProductHeroSection = ({
             buttonLabel={buttonLabel}
             className={className}
             buttonClasses={buttonClasses}
+            titleClasses="text-white"
+            descriptionClasses="mb-16 text-gray-400 text-lg "
           />
         </IllustrationWithComponentSideBySide>
       </Section>

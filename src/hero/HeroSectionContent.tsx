@@ -7,6 +7,7 @@ export interface HeroSectionContentProps extends DivProps {
   description: string;
   buttonLabel?: string;
   descriptionClasses?: string;
+  titleClasses?: string;
   buttonClasses?: string;
 }
 
@@ -16,17 +17,18 @@ const HeroSectionContent = ({
   description,
   buttonLabel,
   className,
-  descriptionClasses,
+  titleClasses = 'text-black',
+  descriptionClasses = 'mb-16 text-gray-600 text-lg ',
   buttonClasses
 }: HeroSectionContentProps) => {
   return (
     <div className={className}>
       <h2 className="font-bold mb-8">
-        <span className="text-black">{titlePart1}</span>
+        <span className={titleClasses}>{titlePart1}</span>
         &nbsp;
         <span className="text-primary-500">{titlePart2 || ''}</span>
       </h2>
-      <p className={`mb-16 text-gray-600 text-lg ${descriptionClasses}`}>{description}</p>
+      <p className={descriptionClasses}>{description}</p>
       {buttonLabel && (
         <Button primary className={`py-4 ${buttonClasses}`}>
           {buttonLabel}
