@@ -5,6 +5,7 @@ import PageWithHeaderAndFooter from '../layout/PageWithHeaderAndFooter'
 import WhyWeStartedJina from '../template/WhyWeStartedJina'
 import Offices from '../template/Offices'
 import Investors from '../template/Investors'
+import HeroSectionAboutPage from '../hero/HeroSectionAboutPage'
 
 const About = () => (
   <>
@@ -14,6 +15,7 @@ const About = () => (
       canonical="https://jina.ai/"
     />
     <PageWithHeaderAndFooter>
+      <HeroSectionAboutPage />
       <WhyWeStartedJina />
       <Offices />
       <Investors />

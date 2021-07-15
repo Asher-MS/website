@@ -106,6 +106,27 @@ export const websiteCopyStrings = {
   Offices3Description: 'Some description',
   aboutInvestorsSectionTitlePart1: 'Our',
   aboutInvestorsSectionTitlePart2: 'Investors',
+  careersPageHeroSectionTitlePart1: 'Careers at',
+  careersPageHeroSectionTitlePart2: 'Jina',
+  careersPageHeroSectionDescription:
+    'Join our diverse team from all around the world and help us shape the future of neural search!',
+  careersPageHeroSectionButtonLabel: 'Current Openings',
+  contributePageHeroSectionTitlePart1: 'Contribute to',
+  contributePageHeroSectionTitlePart2: 'Jina',
+  contributePageHeroSectionDescription: 'Build the biggest neural search ecosystem with us!',
+  contributePageHeroSectionButtonLabel: 'Join the community',
+  aboutPageHeroSectionTitle: 'Jina AI is a Neural Search Company',
+  aboutPageHeroSectionDescription:
+    'We are building an open-source neural search ecosystem. Jina enables developers and enterprises to build search systems that are fast, scalable, and work with any kind of data.',
+  aboutPageHeroSectionButtonLabel: 'Join us!',
+  joinPageHeroSectionTitle: 'Join the Jina Community',
+  joinPageHeroSectionDescription:
+    'Jina is open source at the core. We welcome developers, contributors, and open source evangelists to join us!',
+  joinPageHeroSectionButtonLabel: 'Join our Slack',
+  learnPageHeroSectionTitle: 'Learn, build, and deploy your neural search app',
+  learnPageHeroSectionDescription:
+    'We are building an open-source neural search ecosystem, enabling developers and enterprises to build search systems that are fast, scalable, and work with any kind of data.',
+  learnPageHeroSectionButtonLabel: 'Read our Documentation',
   footerPhoneNumber: '+880 112 345 678',
   footerAddress: '711-2880 Nulla St. Mankato Mississippi 96522',
   footerCompany: 'Company',
