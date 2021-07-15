@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, DivProps } from '../button/Button'
 
-interface HeroSectionContentProps extends DivProps {
+export interface HeroSectionContentProps extends DivProps {
   titlePart1: string;
   titlePart2?: string;
   description: string;

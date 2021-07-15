@@ -127,6 +127,20 @@ export const websiteCopyStrings = {
   learnPageHeroSectionDescription:
     'We are building an open-source neural search ecosystem, enabling developers and enterprises to build search systems that are fast, scalable, and work with any kind of data.',
   learnPageHeroSectionButtonLabel: 'Read our Documentation',
+  corePageHeroSectionTitle: 'The framework for building multimedia search applications',
+  corePageHeroSectionDescription:
+    'Jina is an end-to-end open source framework for building search or recommendation systems on any data you want. Using state-of-the-art ML approaches, you can quickly build search applications leveraging our design framework and multi-layer abstraction.',
+  dashboardPageHeroSectionTitle: `Low code,
+Jina in the Cloud`,
+  dashboardPageHeroSectionDescription:
+    'Build Jina Flows through a drag and drop interface and deploy at the click of a single button. Manage and receive insights on the health and performance of your Flows and infrastructure; All in one user-friendly interface!',
+  dashboardPageHeroSectionButtonLabel: 'Try it out!',
+  hubPageHeroSectionTitle: `Your catalog
+  for everything Jina
+  `,
+  hubPageHeroSectionDescription:
+    'Explore, share and experience custom Jina images tailored for neural search. Seamlessly integrate them into your search pipeline.',
+  hubPageHeroSectionButtonLabel: 'Try it out!',
   footerPhoneNumber: '+880 112 345 678',
   footerAddress: '711-2880 Nulla St. Mankato Mississippi 96522',
   footerCompany: 'Company',

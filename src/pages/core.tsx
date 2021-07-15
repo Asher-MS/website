@@ -3,6 +3,7 @@ import React from 'react'
 import Meta from '../layout/Meta'
 import PageWithHeaderAndFooter from '../layout/PageWithHeaderAndFooter'
 import Installation from '../template/Installation'
+import HeroSectionCore from '../hero/HeroSectionCore'
 
 const Core = () => (
   <>
@@ -13,6 +14,7 @@ const Core = () => (
       canonical="https://jina.ai/"
     />
     <PageWithHeaderAndFooter>
+      <HeroSectionCore />
       <Installation />
     </PageWithHeaderAndFooter>
   </>
