@@ -10,7 +10,7 @@ const sampleImage = {
   numStars: 4.5,
   tags: ['hello', 'world', 'this', 'is', 'a', 'test'],
   author: {
-    displayName: 'Jo Bench',
+    displayName: 'Hugh Mungus',
     avatarURL: '/assets/images/team/1.svg'
   }
 }
