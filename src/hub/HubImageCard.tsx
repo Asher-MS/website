@@ -4,17 +4,35 @@ import { StarIcon } from '../template/StarIcon'
 const DEFAULT_MAX_STARS = 5
 const DEFAULT_MAX_TAGS = 5
 
-const tagColors = ['primary', 'yellow', 'blue', 'red']
+const textColors = [
+  'text-primary-500',
+  'text-secondary-500',
+  'text-blue-500',
+  'text-red-500',
+  'text-purple-500'
+]
+const bgColors = [
+  'bg-primary-500',
+  'bg-secondary-500',
+  'bg-blue-500',
+  'bg-red-500',
+  'bg-purple-500'
+]
 
-const getTagColor = (index: number) => {
-  return tagColors[index % tagColors.length]
+const getTextColor = (index: number) => {
+  return textColors[index % textColors.length]
+}
+
+const getBgColor = (index: number) => {
+  return bgColors[index % bgColors.length]
 }
 
 const Tag = ({ children, index }: { children: React.ReactNode; index: number }) => {
-  const color = getTagColor(index)
+  const textColor = getTextColor(index)
+  const bgColor = getBgColor(index)
   return (
     <div
-      className={`inline-block px-2 py-0 rounded text-${color}-500 bg-${color}-500 bg-opacity-20 mr-2 mb-2`}
+      className={`inline-block px-2 py-0 rounded ${textColor} ${bgColor} bg-opacity-20 mr-2 mb-2`}
     >
       {children}
     </div>
