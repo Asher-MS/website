@@ -51,7 +51,7 @@ const Author = ({ author }: { author: HubImageCardProps['image']['author'] }) =>
   return (
     <div className="flex flex-row items-center">
       <div className="flex-1 truncate text-right mr-2 ">{author.displayName}</div>
-      <img src={author.avatarURL} className="h-8 rounded-full" />
+      <img src={author.avatarURL} className="h-8 rounded-full" alt={author.displayName} />
     </div>
   )
 }
