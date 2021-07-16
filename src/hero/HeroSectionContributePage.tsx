@@ -8,7 +8,7 @@ const HeroSectionContributePage = () => {
   return (
     <Section>
       <IllustrationWithComponentSideBySide
-        illustrationSrc="/assets/images/contribute-illustration.svg"
+        illustrationSrc="/assets/images/illustrations/contribute-illustration.svg"
         illustrationAlt="Careers at Jina image"
         illustrationClasses="w-9/12"
         illustrationPosition="right"

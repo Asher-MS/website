@@ -4,14 +4,14 @@ import ProductHeroSection from './ProductHeroSection'
 
 const HeroSectionHub = () => (
   <ProductHeroSection
-    illustrationSrc="/assets/images/hub-illustration.svg"
+    illustrationSrc="/assets/images/illustrations/hub-illustration.svg"
     illustrationAlt="Hub Image"
     illustrationClasses="w-7/12 ml-20"
     illustrationPosition="right"
     titlePart1={websiteCopyStrings.hubPageHeroSectionTitlePart1}
     titlePart2={websiteCopyStrings.hubPageHeroSectionTitlePart2}
     description={websiteCopyStrings.hubPageHeroSectionDescription}
-    descriptionClasses="text-white"
+    descriptionClasses="w-8/12"
     className="w-11/12 flex flex-col justify-center"
     buttonLabel={websiteCopyStrings.hubPageHeroSectionButtonLabel}
     buttonClasses="w-64"

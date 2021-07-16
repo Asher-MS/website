@@ -5,7 +5,7 @@ import IllustrationWithComponentSideBySide from './IllustrationWithComponentSide
 const WhyWeStartedJina = () => {
   return (
     <IllustrationWithComponentSideBySide
-      illustrationSrc="/assets/images/about_graphic.svg"
+      illustrationSrc="/assets/images/illustrations/about-rocket-illustration.svg"
       illustrationAlt="rocket"
       illustrationClasses="w-1/2"
     >

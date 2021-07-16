@@ -39,50 +39,50 @@ function LearnMore () {
         <LearnCard
           header={websiteCopyStrings.joinLearnCard0Header}
           copy={websiteCopyStrings.joinLearnCard0Copy}
-          icon={<img alt="Twitter" src="/assets/images/Twitter-icon.svg" />}
+          icon={<img alt="Twitter" src="/assets/images/icons/Twitter-icon.svg" />}
           link={websiteCopyStrings.joinLearnCard0Link}
         />
 
         <LearnCard
           header={websiteCopyStrings.joinLearnCard1Header}
           copy={websiteCopyStrings.joinLearnCard1Copy}
-          icon={<img alt="GitHub" src="/assets/images/GitHub-icon.svg" />}
+          icon={<img alt="GitHub" src="/assets/images/icons/GitHub-icon.svg" />}
           link={websiteCopyStrings.joinLearnCard1Link}
         />
         <LearnCard
           header={websiteCopyStrings.joinLearnCard2Header}
           copy={websiteCopyStrings.joinLearnCard2Copy}
-          icon={<img alt="LinkedIn" src="/assets/images/LinkedIn-icon.svg" />}
+          icon={<img alt="LinkedIn" src="/assets/images/icons/LinkedIn-icon.svg" />}
           link={websiteCopyStrings.joinLearnCard2Link}
         />
         <LearnCard
           header={websiteCopyStrings.joinLearnCard3Header}
           copy={websiteCopyStrings.joinLearnCard3Copy}
-          icon={<img alt="NewsLetter" src="/assets/images/newsletter-icon.svg" />}
+          icon={<img alt="NewsLetter" src="/assets/images/icons/newsletter-icon.svg" />}
           link={websiteCopyStrings.joinLearnCard3Link}
         />
         <LearnCard
           header={websiteCopyStrings.joinLearnCard4Header}
           copy={websiteCopyStrings.joinLearnCard4Copy}
-          icon={<img alt="Slack" src="/assets/images/Slack-icon.svg" />}
+          icon={<img alt="Slack" src="/assets/images/icons/Slack-icon.svg" />}
           link={websiteCopyStrings.joinLearnCard4Link}
         />
         <LearnCard
           header={websiteCopyStrings.joinLearnCard5Header}
           copy={websiteCopyStrings.joinLearnCard5Copy}
-          icon={<img alt="YouTube" src="/assets/images/YouTube-icon.svg" />}
+          icon={<img alt="YouTube" src="/assets/images/icons/YouTube-icon.svg" />}
           link={websiteCopyStrings.joinLearnCard5Link}
         />
         <LearnCard
           header={websiteCopyStrings.joinLearnCard6Header}
           copy={websiteCopyStrings.joinLearnCard6Copy}
-          icon={<img alt="Articles" src="/assets/images/articles-icon.svg" />}
+          icon={<img alt="Articles" src="/assets/images/icons/articles-icon.svg" />}
           link={websiteCopyStrings.joinLearnCard6Link}
         />
         <LearnCard
           header={websiteCopyStrings.joinLearnCard7Header}
           copy={websiteCopyStrings.joinLearnCard7Copy}
-          icon={<img alt="Events" src="/assets/images/calendar-icon.svg" />}
+          icon={<img alt="Events" src="/assets/images/icons/calendar-icon.svg" />}
           link={websiteCopyStrings.joinLearnCard7Link}
         />
       </div>

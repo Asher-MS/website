@@ -19,7 +19,7 @@ const HeroSectionAboutPage = () => {
       <style jsx>
         {`
           .about-hero-background {
-            background: url('/assets/images/about-hero-background.svg');
+            background: url('/assets/images/backgrounds/about-hero-background.svg');
             background-size: cover;
           }
         `}

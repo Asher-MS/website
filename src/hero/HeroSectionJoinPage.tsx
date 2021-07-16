@@ -19,7 +19,7 @@ const HeroSectionJoinPage = () => {
       <style jsx>
         {`
           .join-hero-background {
-            background: url('/assets/images/join-hero-background.svg');
+            background: url('/assets/images/backgrounds/join-hero-background.svg');
             background-size: cover;
           }
         `}

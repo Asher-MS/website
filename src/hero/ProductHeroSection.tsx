@@ -20,6 +20,7 @@ const ProductHeroSection = ({
   titlePart1,
   titlePart2,
   description,
+  descriptionClasses,
   buttonLabel,
   className = 'w-4/6 flex flex-col justify-center',
   buttonClasses = 'w-64'
@@ -40,7 +41,7 @@ const ProductHeroSection = ({
             className={className}
             buttonClasses={buttonClasses}
             titleClasses="text-white"
-            descriptionClasses="mb-16 text-gray-400 text-lg "
+            descriptionClasses={`mb-16 text-gray-400 text-lg ${descriptionClasses}`}
           />
         </IllustrationWithComponentSideBySide>
       </Section>

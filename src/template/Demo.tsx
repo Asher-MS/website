@@ -16,7 +16,7 @@ const ImageCard = ({ name, copy, selected }: ImageCardProps) => {
       <img
         className={'border-2 ' + (selected && 'border-primary-500 rounded-xl')}
         alt={name}
-        src={`/assets/images/demo-${name}.png`}
+        src={`/assets/images/demo/demo-${name}.png`}
       />
       {copy && (
         <p className={'font-bold text-gray-500 ' + (selected && 'text-primary-500')}>{copy}</p>

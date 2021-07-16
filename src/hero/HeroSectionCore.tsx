@@ -4,7 +4,7 @@ import ProductHeroSection from './ProductHeroSection'
 
 const HeroSectionCore = () => (
   <ProductHeroSection
-    illustrationSrc="/assets/images/core-illustration.svg"
+    illustrationSrc="/assets/images/illustrations/core-illustration.svg"
     illustrationAlt="Core Image"
     illustrationClasses="w-7/12 ml-20"
     illustrationPosition="right"
