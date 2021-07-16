@@ -3,13 +3,18 @@ import className from 'classnames'
 
 interface IIconProps extends React.HTMLAttributes<HTMLDivElement> {
   name: string;
+  onClick?: () => void;
 }
 
 const Icon = (props: IIconProps) => {
   const iconClasses = className(props.className)
   return (
-    <div className={iconClasses}>
-      <img src={`/assets/images/${props.name}-icon.svg`} alt={`${props.name} icon`} />
+    <div className={iconClasses} onClick={props.onClick}>
+      <img
+        src={`/assets/images/${props.name}-icon.svg`}
+        alt={`${props.name} icon`}
+        className="w-full h-full"
+      />
     </div>
   )
 }

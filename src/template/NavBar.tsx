@@ -96,6 +96,11 @@ const NavBar = () => (
       {`
         .top-nav-bar {
           box-shadow: 3px 6px 33px 0px #cdcdcd40;
+          z-index: 200;
+          position: fixed;
+          width: 100vw;
+          background: white;
+          top: 0;
         }
       `}
     </style>

@@ -13,5 +13,6 @@ module.exports = withBundleAnalyzer({
   },
   future: {
     webpack5: true
-  }
+  },
+  target: 'serverless'
 })

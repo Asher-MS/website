@@ -32,7 +32,7 @@ const Dropdown = ({ dropDownLabel, dropDownItems }: DropdownProps) => {
       <div className="absolute hidden group-hover:block bg-transparent pt-7">
         <ul className="dropdown">
           {dropDownItems.map((item) => (
-            <li className="m-0 hover:bg-gray-200" key={item.title}>
+            <li className="hover:bg-gray-200" key={item.title}>
               <a className="py-2 px-4 block whitespace-no-wrap" href={item.link ? item.link : '#'}>
                 <div>
                   <div className="flex items-center">

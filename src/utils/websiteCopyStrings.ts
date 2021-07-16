@@ -1,3 +1,15 @@
+export const SLACK_LINK =
+  'https://join.slack.com/t/jina-ai/shared_invite/zt-rgm1cxdu-v_uuLntO7VB18o8eH_ZHuA'
+export const MAPS_LINK = 'https://goo.gl/maps/kqrnQFsUAjFEqcZo7'
+export const TWITTER_LINK = 'https://twitter.com/jinaai_?lang=en'
+export const GITHUB_LINK = 'https://github.com/jina-ai/jina'
+export const EMAIL_ADDRESS = 'hello@jina.ai'
+export const TELEPHONE_NUMBER = '+49 30 814577462'
+export const LINKED_IN_LINK = 'https://www.linkedin.com/company/jinaai'
+export const YOUTUBE_LINK = 'https://www.youtube.com/c/jina-ai'
+export const MEDIUM_LINK = 'https://medium.com/@jina_ai'
+export const MEETUP_LINK = 'https://www.meetup.com/berlin-jina-community-meetup/events/past/'
+
 export const websiteCopyStrings = {
   heroHeadline: 'Reimagine search with AI',
   heroDescription:
@@ -20,6 +32,8 @@ export const websiteCopyStrings = {
   valuePropositionPlugAndPlayTitle: 'Plug and play',
   valuePropositionPlugAndPlayDescription:
     'Easily extend and customize leveraging community-driven components. Build search pipelines within seconds.',
+  careersMeetOurTeamSectionHeadingPart1: 'Meet Our',
+  careersMeetOurTeamSectionHeadingPart2: 'Team',
   careersWorkingWithUsSectionHeadingPart1: 'Working with',
   careersWorkingWithUsSectionHeadingPart2: 'Us',
   careersWorkingWithUsNationalitiesTitle: 'Nationalities',
@@ -28,6 +42,8 @@ export const websiteCopyStrings = {
   careersWorkingWithUsLanguagesAmount: '12+',
   careersWorkingWithUsTechnologiesTitle: 'Technoloies',
   careersWorkingWithUsTechnologiesAmount: '20+',
+  cookieConsentText:
+    'On our website, we only collect and store information that is essential for offering our service and for improving user experience, and we do this with the consent of our website visitors.',
   navBarHome: 'Home',
   navBarProducts: 'Products',
   navBarDeveloper: 'Developer',
@@ -43,6 +59,38 @@ export const websiteCopyStrings = {
   navBarCompanyContact: 'Contact us',
   navBarCompanyBlog: 'Blog',
   navBarButtonCallToAction: 'Try it out!',
+  termsAndPoliciesTitle: 'Terms & Policies',
+  termsAndPoliciesUpdateDate: 'Last Updated: 23rd April 2020',
+  termsAndPoliciesSubTitle1: 'Terms of Use',
+  termsAndPoliciesDescription1Part1:
+    'These terms of use ("terms") set forth the terms and conditions under which jina("we" or "us" or "jina") allows the use by persons and entities ("you") of the website located at https://jina.ai (together with all associated websites linked to such website by jina , the "site")',
+  termsAndPoliciesDescription1Part2:
+    'Should you elect to use the site, the terms, together with the jina privacy statement located at privacy statement ("privacy statement"), form a legal contract between you and jina (the "agreement"). by using the site, you are irrevocably agreeing to all of the terms and conditions of the agreement. If you do not agree with any of the terms and conditions in the agreement, you may not use the site.',
+  termsAndPoliciesDescription1Part3:
+    'JINA reserves the right to change, update, add or remove provisions of these Terms, at any time by posting the updated Terms on the Site, along with a notice of the effective date of the updated Terms. By using this Site after JINA has updated the Terms, you are agreeing to all of the updated Terms. If you do not agree with any of the updated Terms, your only recourse will be to stop using the Site.',
+  termsAndPoliciesSubTitle2: 'Jina Content',
+  termsAndPoliciesDescription2:
+    'Except as may be otherwise noted, the information, materials (including, without limitation, HTML, text, audio, video, white papers, press releases, data sheets, product descriptions, software and FAQs and other content) available on or from the Site (collectively, "JINA Content") are the copyrighted works of JINA and its licensors, and JINA and its licensors expressly retain all right, title and interest in and to the JINA Content, including and without limitation, all intellectual property rights therein and thereto. Except as expressly permitted in these Terms, any use of the JINA Content may violate copyright and/or other applicable laws.',
+  termsAndPoliciesSubTitle3: 'Trademarks',
+  termsAndPoliciesDescription3:
+    'All trademarks, service marks and logos included on the Site ("Marks") are the property of JINA, and you may not use such Marks without the express, prior written consent of JINA.',
+  termsAndPoliciesSubTitle4: 'Monitoring',
+  termsAndPoliciesDescription4:
+    'JINA may, but is not obligated to, monitor Site Content, User Content and your use of the Site. JINA reserves the right to accept, reject or modify any Site Content or User Content, but assumes no liability based on its acceptance, rejection, modification or failure to modify any Site Content or User Content.',
+  termsAndPoliciesSubTitle5: 'Warranty Disclaimer',
+  termsAndPoliciesDescription5:
+    'The site and the site content are provided strictly on an "as is" and "as available" basis, and jina makes no representation or warranty that the site or the site content are complete, suitable for your purpose, or accurate. on behalf of itself and its licensors, jina hereby expressly disclaims any and all implied, statutory or other warranties with respect to the site and the site content, including, without limitation, the implied warranties of merchantability, fitness for a particular purpose and noninfirngement. The entire risk as to results obtained through use of the site and/or the site content rests with you. JINA makes no representation or warranty that the availability of the site will be uninterrupted, or that the site and/or the site content will be error free or secure.',
+  termsAndPoliciesSubTitle6: 'Limitation of Liability',
+  termsAndPoliciesDescription6:
+    'To the fullest extent permitted by applicable law, you agree that jina shall not be liabile to you for any damages arising out of or connected to your use of, or inability to use, the site, including, without limitation, any and all direct, indirect, incidental, consequential, punitive, special, exemplary or statutory damages, including any loss of business, loss or profits, loss of revenue, loss of data, loss of goodwill, or any cost of cover or cost of procurement of substitute goods or services, even if JINA has been advised of the possibility of such damages, and regardless of the legal theory under which damages are sought, whether in breach of contract or in tort, including negligence. The foregoing limitations of liability do not limit the liability of jina arising from gross negligence or willful intent, to the extent such damages may not be excluded or limited under applicable law.',
+  termsAndPoliciesSubTitle7: 'General',
+  termsAndPoliciesDescription7:
+    "JINA prefers to advise you if we feel you are not complying with these Terms and to recommend any necessary corrective action. However, certain violations of these Terms, as determined by JINA, may result in immediate termination of your access to this Site without prior notice to you. If any of these Terms is found to be inconsistent with applicable law, then such term shall be interpreted to reflect the intentions of the parties, and no other terms will be modified. JINA's failure to enforce any of these Terms is not a waiver of such terms. The Agreement sets forth the entire agreement between you and JINA and supersede all prior or contemporaneous negotiations, discussions or agreements between you and JINA about this Site. The proprietary rights, disclaimer of warranties, representations made by you, indemnities, limitations of liability and general provisions shall survive any termination of these Terms.",
+  termsAndPoliciesSubTitle8: 'Contact Us',
+  termsAndPoliciesDescription8:
+    'If you have any questions about these Terms or otherwise need to contact JINA for any reason, you can reach us at legal@jina.ai .',
+  termsAndPoliciesSubTitle9: 'GDPR',
+  termsAndPoliciesDescription9: '',
   aboutWhyWeStartedJinaTitlePart1: 'Why we started',
   aboutWhyWeStartedJinaTitlePart2: 'Jina',
   aboutWhyWeStartedJinaDescriptionPart1:
@@ -62,6 +110,27 @@ export const websiteCopyStrings = {
   Offices3Description: 'Some description',
   aboutInvestorsSectionTitlePart1: 'Our',
   aboutInvestorsSectionTitlePart2: 'Investors',
+  careersPageHeroSectionTitlePart1: 'Careers at',
+  careersPageHeroSectionTitlePart2: 'Jina',
+  careersPageHeroSectionDescription:
+    'Join our diverse team from all around the world and help us shape the future of neural search!',
+  careersPageHeroSectionButtonLabel: 'Current Openings',
+  contributePageHeroSectionTitlePart1: 'Contribute to',
+  contributePageHeroSectionTitlePart2: 'Jina',
+  contributePageHeroSectionDescription: 'Build the biggest neural search ecosystem with us!',
+  contributePageHeroSectionButtonLabel: 'Join the community',
+  aboutPageHeroSectionTitle: 'Jina AI is a Neural Search Company',
+  aboutPageHeroSectionDescription:
+    'We are building an open-source neural search ecosystem. Jina enables developers and enterprises to build search systems that are fast, scalable, and work with any kind of data.',
+  aboutPageHeroSectionButtonLabel: 'Join us!',
+  joinPageHeroSectionTitle: 'Join the Jina Community',
+  joinPageHeroSectionDescription:
+    'Jina is open source at the core. We welcome developers, contributors, and open source evangelists to join us!',
+  joinPageHeroSectionButtonLabel: 'Join our Slack',
+  learnPageHeroSectionTitle: 'Learn, build, and deploy your neural search app',
+  learnPageHeroSectionDescription:
+    'We are building an open-source neural search ecosystem, enabling developers and enterprises to build search systems that are fast, scalable, and work with any kind of data.',
+  learnPageHeroSectionButtonLabel: 'Read our Documentation',
   footerPhoneNumber: '+880 112 345 678',
   footerAddress: '711-2880 Nulla St. Mankato Mississippi 96522',
   footerCompany: 'Company',
@@ -84,6 +153,20 @@ export const websiteCopyStrings = {
   footerSocialsSlack: 'Slack',
   navBarCompanyEvents: 'Events',
   navBarCompanyNews: 'News',
+  coreInstallationTitle: 'Instalation',
+  coreInstallationToggleButtonPython: 'PyPi',
+  coreInstallationToggleButtonDocker: 'Docker',
+  coreInstallationCommandPythonPart1: 'pip ',
+  coreInstallationCommandPythonPart2: 'install jina',
+  coreInstallationCommandPython: 'pip install jina',
+  coreInstallationCommandDockerPart1: 'docker ',
+  coreInstallationCommandDockerPart2: 'run jinaai/jina:latest',
+  coreInstallationCommandDocker: 'docker run jinaai/jina:latest',
+  subscribeTitle: 'Never Miss an Update',
+  subscribeSubtitle: 'Stay up to date with our latest news',
+  subscribeButtonLabel: 'Subscribe',
+  subscribeInputPlaceholder: 'Your email',
+  subscribeInputErrorMessage: 'Email is not valid',
   careersWhatWeStandForSectionTitlePart1: 'What We',
   careersWhatWeStandForSectionTitlePart2: 'Stand for',
   careersWhatWeStandForTitle1: 'We believe in open source',
@@ -104,24 +187,198 @@ export const websiteCopyStrings = {
   careersWhatWeStandForTitle6: 'We work together as one',
   careersWhatWeStandForDescription6:
     'Collaboration is essential, whether that’s inside or between teams. It means less wasted effort and makes for better work. We aim to work closely and transparently and bring the right people in as early as possible.',
+  contributeProjectGalleryHeaderPart1: 'Project',
+  contributeProjectGalleryHeaderPart2: 'Gallery',
   contributeResourcesHeaderPart1: 'Resources',
   contributeResourcesHeaderPart2: 'for contributors',
   contributeResourcesGitHubTitle: 'GitHub',
   contributeResourcesGitHubCopy:
     'Our Flow architecture follows a modular design. Easily plug and play with existing solutions!',
-  contributeResourcesGitHubLearnMoreLink: 'https://github.com/jina-ai/jina',
+  contributeResourcesGitHubLearnMoreLink: GITHUB_LINK,
   contributeResourcesArticlesTitle: 'Articles',
   contributeResourcesArticlesCopy:
     'Our Flow architecture follows a modular design. Easily plug and play with existing solutions!',
-  contributeResourcesArticlesLearnMoreLink: 'https://github.com/jina-ai/jina',
+  contributeResourcesArticlesLearnMoreLink: GITHUB_LINK,
   contributeResourcesSlackTitle: 'Slack',
   contributeResourcesSlackCopy:
     'Our Flow architecture follows a modular design. Easily plug and play with existing solutions!',
-  contributeResourcesSlackLearnMoreLink:
-    'https://join.slack.com/t/jina-ai/shared_invite/zt-rgm1cxdu-v_uuLntO7VB18o8eH_ZHuA',
+  contributeResourcesSlackLearnMoreLink: SLACK_LINK,
   contributeResourcesNewsletterTitle: 'NewsLetter',
   contributeResourcesNewsletterCopy:
     'Our Flow architecture follows a modular design. Easily plug and play with existing solutions!',
-  contributeResourcesNewsletterLearnMoreLink: 'https://github.com/jina-ai/jina',
-  contributeResourcesLearnMore: 'Learn more'
+  contributeResourcesNewsletterLearnMoreLink: GITHUB_LINK,
+  contributeResourcesLearnMore: 'Learn more',
+  contactInfoHeaderPart1: 'Contact',
+  contactInfoHeaderPart2: 'info',
+  contactInfoCard1Header: 'STAY IN TOUCH',
+  contactInfoCard1InfoList: [
+    ['Karl-Liebknecht-Str. 5', MAPS_LINK],
+    ['10178 Berlin', MAPS_LINK],
+    ['Germany', MAPS_LINK]
+  ],
+  contactInfoCard2Header: 'CONTACT',
+  contactInfoCard2InfoList: [
+    [`E: ${EMAIL_ADDRESS}`, 'mailto: hello@jina.ai'],
+    [`P: ${TELEPHONE_NUMBER}`, 'tel:004930814577462']
+  ],
+  contactInfoCard3Header: 'WORKING HOURS',
+  contactInfoCard3InfoList: [
+    ['Weekdays: 10 AM – 8 PM', ''],
+    ['Weekends: by appoinment', '']
+  ],
+  contactInfoCard4Header: 'SOCIALS',
+  contactInfoCard4InfoList: [
+    ['GitHub', GITHUB_LINK],
+    ['Twitter', TWITTER_LINK],
+    ['Linkedin', LINKED_IN_LINK],
+    ['Slack', SLACK_LINK]
+  ],
+  contactFormSlackHeaderPart1: 'Reach out using ',
+  contactFormSlackHeaderPart2: ' slack',
+  contactFormHeaderPart1: 'or',
+  contactFormHeaderPart2: 'Email us',
+  contactFormCopy: 'Stay up to date with our latest news',
+  contactFormName: 'Name',
+  contactFormEmail: 'E-mail',
+  contactFormMessage: 'Your message',
+  contactFormButton: 'Send',
+  contactFormThankYouHeaderPart1: 'Thank you',
+  contactFormThankYouHeaderPart2: 'for reaching out!',
+  contactFormThankYouCopy: 'Stay up to date with our latest news',
+  learnHeadlinePart1: 'Learn, build, and deploy your ',
+  learnHeadlinePart2: 'neural search ',
+  learnHeadlinePart3: 'app',
+  learnDescription:
+    'We are building an open-source neural search ecosystem, enabling developers and enterprises to build search systems that are fast, scalable, and work with any kind of data.',
+  learnDocumentationButton: 'Read our Documentation',
+  learnCardNewTitleUncolored: 'New to',
+  learnCardNewTitleColored: 'jina',
+  learnCardNewCopy:
+    'Data is transforming nowadays while the design pattern to process such information needs to be up to date.',
+  learnCardNewLinkList: [
+    ['What is Neural Search?', 'www.google.com'],
+    ['Install Jina', 'www.google.com'],
+    ['Jina Fundamentals', 'www.google.com'],
+    ['Jina Documentation', 'www.google.com']
+  ],
+  learnCardGetStartedTitleUncolored: 'Get',
+  learnCardGetStartedTitleColored: 'Started',
+  learnCardGetStartedCopy:
+    'Data is transforming nowadays while the design pattern to process such information needs to be up to date.',
+  learnCardGetStartedLinkList: [
+    ['Jina Hello-world', 'www.google.com'],
+    ['See Jina in action - play with examples', 'www.google.com'],
+    ['Build your first Jina App', 'www.google.com']
+  ],
+  learnCardExploreTitleUncolored: 'Explore the ',
+  learnCardExploreTitleColored: 'jina suite',
+  learnCardExploreCopy:
+    'Data is transforming nowadays while the design pattern to process such information needs to be up to date.',
+  learnCardExploreLinkList: [
+    ['Search with Jina Box', 'www.google.com'],
+    ['Quick tour of Jina Dashboard', 'www.google.com'],
+    ['Upload your App to Jina Hub', 'www.google.com']
+  ],
+  learnCardVideoTitleUncolored: 'Watch our',
+  learnCardVideoTitleColored: 'videos',
+  learnCardVideoCopy:
+    'Data is transforming nowadays while the design pattern to process such information needs to be up to date.',
+  learnCardVideoLinkList: [
+    ['From Zero to Hero - Jina Fundamentals', 'www.google.com'],
+    ['From Zero to Hero - ...', 'www.google.com']
+  ],
+  learnCardInspiredTitleColored: 'Get inspired',
+  learnCardInspiredTitleUncolored: 'by others',
+  learnCardInspiredCopy:
+    'Data is transforming nowadays while the design pattern to process such information needs to be up to date.',
+  learnCardInspiredLinkList: [
+    ['Financial QA article', 'www.google.com'],
+    ['Streamlit article', 'www.google.com']
+  ],
+  learnCardProductivityTitleColored: 'Productivity',
+  learnCardProductivityTitleUncolored: 'Tips',
+  learnCardProductivityCopy:
+    'Data is transforming nowadays while the design pattern to process such information needs to be up to date.',
+  learnCardProductivityLinkList: [['Set up YAML Intellisense in IDE', 'www.google.com']],
+  careersCommonQATitlePart1: 'Common ',
+  careersCommonQATitlePart2: 'Q&A',
+  careersCommonQASubtitle1: 'What does your ideal teammate look like?',
+  careersCommonQADescription1: 'We love to work with people who share our values and passions for open source and neural search! If you think you\'ve got what it takes for our fast-changing, chaotic-but-fun, startup environment — apply now!',
+  careersCommonQASubtitle2: 'How can I prepare for the interview?',
+  careersCommonQADescription2: 'We love to work with people who share our values and passions for open source and neural search! If you think you\'ve got what it takes for our fast-changing, chaotic-but-fun, startup environment — apply now!',
+  careersCommonQASubtitle3: 'Can I choose between working remotely or relocating to Berlin/Beijing?',
+  careersCommonQADescription3: 'We love to work with people who share our values and passions for open source and neural search! If you think you\'ve got what it takes for our fast-changing, chaotic-but-fun, startup environment — apply now!',
+  careersCommonQASubtitle4: 'Do you sponsor working visas?',
+  careersCommonQADescription4: 'We love to work with people who share our values and passions for open source and neural search! If you think you\'ve got what it takes for our fast-changing, chaotic-but-fun, startup environment — apply now!',
+  careersCommonQASubtitle5: 'What will my first day at Jina AI look like?',
+  careersCommonQADescription5: 'As our engineers always say: "It depends ..."',
+  demoHeaderPart1: 'Build your ',
+  demoHeaderPart2: 'AI search ',
+  demoHeaderPart3: 'in a few steps...',
+  demoCodeExample: `class MyFashionEncoder(Executor)
+    ...
+f = Flow().add(uses=MyFashionEncorder)\\
+
+.add(uses="jinahub://indexer")
+
+with f:
+    f.index(inputs=[...])
+    f.search(inputs=[...])
+    ...
+`,
+  demoSearchImagesHeader: 'Search images:',
+  demoSearchImagesShoesCopy: 'Shoes',
+  demoSearchImagesDressCopy: 'Dress',
+  demoSearchImagesHatCopy: 'Hat',
+  heroReleaseBannerText: 'Jina 2.0 is out now! Check our GitHub repo to learn more!',
+  heroReleaseBannerButtonLabel: 'GO',
+  joinLearnHeaderPart1: 'Learn ',
+  joinLearnHeaderPart2: 'more about ',
+  joinLearnHeaderPart3: 'Jina',
+  reviewsHeaderPart1: 'Reviews from our ',
+  reviewsHeaderPart2: 'Users',
+  reviewsReview1:
+    'The team at Jina AI is passionate about open source. The founders quit their high tech prestigious jobs to pursue their passion and innovate the open source way. Just a great example of how you can be open source friendly, create a promising technology, and build a commercial product.',
+  reviewsReview1Reviewer: 'Dr. Ibrahim Haddad',
+  reviewsReview1Position: 'Executive Director',
+  reviewsReview1Organisation: 'LF AI Foundation',
+  reviewsReview2:
+    'The team at Jina AI is passionate about open source. The founders quit their high tech prestigious jobs to pursue their passion and innovate the open source way. Just a great example of how you can be open source friendly, create a promising technology, and build a commercial product.',
+  reviewsReview2Reviewer: 'Dr. Ibrahim Haddad',
+  reviewsReview2Position: 'Executive Director',
+  reviewsReview2Organisation: 'LF AI Foundation',
+  reviewsReview3:
+    'The team at Jina AI is passionate about open source. The founders quit their high tech prestigious jobs to pursue their passion and innovate the open source way. Just a great example of how you can be open source friendly, create a promising technology, and build a commercial product.',
+  reviewsReview3Reviewer: 'Dr. Ibrahim Haddad',
+  reviewsReview3Position: 'Executive Director',
+  reviewsReview3Organisation: 'LF AI Foundation',
+  joinLearnCard0Header: 'Twitter',
+  joinLearnCard0Copy: 'Follow @JinaAI_ on Twitter',
+  joinLearnCard0Link: TWITTER_LINK,
+  joinLearnCard1Header: 'GitHub',
+  joinLearnCard1Copy: 'Star our repository',
+  joinLearnCard1Link: GITHUB_LINK,
+  joinLearnCard2Header: 'Linkedin',
+  joinLearnCard2Copy: 'Follow @jinaai on Linkedin',
+  joinLearnCard2Link: LINKED_IN_LINK,
+  joinLearnCard3Header: 'Newsletter',
+  joinLearnCard3Copy: 'Subscribe to the Jina newsletter',
+  joinLearnCard3Link: 'www.google.com',
+  joinLearnCard4Header: 'Slack',
+  joinLearnCard4Copy: 'Join @jinaai on Slack',
+  joinLearnCard4Link: SLACK_LINK,
+  joinLearnCard5Header: 'YouTube',
+  joinLearnCard5Copy: 'Follow @jinaai on YouTube',
+  joinLearnCard5Link: YOUTUBE_LINK,
+  joinLearnCard6Header: 'Articles',
+  joinLearnCard6Copy: 'Read articles published by Jina',
+  joinLearnCard6Link: MEDIUM_LINK,
+  joinLearnCard7Header: 'Events',
+  joinLearnCard7Copy: 'View Jina organized events',
+  joinLearnCard7Link: MEETUP_LINK,
+  joinCommunityHeaderStrings: [
+    ['Join Our Growing ', false],
+    ['Community', true]
+  ],
+  joinCommunityButton: 'Join the community'
 }

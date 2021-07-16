@@ -5,7 +5,9 @@ import PageWithHeaderAndFooter from '../layout/PageWithHeaderAndFooter'
 import Offices from '../template/Offices'
 import WorkingWithUs from '../template/WorkingWithUs'
 import WhatWeStandFor from '../template/WhatWeStandFor'
-import Accordion from '../template/Accordion'
+import MeetOurTeam from '../template/MeetOurTeam'
+import HeroSectionCareersPage from '../hero/HeroSectionCareersPage'
+import CareersCommonQandA from '../template/CareersCommonQandA'
 
 const Careers = () => (
   <>
@@ -15,10 +17,12 @@ const Careers = () => (
       canonical="https://jina.ai/"
     />
     <PageWithHeaderAndFooter>
+      <HeroSectionCareersPage />
       <WhatWeStandFor />
+      <MeetOurTeam />
       <WorkingWithUs />
       <Offices />
-      <Accordion />
+      <CareersCommonQandA />
     </PageWithHeaderAndFooter>
   </>
 )

@@ -1,5 +1,6 @@
 import React from 'react'
 import { DivProps } from '../button/Button'
+import { CookieConsent } from '../template/CookieConsent'
 import { Footer } from '../template/Footer'
 import NavBar from '../template/NavBar'
 
@@ -9,7 +10,8 @@ const PageWithHeaderAndFooter = ({ children }: PageWithHeaderAndFooterProps) => 
   return (
     <>
       <NavBar />
-      {children}
+      <div className="mt-20">{children}</div>
+      <CookieConsent />
       <Footer />
     </>
   )
