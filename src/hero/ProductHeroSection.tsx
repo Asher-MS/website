@@ -48,7 +48,8 @@ const ProductHeroSection = ({
         {`
           .product-hero-background {
             background: url('/assets/images/backgrounds/product-background.svg');
-            background-size: cover 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
           }
         `}
       </style>
