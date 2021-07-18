@@ -187,6 +187,15 @@ export const websiteCopyStrings = {
   careersWhatWeStandForTitle6: 'We work together as one',
   careersWhatWeStandForDescription6:
     'Collaboration is essential, whether that’s inside or between teams. It means less wasted effort and makes for better work. We aim to work closely and transparently and bring the right people in as early as possible.',
+  contributeHowToContributeHeaderPart1: 'How Can I ',
+  contributeHowToContributeHeaderPart2: 'Contribute ',
+  contributeHowToContributeHeaderPart3: 'To Jina',
+  contributeHowToContributeSubtitle1: 'Make Jina better!',
+  contributeHowToContributeSubtitle2: 'Hone your technical writing skills',
+  contributeHowToContributeSubtitle3: 'Help others learn Jina',
+  contributeHowToContributeSubtitle4: 'Share your Jina projects',
+  contributeHowToContributeSubtitle5: 'Integrate an awesome AI model',
+  contributeHowToContributeSubtitle6: 'Become a front-end hero',
   contributeProjectGalleryHeaderPart1: 'Project',
   contributeProjectGalleryHeaderPart2: 'Gallery',
   contributeResourcesHeaderPart1: 'Resources',
@@ -303,13 +312,18 @@ export const websiteCopyStrings = {
   careersCommonQATitlePart1: 'Common ',
   careersCommonQATitlePart2: 'Q&A',
   careersCommonQASubtitle1: 'What does your ideal teammate look like?',
-  careersCommonQADescription1: 'We love to work with people who share our values and passions for open source and neural search! If you think you\'ve got what it takes for our fast-changing, chaotic-but-fun, startup environment — apply now!',
+  careersCommonQADescription1:
+    "We love to work with people who share our values and passions for open source and neural search! If you think you've got what it takes for our fast-changing, chaotic-but-fun, startup environment — apply now!",
   careersCommonQASubtitle2: 'How can I prepare for the interview?',
-  careersCommonQADescription2: 'We love to work with people who share our values and passions for open source and neural search! If you think you\'ve got what it takes for our fast-changing, chaotic-but-fun, startup environment — apply now!',
-  careersCommonQASubtitle3: 'Can I choose between working remotely or relocating to Berlin/Beijing?',
-  careersCommonQADescription3: 'We love to work with people who share our values and passions for open source and neural search! If you think you\'ve got what it takes for our fast-changing, chaotic-but-fun, startup environment — apply now!',
+  careersCommonQADescription2:
+    "We love to work with people who share our values and passions for open source and neural search! If you think you've got what it takes for our fast-changing, chaotic-but-fun, startup environment — apply now!",
+  careersCommonQASubtitle3:
+    'Can I choose between working remotely or relocating to Berlin/Beijing?',
+  careersCommonQADescription3:
+    "We love to work with people who share our values and passions for open source and neural search! If you think you've got what it takes for our fast-changing, chaotic-but-fun, startup environment — apply now!",
   careersCommonQASubtitle4: 'Do you sponsor working visas?',
-  careersCommonQADescription4: 'We love to work with people who share our values and passions for open source and neural search! If you think you\'ve got what it takes for our fast-changing, chaotic-but-fun, startup environment — apply now!',
+  careersCommonQADescription4:
+    "We love to work with people who share our values and passions for open source and neural search! If you think you've got what it takes for our fast-changing, chaotic-but-fun, startup environment — apply now!",
   careersCommonQASubtitle5: 'What will my first day at Jina AI look like?',
   careersCommonQADescription5: 'As our engineers always say: "It depends ..."',
   demoHeaderPart1: 'Build your ',

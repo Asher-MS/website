@@ -4,14 +4,20 @@ import { DivProps } from '../button/Button'
 interface CollapsibleElementProps extends DivProps {
   title: string;
   content: string;
+  chevronPosition?: 'right' | 'left';
 }
 
-const CollapsibleElement = ({ title, content }: CollapsibleElementProps) => {
+const CollapsibleElement = ({ title, content, chevronPosition }: CollapsibleElementProps) => {
   const [isActive, setIsActive] = useState(false)
 
   return (
     <div className="accordion-item">
-      <div className="accordion-title flex" onClick={() => setIsActive(!isActive)}>
+      <div
+        className={`accordion-title flex ${
+          chevronPosition === 'right' && 'flex-row-reverse justify-between'
+        }`}
+        onClick={() => setIsActive(!isActive)}
+      >
         <div>
           <div
             className={`bg-primary-400 bg-opacity-40 text-primary-500 rounded-full p-1 m-5 transform ${
@@ -43,9 +49,6 @@ const Chevron = () => (
     className="bi bi-chevron-left"
     viewBox="0 0 16 16"
   >
-    <path
-      fillRule="evenodd"
-      d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-    />
+    <path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
   </svg>
 )

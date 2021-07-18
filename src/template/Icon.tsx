@@ -11,7 +11,7 @@ const Icon = (props: IIconProps) => {
   return (
     <div className={iconClasses} onClick={props.onClick}>
       <img
-        src={`/assets/images/${props.name}-icon.svg`}
+        src={`/assets/images/icons/${props.name}-icon.svg`}
         alt={`${props.name} icon`}
         className="w-full h-full"
       />

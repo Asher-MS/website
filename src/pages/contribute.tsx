@@ -5,6 +5,7 @@ import PageWithHeaderAndFooter from '../layout/PageWithHeaderAndFooter'
 import HeroSectionContributePage from '../hero/HeroSectionContributePage'
 import Resources from '../resources/Resources'
 import ProjectGallery from '../template/ProjectGallery'
+import HowToContribute from '../template/HowToContribute'
 
 const Contribute = () => (
   <>
@@ -15,6 +16,7 @@ const Contribute = () => (
     />
     <PageWithHeaderAndFooter>
       <HeroSectionContributePage />
+      <HowToContribute />
       <Resources />
       <ProjectGallery />
     </PageWithHeaderAndFooter>
