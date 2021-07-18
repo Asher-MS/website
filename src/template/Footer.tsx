@@ -14,8 +14,8 @@ const Footer = () => (
     <Background color="bg-primary-500" className="text-white">
       <div className="flex justify-between">
         <div className="footer-left-margin"></div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-6 py-16">
-          <div className="col-span-2 pr-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-20 py-16">
+          <div className=" pr-4">
             <FooterCompanyInfo logo={<LogoWhite />} description={Config.description} />
           </div>
 
