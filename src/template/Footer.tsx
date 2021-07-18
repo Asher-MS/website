@@ -11,12 +11,12 @@ import { websiteCopyStrings } from '../utils/websiteCopyStrings'
 
 const Footer = () => (
   <div>
-    <Background color="bg-primary-500" className="text-white">
+    <Background color="bg-primary-500 pt-20" className="text-white">
       <div className="flex justify-between">
         <div className="footer-left-margin"></div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-20 py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-32 py-16">
           <div className=" pr-4">
-            <FooterCompanyInfo logo={<LogoWhite />} description={Config.description} />
+            <FooterCompanyInfo logo={<LogoWhite xl />} description={Config.description} />
           </div>
 
           <FooterLinks title={websiteCopyStrings.footerCompany}>
