@@ -6,6 +6,7 @@ import WhyWeStartedJina from '../template/WhyWeStartedJina'
 import Offices from '../template/Offices'
 import Investors from '../template/Investors'
 import HeroSectionAboutPage from '../hero/HeroSectionAboutPage'
+import OurCommitments from '../template/OurCommitments'
 
 const About = () => (
   <>
@@ -16,6 +17,7 @@ const About = () => (
     />
     <PageWithHeaderAndFooter>
       <HeroSectionAboutPage />
+      <OurCommitments />
       <WhyWeStartedJina />
       <Offices />
       <Investors />

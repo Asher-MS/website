@@ -1,17 +1,20 @@
 import React from 'react'
 
 import { FeatureElement } from '../feature/FeatureElement'
+import Header from './Header'
 import { Section } from '../layout/Section'
 import { websiteCopyStrings } from '../utils/websiteCopyStrings'
 import Icon from './Icon'
 
 const Features = () => (
   <Section yPadding="pb-16">
-    <div className="text-center font-bold text-4xl mb-20">
-      <h2 className="text-black">
-        Why <span className="text-primary-500">Jina</span>
-      </h2>
-    </div>
+    <Header
+      className="text-black"
+      headerStrings={[
+        [websiteCopyStrings.homeValuePropositionTitlePart1, false],
+        [websiteCopyStrings.homeValuePropositionTitlePart2, true]
+      ]}
+    />
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-16 gap-y-16 px-4 md:px-0">
       <FeatureElement
         title={websiteCopyStrings.valuePropositionTimeSaverTitle}

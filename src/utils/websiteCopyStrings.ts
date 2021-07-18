@@ -20,6 +20,8 @@ export const websiteCopyStrings = {
   HomeCallToActionDescription:
     'Jina is an easier way to build neural search on the cloud. Our open source ecosystem lets you build and deploy search pipelines for any kind of data within seconds!',
   HomeCallToActionButtonLabel: 'Try it on',
+  homeValuePropositionTitlePart1: 'Why ',
+  homeValuePropositionTitlePart2: 'Jina? ',
   valuePropositionTimeSaverTitle: 'Timesaver',
   valuePropositionTimeSaverDescription:
     'Get started with neural search within minutes! No more stitching together systems for your search pipeline.',
@@ -32,6 +34,17 @@ export const websiteCopyStrings = {
   valuePropositionPlugAndPlayTitle: 'Plug and play',
   valuePropositionPlugAndPlayDescription:
     'Easily extend and customize leveraging community-driven components. Build search pipelines within seconds.',
+  aboutCommitmentsTitlePart1: 'Our ',
+  aboutCommitmentsTitlePart2: 'Commitments',
+  aboutCommitmentsItem1Subtitle: 'Community',
+  aboutCommitmentsItem1Description:
+    'We nurture a diverse and welcoming community. We love to share our knowledge and support community members to use our products in millions of different ways. Your feedback means everything!',
+  aboutCommitmentsItem2Subtitle: 'Open Source',
+  aboutCommitmentsItem2Description:
+    'We are evangelists of open source. We believe that open source is the best approach to make artificial intelligence truly accessible.',
+  aboutCommitmentsItem3Subtitle: 'AI in production',
+  aboutCommitmentsItem3Description:
+    'We build the biggest neural search ecosystem. Jina enables developers to use deep-learning models to tackle real-world problems in a fast, scalable, and stable fashion.',
   careersMeetOurTeamSectionHeadingPart1: 'Meet Our',
   careersMeetOurTeamSectionHeadingPart2: 'Team',
   careersWorkingWithUsSectionHeadingPart1: 'Working with',
