@@ -4,6 +4,7 @@ import { Button, DivProps } from '../button/Button'
 interface HeroSectionContentProps extends DivProps {
   titlePart1: string;
   titlePart2?: string;
+  titleClasses?: string;
   description: string;
   buttonLabel?: string;
   descriptionClasses?: string;
@@ -13,6 +14,7 @@ interface HeroSectionContentProps extends DivProps {
 const HeroSectionContent = ({
   titlePart1,
   titlePart2,
+  titleClasses,
   description,
   buttonLabel,
   className,
@@ -21,11 +23,11 @@ const HeroSectionContent = ({
 }: HeroSectionContentProps) => {
   return (
     <div className={className}>
-      <h2 className="font-bold mb-8">
+      <h1 className={`font-bold mb-8 ${titleClasses}`}>
         <span className="text-black">{titlePart1}</span>
         &nbsp;
         <span className="text-primary-500">{titlePart2 || ''}</span>
-      </h2>
+      </h1>
       <p className={`mb-16 text-gray-600 text-lg ${descriptionClasses}`}>{description}</p>
       {buttonLabel && (
         <Button primary className={`py-4 ${buttonClasses}`}>
@@ -34,7 +36,7 @@ const HeroSectionContent = ({
       )}
       <style>
         {`
-          h2 {
+          h1 {
             font-size: 3.5rem;
           }
         `}

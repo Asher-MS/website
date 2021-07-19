@@ -27,6 +27,7 @@ const About = () => (
       <Section>
         <HeroSectionContent
           titlePart1={websiteCopyStrings.aboutCallToActionTitle}
+          titleClasses="text-5xl"
           description={websiteCopyStrings.aboutCallToActionDescription}
           buttonLabel={websiteCopyStrings.aboutCallToActionCallToActionButton}
           className="flex flex-col items-center"

@@ -8,7 +8,7 @@ interface HeaderProps extends DivProps {
 }
 
 const Header = ({ headerStrings, className }: HeaderProps) => (
-  <h2 className={`text-center font-bold text-4xl mb-10 ${className}`}>
+  <h2 className={`text-center font-bold  mb-10 ${className}`}>
     {headerStrings.map((tuple, index) => (
       <span key={`header-part-${index}`} className={'' + (tuple[1] && 'text-primary-500')}>
         {tuple[0]}
