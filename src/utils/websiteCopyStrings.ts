@@ -111,6 +111,10 @@ export const websiteCopyStrings = {
 
   aboutWhyWeStartedJinaDescriptionPart2:
     'Jina AI was started to provide a solution ready to keep up with the emerging needs for all kinds of search. As the need to process large quantities of data grows, Jina helps you to stay on top of the ever changing data landscape.',
+  aboutCallToActionTitle: 'Interested in working with us?',
+  aboutCallToActionDescription:
+    'Join the Jina AI community and help us build the search systems of the future!',
+  aboutCallToActionCallToActionButton: 'Careers',
   OfficesSecionTitlePart1: 'Our',
   OfficesSecionTitlePart2: 'Offices',
   Offices1TitlePart1: 'Berlin,',
